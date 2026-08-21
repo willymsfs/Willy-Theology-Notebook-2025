@@ -1,0 +1,33 @@
+---
+title: "The long nose of Hebrew God, The long nose of Hebrew God"
+source: "https://drelisblog.com/the-long-nose-of-hebrew-god/"
+author:
+  - "[[Dr. Eli Lizorkin-Eyzenberg]]"
+published: 2025-06-30
+created: 2025-12-07
+description: "Hebrew metaphors are amazing and this insightful article explores of them!"
+tags:
+type: literature-note
+  - "clippings"
+---
+As the Jewish year drew to a close, our community gathered to observe Yom Kippur, the Day of Atonement—a day heavy with meaning, solemnity, and hope. This wasn’t just any gathering. It was a sacred moment, a collective pause to seek forgiveness, reflect on our failings, and lean into God’s mercy. Our crowded local synagogue was unable to accommodate everyone, so we relocated to the village community center located just down the road. The room was small, but the mood was full of respect. Throughout the day, as prayers and readings filled the air, one refrain kept rising above the rest—a Hebrew song echoing the words God spoke to Moses in a moment of divine revelation (Exodus 34:6-7). Those words, chanted with fervor, carried a truth about God that’s both profound and, frankly, somewhat quirky.
+
+The heart of this song comes from a passage where God describes himself, passing before Moses while shielding him from the full weight of divine glory. It’s one of the most stunning self-portraits in Scripture: “The Lord, the Lord God, compassionate and gracious, slow to anger, and abounding in lovingkindness and truth; who keeps lovingkindness for thousands, who forgives iniquity, transgression, and sin” (Exodus 34:6-7, NASB). But tucked inside this declaration is a Hebrew phrase that doesn’t quite survive the jump to English. God calls himself erech apaim (אֶרֶךְ אַפַּיִם), pronounced roughly as “eh-rekh ah-pie-yim.” This phrase is a gem. Literally, erech apaim means “long of nose.” Yes, you read that right. God’s got a long “nose.” Plural, actually. What in the world is that about?
+
+Before you picture God with a comically oversized schnoz, let’s unpack this. In ancient Hebrew, language was vivid, physical, and full of imagery. Unlike our abstract English terms, Hebrew often tied emotions to the body. When someone got frustrated, their face would flush, their nostrils would flare, and their nose—well, it seemed to take up more space. The Hebrew word af (nose) is even tied to anger in phrases like “burning nose” to describe rage (think Exodus 15:8 or Psalm 18:8). So when God states that he is erech apaim—long of nose—it is a vivid expression indicating that he is slow to anger. His nostrils don’t flare quickly. He doesn’t get angry right away. Instead, God’s patience stretches long, like a nose that refuses to puff up in fury. It’s a beautiful, almost playful image of divine restraint, and it’s at the heart of Yom Kippur’s message.
+
+Think about the context of this declaration. In Exodus 34, Israel has made a significant mistake. They’ve worshipped a golden calf, breaking the covenant fresh off Sinai’s thunder (Exodus 32). Moses pleads for mercy, and God responds by revealing his character: compassionate, gracious, slow to anger, and overflowing with steadfast love. This assertion isn’t a cold theological statement; it’s a lifeline. God’s unwavering patience ensures that he never abandons his people, even when they deserve it. On Yom Kippur, as we confess our failures—personal and communal—this truth becomes our anchor. God’s mercy outlasts our mess-ups. His patience is longer than our rebellion.
+
+This phrase, erech apaim, isn’t just a cute linguistic quirk. It’s a window into God’s heart. Throughout Scripture, we see this “long nose” in action. When Israel grumbles in the wilderness, God provides manna instead of fire (Numbers 11). When David sins with Bathsheba, God forgives, even as he disciplines (2 Samuel 12). When Nineveh repents in Jonah’s day, God relents from judgment (Jonah 3:10). Over and over, God’s slowness to anger creates space for redemption. And on Yom Kippur, as we chant these words, we’re not just reciting history—we’re claiming that same mercy for ourselves. It’s a reminder that God’s patience is still at work, inviting us to turn back, to be made new.
+
+But let’s delve into reality for a moment. This idea of a “long nose” isn’t just about God—it’s a challenge to us. If God is slow to anger, what about us? How quickly do we react when someone cuts us off in traffic, betrays our trust, or simply irritates us? Yom Kippur isn’t only about receiving God’s mercy; it’s about becoming people who reflect it. The Hebrew sages often linked God’s attributes in Exodus 34 to human behavior, urging us to “imitate God” by being compassionate, gracious, and, yes, long of nose (see the Talmud, Shabbat 133b). Imagine if our noses got a little longer—if we learned to pause, breathe, and choose patience over rage. That’s the kind of transformation Yom Kippur calls us to.
+
+Now, let’s talk about the worship itself. Picture the scene: a packed community center, voices rising in Hebrew, some stumbling over the words, others singing with fluency. The melody of erech apaim weaves through the service, tying us to centuries of Jewish prayer and to the moment God spoke these words to Moses. It’s not just a song; it’s a confession of who God is and who we’re called to be. Yom Kippur lays us bare—our sins, our weakness, and our need for grace—and this statement about God’s character becomes our lifeline. We sing it not because it’s catchy but because it’s true. God’s enduring presence provides hope, even in the face of our shortcomings.
+
+For those of us who don’t know Hebrew, this moment can feel like a nudge. Learning even a little of the language opens up Scripture in ways English can’t. You don’t need to be a scholar—just curious. Start with a phrase like erech apaim. Allow it to effortlessly flow from your mouth. Feel its strangeness, its poetry. It’s a reminder that the Bible wasn’t written in our language or culture. It’s a foreign text, and diving into its original words is like stepping into a new country, full of surprises and depth. Resources like Hebrew dictionaries or online interlinears can help you explore, but the real key is a willingness to engage.
+
+> Reading the Bible always and only in translation is like listening to Mozart in mono sound. The music is there, but its richness and depth are missing. Remember: The Bible does not need to be rewritten, but it needs to be reread.
+> 
+> Dr. Eli Lizorkin-Eyzenberg
+
+![](https://drelisblog.com/wp-content/uploads/2025/04/4X4_Bible_Eli_good.jpg)

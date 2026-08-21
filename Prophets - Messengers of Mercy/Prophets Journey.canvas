@@ -1,0 +1,27 @@
+{
+	"nodes": [
+		{"id":"thread","type":"text","text":"# Golden thread\n\n> \"A prophet **afflicts the comfortable and comforts the afflicted**.\"\n— Abraham Heschel\n\n> \"The God of sacred scripture is **head over heels in love with you**.\"","x":320,"y":-1020,"width":360,"height":260,"color":"6"},
+		{"id":"moc","type":"file","file":"Prophets - Messengers of Mercy/Prophets - Messengers of Mercy (MOC).md","x":-180,"y":-1020,"width":360,"height":180,"color":"5"},
+		{"id":"n01","type":"file","file":"Prophets - Messengers of Mercy/01 What is a Prophet.md","x":-180,"y":-760,"width":360,"height":120,"color":"4"},
+		{"id":"n02","type":"file","file":"Prophets - Messengers of Mercy/02 Salvation History Context.md","x":-180,"y":-560,"width":360,"height":120,"color":"4"},
+		{"id":"n03","type":"file","file":"Prophets - Messengers of Mercy/03 Hosea - Living God's Love Story.md","x":-180,"y":-360,"width":360,"height":120,"color":"1"},
+		{"id":"n04","type":"file","file":"Prophets - Messengers of Mercy/04 Jonah - God's Reluctant Messenger.md","x":-180,"y":-160,"width":360,"height":120,"color":"1"},
+		{"id":"n05","type":"file","file":"Prophets - Messengers of Mercy/05 Daniel - Faithful to the End.md","x":-180,"y":40,"width":360,"height":120,"color":"1"},
+		{"id":"n06","type":"file","file":"Prophets - Messengers of Mercy/06 The Heart of God.md","x":-180,"y":240,"width":360,"height":120,"color":"3"},
+		{"id":"n07","type":"file","file":"Prophets - Messengers of Mercy/07 Fulfillment in Jesus Christ.md","x":-180,"y":440,"width":360,"height":120,"color":"2"},
+		{"id":"n08","type":"file","file":"Prophets - Messengers of Mercy/08 Living Your Baptismal Anointing.md","x":-180,"y":640,"width":360,"height":120,"color":"5"},
+		{"id":"grp_figures","type":"text","text":"### Three prophet models\nHosea · Jonah · Daniel\n\nPersonal trials → courageous fidelity → timeless models","x":320,"y":-360,"width":320,"height":320,"color":"1"}
+	],
+	"edges": [
+		{"id":"e_moc_01","fromNode":"moc","fromSide":"bottom","toNode":"n01","toSide":"top","label":"start"},
+		{"id":"e_01_02","fromNode":"n01","fromSide":"bottom","toNode":"n02","toSide":"top"},
+		{"id":"e_02_03","fromNode":"n02","fromSide":"bottom","toNode":"n03","toSide":"top"},
+		{"id":"e_03_04","fromNode":"n03","fromSide":"bottom","toNode":"n04","toSide":"top"},
+		{"id":"e_04_05","fromNode":"n04","fromSide":"bottom","toNode":"n05","toSide":"top"},
+		{"id":"e_05_06","fromNode":"n05","fromSide":"bottom","toNode":"n06","toSide":"top"},
+		{"id":"e_06_07","fromNode":"n06","fromSide":"bottom","toNode":"n07","toSide":"top"},
+		{"id":"e_07_08","fromNode":"n07","fromSide":"bottom","toNode":"n08","toSide":"top"},
+		{"id":"e_fig","fromNode":"grp_figures","fromSide":"left","toNode":"n04","toSide":"right","color":"1"},
+		{"id":"e_thread","fromNode":"thread","fromSide":"left","toNode":"moc","toSide":"right"}
+	]
+}
