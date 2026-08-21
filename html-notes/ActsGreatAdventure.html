@@ -1,0 +1,2264 @@
+<title>Acts of the Apostles — The Great Adventure</title>
+<style>
+  :root {
+    --ink: #ede3cf; --ink-soft: #cdbfa4; --paper: #211c16; --paper-raised: #2a241c;
+    --line: rgba(237,227,207,0.16); --wine: #c17a4d; --wine-soft: #c17a4d1c;
+    --gold: #d6ad5c; --gold-soft: #d6ad5c1a; --muted: #a3947a;
+    color-scheme: dark;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --ink: #2a2318; --ink-soft: #4d4330; --paper: #f4ecdb; --paper-raised: #ffffff;
+      --line: rgba(42,35,24,0.15); --wine: #9c4f27; --wine-soft: #9c4f2714;
+      --gold: #8a6414; --gold-soft: #8a641414; --muted: #7a6c52; color-scheme: light;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #ede3cf; --ink-soft: #cdbfa4; --paper: #211c16; --paper-raised: #2a241c;
+    --line: rgba(237,227,207,0.16); --wine: #c17a4d; --wine-soft: #c17a4d1c;
+    --gold: #d6ad5c; --gold-soft: #d6ad5c1a; --muted: #a3947a;
+  }
+  :root[data-theme="light"] {
+    --ink: #2a2318; --ink-soft: #4d4330; --paper: #f4ecdb; --paper-raised: #ffffff;
+    --line: rgba(42,35,24,0.15); --wine: #9c4f27; --wine-soft: #9c4f2714;
+    --gold: #8a6414; --gold-soft: #8a641414; --muted: #7a6c52;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 20px; line-height: 1.7; -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--wine-soft); }
+  h1, h2, h3, h4 {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "URW Palladio", serif;
+    text-wrap: balance; font-weight: 400; color: var(--gold); margin: 0;
+  }
+  p { margin: 0 0 1.1em; max-width: 42em; }
+  strong { color: var(--ink); font-weight: 700; }
+  em { color: var(--wine); font-style: italic; }
+  a { color: var(--wine); }
+  header.hero { padding: 60px 24px 40px; text-align: center; border-bottom: 1px solid var(--line); }
+  header.hero .eyebrow { font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--wine); margin-bottom: 12px; }
+  header.hero h1 { font-size: clamp(28px, 4.4vw, 40px); max-width: 22ch; margin: 0 auto 8px; font-style: italic; }
+  header.hero .sub { max-width: 46em; margin: 0 auto; color: var(--ink-soft); font-size: 16.5px; }
+  nav.chapters {
+    position: sticky; top: 0; z-index: 10; display: flex; gap: 2px; overflow-x: auto;
+    background: var(--paper); border-bottom: 1px solid var(--line); padding: 0 12px;
+  }
+  nav.chapters a {
+    flex: none; padding: 12px 13px; font-size: 12.5px; text-decoration: none; color: var(--muted);
+    white-space: nowrap; border-bottom: 2px solid transparent;
+  }
+  nav.chapters a:hover { color: var(--wine); border-color: var(--wine-soft); }
+  main { max-width: 780px; margin: 0 auto; padding: 0 24px 40px; }
+  section.chapter { padding: 44px 0 30px; border-bottom: 1px solid var(--line); scroll-margin-top: 50px; }
+  section.chapter:last-of-type { border-bottom: none; }
+  section.chapter h2 { font-size: clamp(21px, 2.8vw, 26px); margin-bottom: 14px; font-style: italic; }
+  h3.sec { font-size: 18.5px; color: var(--gold); margin: 24px 0 8px; }
+  ul, ol { padding-left: 1.3em; margin: 0 0 1.1em; max-width: 42em; }
+  li { margin-bottom: 7px; }
+  table { border-collapse: collapse; width: 100%; margin: 14px 0; font-size: 14.5px; }
+  th, td { border: 1px solid var(--line); padding: 7px 9px; text-align: left; vertical-align: top; }
+  th { background: var(--paper-raised); color: var(--gold); }
+  .table-wrap { overflow-x: auto; }
+  hr { border: none; border-top: 1px solid var(--line); margin: 22px 0; }
+  .callout {
+    background: var(--paper-raised); border: 1px solid var(--line); border-left: 3px solid var(--gold);
+    border-radius: 3px; padding: 14px 18px; margin: 16px 0;
+  }
+  .callout p { margin: 0 0 6px; font-size: 15.5px; color: var(--ink-soft); }
+  .callout p:last-child { margin-bottom: 0; }
+  .callout-label { font-size: 12px !important; letter-spacing: 0.05em; text-transform: uppercase; color: var(--gold) !important; margin-bottom: 6px !important; }
+  footer.page { max-width: 780px; margin: 0 auto; padding: 34px 24px 60px; font-size: 13.5px; color: var(--muted); }
+</style>
+
+<header class="hero">
+  <p class="eyebrow">Scripture &middot; Narrative Study</p>
+  <h1>Acts of the Apostles — The Great Adventure</h1>
+  <p class="sub">Twenty Sessions from Jerusalem to Rome, with Cross-Cutting Threads and Reference Schemas</p>
+</header>
+
+<nav class="chapters">
+  <a href="#acts-great-adventure-moc">Acts of the Apostles — The Great Adventure (MOC)</a>
+  <a href="#s01-reading-the-map">Session 1 — Reading the Map</a>
+  <a href="#s02-prelude-to-power">Session 2 — Prelude to Power</a>
+  <a href="#s03-the-fire-falls">Session 3 — The Fire Falls</a>
+  <a href="#s04-first-steps-first-signs">Session 4 — First Steps, First Signs</a>
+  <a href="#s05-first-resistance">Session 5 — First Resistance</a>
+  <a href="#s06-danger-inside-the-camp">Session 6 — Danger Inside the Camp</a>
+  <a href="#s07-the-first-martyr-s-torch">Session 7 — The First Martyr&#x27;s Torch</a>
+  <a href="#s08-over-the-wall">Session 8 — Over the Wall</a>
+  <a href="#s09-the-hunter-becomes-the-herald">Session 9 — The Hunter Becomes the Herald</a>
+  <a href="#s10-the-door-swings-open-to-the-nations">Session 10 — The Door Swings Open to the Nations</a>
+  <a href="#s11-chains-broken-kingdoms-judged">Session 11 — Chains Broken, Kingdoms Judged</a>
+  <a href="#s12-first-voyage">Session 12 — First Voyage</a>
+  <a href="#s13-council-and-second-voyage">Session 13 — Council and Second Voyage</a>
+  <a href="#s14-turning-the-world-upside-down">Session 14 — Turning the World Upside Down</a>
+  <a href="#s15-anchored-in-corinth">Session 15 — Anchored in Corinth</a>
+  <a href="#s16-riot-in-ephesus">Session 16 — Riot in Ephesus</a>
+  <a href="#s17-the-road-to-jerusalem">Session 17 — The Road to Jerusalem</a>
+  <a href="#s18-the-prisoner-speaks">Session 18 — The Prisoner Speaks</a>
+  <a href="#s19-before-kings-and-through-the-storm">Session 19 — Before Kings and Through the Storm</a>
+  <a href="#s20-journey-s-end-mission-unending">Session 20 — Journey&#x27;s End, Mission Unending</a>
+  <a href="#thread-jesus-continues-his-work">Thread — Jesus continues his work</a>
+  <a href="#thread-new-exodus-end-of-exile">Thread — New Exodus, End of Exile</a>
+  <a href="#thread-suffering-as-seed">Thread — Suffering as seed</a>
+  <a href="#thread-the-church-we-know-today">Thread — The Church we know today</a>
+  <a href="#thread-the-new-israel-without-borders">Thread — The New Israel without borders</a>
+  <a href="#ccc-and-church-document-references-by-sessio">CCC and Church Document References by Session</a>
+  <a href="#greek-word-bank-acts">Greek / Hebrew Word Bank — Acts</a>
+  <a href="#leg-i-base-camp-jerusalem">Leg I - Base Camp Jerusalem</a>
+  <a href="#leg-ii-crossing-borders">Leg II - Crossing Borders</a>
+  <a href="#leg-iii-to-the-ends-of-the-earth">Leg III - To the Ends of the Earth</a>
+  <a href="#luke-acts-parallels">Luke–Acts Parallels</a>
+  <a href="#signature-stories-by-leg">Signature Stories by Leg</a>
+  <a href="#standard-session-architecture">Standard Session Architecture</a>
+  <a href="#the-four-pentecosts">The Four Pentecosts</a>
+  <a href="#source-acts-great-adventure-conversation">Source — Acts Great Adventure conversation</a>
+
+</nav>
+
+<main>
+<section class="chapter" id="acts-great-adventure-moc"><h2>Acts of the Apostles — The Great Adventure (MOC)</h2>
+
+<blockquote>
+<p><em>"From the Upper Room to the Ends of the Earth"</em>
+A 20-session expedition through Acts for BTh students, after Jeff Cavins' <em>Acts: The Spread of the Kingdom</em>.</p>
+</blockquote>
+<p><strong>Start here.</strong> Master navigation for the whole course.</p>
+<h3 class="sec">The master metaphor — an expedition in three legs</h3>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>In Acts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>The Map</strong></td>
+<td>Acts 1:8 — Jerusalem → Judea &amp; Samaria → the ends of the earth</td>
+</tr>
+<tr>
+<td><strong>The Compass</strong></td>
+<td>The Holy Spirit ("Acts of the Holy Spirit")</td>
+</tr>
+<tr>
+<td><strong>The Fire</strong></td>
+<td>Pentecost power (<em>dunamis</em>) carried by ordinary people</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Leg</th>
+<th>Sessions</th>
+<th>Territory</th>
+<th>Guide</th>
+<th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#leg-i-base-camp-jerusalem">Leg I - Base Camp Jerusalem</a></td>
+<td>1–7</td>
+<td>Acts 1:1–8:3</td>
+<td>Peter</td>
+<td>c. 2 years</td>
+</tr>
+<tr>
+<td><a href="#leg-ii-crossing-borders">Leg II - Crossing Borders</a></td>
+<td>8–11</td>
+<td>Acts 8:4–12:25</td>
+<td>Peter / Philip</td>
+<td>c. 10 years</td>
+</tr>
+<tr>
+<td><a href="#leg-iii-to-the-ends-of-the-earth">Leg III - To the Ends of the Earth</a></td>
+<td>12–20</td>
+<td>Acts 13:1–28:31</td>
+<td>Paul</td>
+<td>c. 17 years</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Every class runs the same six blocks</strong> — see <a href="#standard-session-architecture">Standard Session Architecture</a>:
+Trailhead (5) → Story Script (15) → Deeper Look (30) → Guideposts (10) → Campfire (10) → Provisions.</p>
+<h3 class="sec">Sessions</h3>
+<h3>Leg I — Base Camp: fire falls on Jerusalem</h3>
+<ol>
+<li><a href="#s01-reading-the-map">S01 - Reading the Map</a> — Introduction: Introduction to Acts</li>
+<li><a href="#s02-prelude-to-power">S02 - Prelude to Power</a> — Acts 1: Ascension, waiting, Matthias</li>
+<li><a href="#s03-the-fire-falls">S03 - The Fire Falls</a> — Acts 2: The Power of Pentecost</li>
+<li><a href="#s04-first-steps-first-signs">S04 - First Steps, First Signs</a> — Acts 3: The Miraculous Power of Jesus' Name</li>
+<li><a href="#s05-first-resistance">S05 - First Resistance</a> — Acts 4:1-31: The Church Acts with Boldness</li>
+<li><a href="#s06-danger-inside-the-camp">S06 - Danger Inside the Camp</a> — Acts 4:32-5:42: Problems Within, Persecutions Without</li>
+<li><a href="#s07-the-first-martyr-s-torch">S07 - The First Martyr&#x27;s Torch</a> — Acts 6-7: The First Christian Martyr</li>
+</ol>
+<h3>Leg II — Crossing Borders: the gospel breaks out</h3>
+<ol>
+<li><a href="#s08-over-the-wall">S08 - Over the Wall</a> — Acts 8: Philip in Samaria; the Ethiopian Eunuch</li>
+<li><a href="#s09-the-hunter-becomes-the-herald">S09 - The Hunter Becomes the Herald</a> — Acts 9: The Persecutor Becomes the Preacher</li>
+<li><a href="#s10-the-door-swings-open-to-the-nations">S10 - The Door Swings Open to the Nations</a> — Acts 10: St. Peter's "Un-Kosher Picnic"</li>
+<li><a href="#s11-chains-broken-kingdoms-judged">S11 - Chains Broken, Kingdoms Judged</a> — Acts 11-12: The Church in Antioch</li>
+</ol>
+<h3>Leg III — To the Ends of the Earth: Paul's journeys</h3>
+<ol>
+<li><a href="#s12-first-voyage">S12 - First Voyage</a> — Acts 13-14: Paul's First Missionary Journey</li>
+<li><a href="#s13-council-and-second-voyage">S13 - Council and Second Voyage</a> — Acts 15-16: The Jerusalem Council; Paul's Second Journey</li>
+<li><a href="#s14-turning-the-world-upside-down">S14 - Turning the World Upside Down</a> — Acts 17: Converts and Conflicts</li>
+<li><a href="#s15-anchored-in-corinth">S15 - Anchored in Corinth</a> — Acts 18: Ministry in Corinth; the Third Journey Begins</li>
+<li><a href="#s16-riot-in-ephesus">S16 - Riot in Ephesus</a> — Acts 19: Ministry in Ephesus</li>
+<li><a href="#s17-the-road-to-jerusalem">S17 - The Road to Jerusalem</a> — Acts 20-21: Paul Heads for Jerusalem</li>
+<li><a href="#s18-the-prisoner-speaks">S18 - The Prisoner Speaks</a> — Acts 22:1-25:12: Paul Makes His Defense</li>
+<li><a href="#s19-before-kings-and-through-the-storm">S19 - Before Kings and Through the Storm</a> — Acts 25:13-28:31: Final Defense and Witness in Rome</li>
+<li><a href="#s20-journey-s-end-mission-unending">S20 - Journey&#x27;s End, Mission Unending</a> — Conclusion: Synthesis and commissioning</li>
+</ol>
+<h3 class="sec">The five golden threads</h3>
+<ul>
+<li><a href="#thread-jesus-continues-his-work">Thread - Jesus continues his work</a> — Acts is volume two of one work: what Jesus "began to do and teach" (Acts 1:1) he continues to do through his Spirit-filled Church.</li>
+<li><a href="#thread-new-exodus-end-of-exile">Thread - New Exodus, End of Exile</a> — The signs and wonders of Acts renew the signs of the Exodus: the Church is leading a new exodus out of the bondage of sin.</li>
+<li><a href="#thread-the-new-israel-without-borders">Thread - The New Israel without borders</a> — The kingdom is planted in the heart, not bounded by land: the New Israel has no ethnic or geographic frontier.</li>
+<li><a href="#thread-suffering-as-seed">Thread - Suffering as seed</a> — Persecution does not stop the gospel; it scatters it - the blood of the martyrs is the seed of the Church.</li>
+<li><a href="#thread-the-church-we-know-today">Thread - The Church we know today</a> — The Church we know today - apostolic authority, sacraments, Magisterium and the office of Peter - is visible in seed form throughout Acts.</li>
+</ul>
+<h3 class="sec">Schemas and teaching tools</h3>
+<ul>
+<li><a href="#standard-session-architecture">Standard Session Architecture</a> — the six-block shape of every class</li>
+<li><a href="#luke-acts-parallels">Luke-Acts Parallels</a> — Jesus // Peter // Paul</li>
+<li><a href="#signature-stories-by-leg">Signature Stories by Leg</a> — the storytelling arsenal</li>
+<li><a href="#greek-word-bank-acts">Greek Word Bank - Acts</a> — every term, by session</li>
+<li><a href="#ccc-and-church-document-references-by-sessio">CCC and Church Document References by Session</a></li>
+<li><a href="#the-four-pentecosts">The Four Pentecosts</a></li>
+</ul>
+<h3 class="sec">Source</h3>
+<ul>
+<li><a href="#source-acts-great-adventure-conversation">Source - Acts Great Adventure conversation</a></li>
+</ul>
+<h3 class="sec">Dataview — all sessions</h3>
+<p><code>dataview
+TABLE session AS "#", passage, leg FROM "Willy Dec 2025/Acts - Great Adventure/10 Sessions" SORT session ASC</code></p>
+</section>
+<section class="chapter" id="s01-reading-the-map"><h2>Session 1 — Reading the Map</h2>
+
+<blockquote>
+<p><strong>Introduction to Acts</strong> · <strong>Passage:</strong> Introduction · <strong>Leg:</strong> <a href="#leg-i-base-camp-jerusalem">Leg I - Base Camp Jerusalem</a></p>
+</blockquote>
+<h3 class="sec">Slide 1 · Trailhead (5 min)</h3>
+<p>Acts completes the three-part Great Adventure series (Bible Timeline → Matthew → Acts). A thirty-year span after the Resurrection, in which the Church "turned the world upside down" (Acts 17:6).</p>
+<h3 class="sec">Slide 2 · Story Script (15 min)</h3>
+<p>Begin with Luke the physician at his desk, writing to one man — Theophilus, "lover of God" — telling him volume two of a story: what Jesus <em>began</em> to do (the Gospel) and what he <em>continues</em> to do through his Spirit-filled Church. Invite the class: every lover of God is Theophilus; this letter is addressed to you.</p>
+<h3 class="sec">Slide 3 · Deeper Look (30 min)</h3>
+<ul>
+<li><strong>Author:</strong> Luke, physician, sometime companion of Paul. <strong>Date:</strong> likely before or in the early AD 60s — no mention of Nero's persecution (AD 65), Paul's martyrdom, or the fall of the Temple (AD 70).</li>
+<li><strong>Audience:</strong> Gentile Christians and potential converts; Luke omits Hebrew-Aramaic presuppositions.</li>
+<li><strong>Structure from Acts 1:8:</strong> Jerusalem (1:1–8:3) → Judea &amp; Samaria (8:4–12:25) → ends of the earth (13:1–28:31). Peter dominates chapters 1–12, Paul chapters 13–28.</li>
+<li><strong>Intertextual key — the Luke–Acts parallels:</strong> Jesus prays at his baptism / the disciples pray awaiting Spirit-baptism (Lk 3:21 // Acts 1:14); anointing by the Spirit (Lk 3:21-22 // Acts 2:1-4); healing of a paralytic (Lk 5:17-26 // Acts 3:1-10; 20:9-12); four trials of Jesus // four trials of Paul (Lk 22–23 // Acts 23–26); dying words of Jesus // of Stephen (Lk 23:34, 46 // Acts 7:59-60). See <a href="#luke-acts-parallels">Luke-Acts Parallels</a>.</li>
+</ul>
+<h3 class="sec">Slide 4 · Greek / Hebrew terms</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Gloss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>dunamis</em></td>
+<td>power (Acts 1:8) — the keyword of the whole course</td>
+</tr>
+<tr>
+<td><em>Theophilus</em></td>
+<td>"lover of God"</td>
+</tr>
+</tbody>
+</table>
+<p>→ <a href="#greek-word-bank-acts">Greek Word Bank - Acts</a></p>
+<h3 class="sec">Slide 5 · Guideposts (10 min)</h3>
+<ul>
+<li>RSV-2CE recommended as the class text.</li>
+<li>"Acts of the Holy Spirit" as the alternate title of the book.</li>
+</ul>
+<p>→ <a href="#ccc-and-church-document-references-by-sessio">CCC and Church Document References by Session</a></p>
+<h3 class="sec">Slide 6 · Campfire (10 min)</h3>
+<ol>
+<li>If Acts could "just as easily be called the Acts of the Holy Spirit," what expectation does that set for our reading?</li>
+<li>Which Luke–Acts parallel strikes you most, and what does it claim about the Church?</li>
+</ol>
+<p>Close with a written <strong>"Dear Lord…"</strong> prayer, as every session in the workbook ends.</p>
+<h3 class="sec">Provisions for Tomorrow</h3>
+<p>Read: Acts 1 and the Session Two questions.</p>
+<h3 class="sec">Threads running through this session</h3>
+<ul>
+<li><a href="#thread-jesus-continues-his-work">Thread - Jesus continues his work</a></li>
+</ul>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a> · Architecture: <a href="#standard-session-architecture">Standard Session Architecture</a></li>
+<li>Previous: — · Next: <a href="#s02-prelude-to-power">S02 - Prelude to Power</a></li>
+<li>Source: <a href="#source-acts-great-adventure-conversation">Source - Acts Great Adventure conversation</a></li>
+</ul>
+</section>
+<section class="chapter" id="s02-prelude-to-power"><h2>Session 2 — Prelude to Power</h2>
+
+<blockquote>
+<p><strong>Ascension, waiting, Matthias</strong> · <strong>Passage:</strong> Acts 1 · <strong>Leg:</strong> <a href="#leg-i-base-camp-jerusalem">Leg I - Base Camp Jerusalem</a></p>
+</blockquote>
+<h3 class="sec">Slide 1 · Trailhead (5 min)</h3>
+<p>Between Resurrection and Pentecost: forty days of instruction, then waiting in the upper room.</p>
+<h3 class="sec">Slide 2 · Story Script (15 min)</h3>
+<p>The disciples ask the wrong-shaped question — "Lord, will you at this time restore the kingdom to Israel?" — dreaming of thrones and armies. Jesus answers with a mission instead of a map: "You shall receive power… you shall be my witnesses." Then the cloud takes him, and 120 people go upstairs to wait and pray with Mary.</p>
+<h3 class="sec">Slide 3 · Deeper Look (30 min)</h3>
+<ul>
+<li><strong>Kingdom expectation:</strong> reuniting the twelve tribes under a Davidic king — read against Daniel 2 (Nebuchadnezzar's five kingdoms, the fifth everlasting) and Daniel 7:13-14 (the Son of Man coming with clouds — Jesus' most-used title).</li>
+<li><strong>Ascension clouds</strong> = messianic presence language (the pillar of cloud, Ex 13). Jesus is enthroned in heaven; power flows from a restored King.</li>
+<li><strong>Mary intercedes</strong> — the Queen Mother pattern (<em>Gebirah</em>, 1 Kgs 2). <strong>Peter speaks as steward</strong> (<em>al ha-bayit</em>, "over the house" — cf. Mt 18; Is 22).</li>
+<li><strong>The 120:</strong> the number needed to found a new community. Judas' <em>office</em> must be filled (Pss 69; 109) — the New Israel needs twelve pillars.</li>
+<li><strong>Casting lots:</strong> not chance but discernment (Lev 16:7-10; Prov 16:33; 1 Chr 24:31 — priestly duties in the Temple). Jesus is the new Temple, the apostles the new priests. Luke opens both his books with lots (Zechariah, Lk 1).</li>
+</ul>
+<h3 class="sec">Slide 4 · Greek / Hebrew terms</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Gloss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>dunamis</em></td>
+<td>power — the root behind "dynamite"</td>
+</tr>
+<tr>
+<td><em>martus</em></td>
+<td>witness → "martyr"</td>
+</tr>
+<tr>
+<td><em>remez</em> (Heb.)</td>
+<td>rabbinic "hinting"</td>
+</tr>
+<tr>
+<td><em>Gebirah</em> (Heb.)</td>
+<td>Queen Mother</td>
+</tr>
+</tbody>
+</table>
+<p>→ <a href="#greek-word-bank-acts">Greek Word Bank - Acts</a></p>
+<h3 class="sec">Slide 5 · Guideposts (10 min)</h3>
+<ul>
+<li><strong>CCC 697</strong> — cloud and glory.</li>
+<li><strong>CCC 668–682</strong> — Christ's reign and return.</li>
+<li><strong>CCC 860</strong> — the apostles as witnesses of the Resurrection.</li>
+</ul>
+<p>→ <a href="#ccc-and-church-document-references-by-sessio">CCC and Church Document References by Session</a></p>
+<h3 class="sec">Slide 6 · Campfire (10 min)</h3>
+<ol>
+<li>How does Jesus' answer transform the disciples' question about the kingdom (Acts 1:6-8)?</li>
+<li>Why must the new apostle be a witness of the Resurrection (Acts 1:21-22)?</li>
+<li>Does Acts 1:8 apply to you? If not, why not?</li>
+</ol>
+<p>Close with a written <strong>"Dear Lord…"</strong> prayer, as every session in the workbook ends.</p>
+<h3 class="sec">Provisions for Tomorrow</h3>
+<p>Read: Acts 2.</p>
+<h3 class="sec">Threads running through this session</h3>
+<ul>
+<li><a href="#thread-the-church-we-know-today">Thread - The Church we know today</a></li>
+</ul>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a> · Architecture: <a href="#standard-session-architecture">Standard Session Architecture</a></li>
+<li>Previous: <a href="#s01-reading-the-map">S01 - Reading the Map</a> · Next: <a href="#s03-the-fire-falls">S03 - The Fire Falls</a></li>
+<li>Source: <a href="#source-acts-great-adventure-conversation">Source - Acts Great Adventure conversation</a></li>
+</ul>
+</section>
+<section class="chapter" id="s03-the-fire-falls"><h2>Session 3 — The Fire Falls</h2>
+
+<blockquote>
+<p><strong>The Power of Pentecost</strong> · <strong>Passage:</strong> Acts 2 · <strong>Leg:</strong> <a href="#leg-i-base-camp-jerusalem">Leg I - Base Camp Jerusalem</a></p>
+</blockquote>
+<h3 class="sec">Slide 1 · Trailhead (5 min)</h3>
+<p>Pentecost = "fifty days": the Feast of Weeks, fifty days after Passover (Lev 23; Dt 16:16) — a harvest feast that became the feast of the giving of the Law at Sinai.</p>
+<h3 class="sec">Slide 2 · Story Script (15 min)</h3>
+<p>Jerusalem is packed with pilgrims from fifteen nations. Suddenly: a sound like driving wind, tongues as of fire, and Galilean fishermen preaching in every mother-tongue in the crowd. Babel runs backwards. Peter — the man who denied Jesus to a servant girl — stands and preaches to thousands. By evening, three thousand are baptized.</p>
+<h3 class="sec">Slide 3 · Deeper Look (30 min)</h3>
+<ul>
+<li><strong>Acts 2 parallels Sinai (Ex 19):</strong> fire, theophany, covenant, and the new law of the Spirit (Rom 8:2).</li>
+<li><strong>Wind and fire in the OT:</strong> Ex 3:1-3; 13:21-22; 19:16-21; Ps 104:3-4.</li>
+<li><strong>Reversal of Babel (Gen 11:1-9):</strong> the division of tongues undone in the Church "which speaks all tongues" (<em>Ad Gentes</em> 4).</li>
+<li><strong>Tongues mark four new beginnings:</strong> Jews (Acts 2), Samaritans (Acts 8), Gentiles (Acts 10), disciples of John at Ephesus (Acts 19). See <a href="#the-four-pentecosts">The Four Pentecosts</a>.</li>
+<li><strong>Peter's sermon:</strong> Joel 2:28-32 fulfilled; "last days" = the end of the Old Covenant; proofs that Jesus is Messiah (2:22-36).</li>
+<li><strong>Response:</strong> repent and be baptized. Infant baptism from the 2nd century — the new circumcision of the heart (1 Pet 3:21); "crooked generation" (Dt 32:5; Phil 2:15).</li>
+<li><strong>The four pillars of the community (2:42):</strong> the apostles' teaching, fellowship, the breaking of bread (Eucharist), and the prayers.</li>
+</ul>
+<h3 class="sec">Slide 4 · Greek / Hebrew terms</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Gloss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>metanoia</em></td>
+<td>repent — "to turn around completely"</td>
+</tr>
+<tr>
+<td><em>Pentecost</em></td>
+<td>fiftieth</td>
+</tr>
+</tbody>
+</table>
+<p>→ <a href="#greek-word-bank-acts">Greek Word Bank - Acts</a></p>
+<h3 class="sec">Slide 5 · Guideposts (10 min)</h3>
+<ul>
+<li><strong>CCC 696</strong> — fire as symbol of the Spirit.</li>
+<li><strong>CCC 799</strong> — charisms build up the Church.</li>
+<li><strong>CCC 1302–1305</strong> — confirmation: outpouring, effects, indelible mark, power to profess publicly.</li>
+<li><strong>CCC 1299</strong> — gifts of the Spirit. <strong>CCC 1252</strong> — infant baptism. <strong>CCC 1116</strong> — sacraments as actions of the Spirit.</li>
+<li><strong><em>Ad Gentes</em> 4</strong> — the meaning of Pentecost.</li>
+</ul>
+<p>→ <a href="#ccc-and-church-document-references-by-sessio">CCC and Church Document References by Session</a></p>
+<h3 class="sec">Slide 6 · Campfire (10 min)</h3>
+<ol>
+<li>What did wind and fire signify in the OT, and what do the tongues of fire signify here?</li>
+<li>What event of Genesis 11 is "undone" at Pentecost, and how?</li>
+<li>Which fruits of Acts 2:42-47 are alive in your community, and what practical step could grow them?</li>
+</ol>
+<p>Close with a written <strong>"Dear Lord…"</strong> prayer, as every session in the workbook ends.</p>
+<h3 class="sec">Provisions for Tomorrow</h3>
+<p>Read: Acts 3.</p>
+<h3 class="sec">Threads running through this session</h3>
+<ul>
+<li><a href="#thread-jesus-continues-his-work">Thread - Jesus continues his work</a></li>
+<li><a href="#thread-the-church-we-know-today">Thread - The Church we know today</a></li>
+</ul>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a> · Architecture: <a href="#standard-session-architecture">Standard Session Architecture</a></li>
+<li>Previous: <a href="#s02-prelude-to-power">S02 - Prelude to Power</a> · Next: <a href="#s04-first-steps-first-signs">S04 - First Steps, First Signs</a></li>
+<li>Source: <a href="#source-acts-great-adventure-conversation">Source - Acts Great Adventure conversation</a></li>
+</ul>
+</section>
+<section class="chapter" id="s04-first-steps-first-signs"><h2>Session 4 — First Steps, First Signs</h2>
+
+<blockquote>
+<p><strong>The Miraculous Power of Jesus' Name</strong> · <strong>Passage:</strong> Acts 3 · <strong>Leg:</strong> <a href="#leg-i-base-camp-jerusalem">Leg I - Base Camp Jerusalem</a></p>
+</blockquote>
+<h3 class="sec">Slide 1 · Trailhead (5 min)</h3>
+<p>After Pentecost's three thousand, the Jerusalem church models Church life (<em>Catechesi Tradendae</em> 10). Now the first recorded miracle.</p>
+<h3 class="sec">Slide 2 · Story Script (15 min)</h3>
+<p>Three o'clock — the hour of the evening sacrifice. A man lame from birth sits where he has always sat, at the Beautiful Gate, hand out. Peter has no silver, no gold — only a Name. "In the name of Jesus Christ of Nazareth, walk." And the man doesn't just walk; he leaps into the Temple, and the whole crowd knows him.</p>
+<h3 class="sec">Slide 3 · Deeper Look (30 min)</h3>
+<ul>
+<li><strong>Luke's double witness pattern:</strong> divine sign (3:1-11) then apostolic testimony (3:12–4:23); cf. Heb 2:3-4; 1 Cor 2:3-5; Rom 15:18-19.</li>
+<li><strong>Ninth hour = 3 PM,</strong> the hour of the evening liturgy (Ex 29:38-42; Nm 28:1-8; Dn 9:21) — foundation of the Liturgy of the Hours (CCC 1174–1178).</li>
+<li><strong>"Beautiful Gate":</strong> likely Josephus' Corinthian-bronze gate on the east side; the poor sat at the gate. The Temple was Israel's centre — Jesus now is.</li>
+<li><strong>The lame leaping = messianic sign</strong> (Is 35:6; Mal 4:2).</li>
+<li><strong>Theology of the Name:</strong> a name expresses essence; YHWH the unpronounceable tetragrammaton, spoken once yearly by the high priest; calling on the Name invokes presence (Ex 20:24; Dt 12:5; Ps 91:14). Divine name formulas: Yahweh-jireh (Gen 22:14), -rapha (Ex 15:26), -nissi (Ex 17:15), -shalom (Jgs 6:24), -ra'ah (Ps 23), -tsidkenu (Jer 23:6), -shammah (Ez 48:35).</li>
+<li><strong><em>Yeshua</em></strong> = "God saves" (Mt 1:21; Lk 1); Simeon sees "the salvation of God" (Lk 2); salvation comes to Zacchaeus' house (Lk 19:9).</li>
+<li><strong>Peter's sermon in Solomon's Portico:</strong> Jesus as God's "Servant" — Is 42:1-4; 52:13–53:12; the call to repentance; "to you first" (Acts 3:26).</li>
+</ul>
+<h3 class="sec">Slide 4 · Greek / Hebrew terms</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Gloss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>onoma</em></td>
+<td>name — c. 60 occurrences in Acts: nature, authority, power and presence of the bearer</td>
+</tr>
+<tr>
+<td><em>Yeshua</em> (Heb.)</td>
+<td>"God saves"</td>
+</tr>
+</tbody>
+</table>
+<p>→ <a href="#greek-word-bank-acts">Greek Word Bank - Acts</a></p>
+<h3 class="sec">Slide 5 · Guideposts (10 min)</h3>
+<ul>
+<li><strong>CCC 203</strong> — to disclose one's name is to hand oneself over.</li>
+<li><strong>CCC 430–435</strong> — the name Jesus. <strong>CCC 2666</strong> — invoking the Name today.</li>
+<li><strong>CCC 724</strong> — Mary as the new burning bush.</li>
+<li><strong>CCC 1174–1178</strong> — the Liturgy of the Hours.</li>
+<li><strong><em>Catechesi Tradendae</em> 10.</strong></li>
+</ul>
+<p>→ <a href="#ccc-and-church-document-references-by-sessio">CCC and Church Document References by Session</a></p>
+<h3 class="sec">Slide 6 · Campfire (10 min)</h3>
+<ol>
+<li>By what authority is the lame man healed, and how do we know?</li>
+<li>"The name of the LORD is a strong tower" (Prov 18:10) — what does calling on the Name mean for you?</li>
+<li>Choose one truth about Jesus from Peter's speech: how is it an invitation to change?</li>
+</ol>
+<p>Close with a written <strong>"Dear Lord…"</strong> prayer, as every session in the workbook ends.</p>
+<h3 class="sec">Provisions for Tomorrow</h3>
+<p>Read: Acts 4:1-31.</p>
+<h3 class="sec">Threads running through this session</h3>
+<ul>
+<li><a href="#thread-jesus-continues-his-work">Thread - Jesus continues his work</a></li>
+</ul>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a> · Architecture: <a href="#standard-session-architecture">Standard Session Architecture</a></li>
+<li>Previous: <a href="#s03-the-fire-falls">S03 - The Fire Falls</a> · Next: <a href="#s05-first-resistance">S05 - First Resistance</a></li>
+<li>Source: <a href="#source-acts-great-adventure-conversation">Source - Acts Great Adventure conversation</a></li>
+</ul>
+</section>
+<section class="chapter" id="s05-first-resistance"><h2>Session 5 — First Resistance</h2>
+
+<blockquote>
+<p><strong>The Church Acts with Boldness</strong> · <strong>Passage:</strong> Acts 4:1-31 · <strong>Leg:</strong> <a href="#leg-i-base-camp-jerusalem">Leg I - Base Camp Jerusalem</a></p>
+</blockquote>
+<h3 class="sec">Slide 1 · Trailhead (5 min)</h3>
+<p>The healing draws a crowd — and the authorities. First arrest, first trial, first test of nerve.</p>
+<h3 class="sec">Slide 2 · Story Script (15 min)</h3>
+<p>Peter and John spend the night in custody. In the morning they face the same court that condemned Jesus. The judges look at two "uneducated, common men" and are astonished — then they recognize the source: "they had been with Jesus." Ordered to silence, the apostles answer: "We cannot but speak of what we have seen and heard." Released, the Church doesn't hide; it prays Psalm 2 — and the room shakes.</p>
+<h3 class="sec">Slide 3 · Deeper Look (30 min)</h3>
+<ul>
+<li><strong>Confrontation</strong> between the old leadership and the body of Christ; the emerging Church does the work of Christ.</li>
+<li><strong>"Cornerstone" (Acts 4:11):</strong> Is 28:14-16; Jesus applies it in Lk 20:9-19; developed in Eph 2:19-22; 1 Pet 2:4-9.</li>
+<li><strong>Salvation in three tenses:</strong> we <em>have been</em> saved (Rom 8:24), <em>are being</em> saved (1 Pet 3:21), <em>will be</em> saved if we persevere (Mt 10:22; Mk 13:13) — cooperation with grace.</li>
+<li><strong>New Israel and the new Temple:</strong> the Sanhedrin no longer rules reconstituted Israel; the apostles who speak in Jesus' name do (Lk 20:9-19; 22:29-30; Acts 1:15-26).</li>
+<li><strong>Prayer of the Church:</strong> Psalm 2 in full — the nations' plot against the LORD's Anointed thwarted; the believers apply it prophetically to themselves; they ask for boldness, and the place is shaken like a second Pentecost. When light and darkness collide, darkness gives way.</li>
+</ul>
+<h3 class="sec">Slide 4 · Greek / Hebrew terms</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Gloss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>parrēsia</em></td>
+<td>boldness — the keynote of the chapter (Acts 4:13, 29, 31)</td>
+</tr>
+</tbody>
+</table>
+<p>→ <a href="#greek-word-bank-acts">Greek Word Bank - Acts</a></p>
+<h3 class="sec">Slide 5 · Guideposts (10 min)</h3>
+<ul>
+<li><strong>CCC 1996–2005</strong> — grace and cooperation.</li>
+<li><strong>CCC 2242</strong> — obeying God rather than civil authority.</li>
+</ul>
+<p>→ <a href="#ccc-and-church-document-references-by-sessio">CCC and Church Document References by Session</a></p>
+<h3 class="sec">Slide 6 · Campfire (10 min)</h3>
+<ol>
+<li>The leaders recognized that the apostles "had been with Jesus." Do others know that of you? Why or why not?</li>
+<li>Read 1 Cor 1:26-31: how can God use the unqualified? What is silencing us?</li>
+</ol>
+<p>Close with a written <strong>"Dear Lord…"</strong> prayer, as every session in the workbook ends.</p>
+<h3 class="sec">Provisions for Tomorrow</h3>
+<p>Read: Acts 4:32–5:42.</p>
+<h3 class="sec">Threads running through this session</h3>
+<ul>
+<li><a href="#thread-jesus-continues-his-work">Thread - Jesus continues his work</a></li>
+<li><a href="#thread-the-new-israel-without-borders">Thread - The New Israel without borders</a></li>
+</ul>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a> · Architecture: <a href="#standard-session-architecture">Standard Session Architecture</a></li>
+<li>Previous: <a href="#s04-first-steps-first-signs">S04 - First Steps, First Signs</a> · Next: <a href="#s06-danger-inside-the-camp">S06 - Danger Inside the Camp</a></li>
+<li>Source: <a href="#source-acts-great-adventure-conversation">Source - Acts Great Adventure conversation</a></li>
+</ul>
+</section>
+<section class="chapter" id="s06-danger-inside-the-camp"><h2>Session 6 — Danger Inside the Camp</h2>
+
+<blockquote>
+<p><strong>Problems Within, Persecutions Without</strong> · <strong>Passage:</strong> Acts 4:32-5:42 · <strong>Leg:</strong> <a href="#leg-i-base-camp-jerusalem">Leg I - Base Camp Jerusalem</a></p>
+</blockquote>
+<h3 class="sec">Slide 1 · Trailhead (5 min)</h3>
+<p>The camp's greatest dangers are twofold: deception within, persecution without. Barnabas versus Ananias and Sapphira.</p>
+<h3 class="sec">Slide 2 · Story Script (15 min)</h3>
+<p>Barnabas lays a field's price at the apostles' feet — freely, wholly. Ananias and Sapphira stage the same gesture with a hidden discount, lying not to men but to the Holy Spirit. Both fall dead, and "great fear came upon the whole church." Meanwhile Peter's mere <em>shadow</em> heals the sick in the streets, an angel opens prison doors by night, and beaten apostles walk out of the council <em>rejoicing</em> to be counted worthy of dishonour for the Name.</p>
+<h3 class="sec">Slide 3 · Deeper Look (30 min)</h3>
+<ul>
+<li><strong>One heart and soul:</strong> land-and-blessing theology (Gen 12:1-3; 15) transposed — <em>Eretz Israel</em> is no longer the point; the New Covenant blessing is in the heart; the Kingdom is not limited by geography (Dt 30:1-10; Dn 9's seventy weeks leading to Jesus, who ends the exile of sin).</li>
+<li><strong>Ananias and Sapphira:</strong> Satan fills their hearts; parallel to Achan's sin (Josh 7, <em>herem</em>); there is no private sin; lying to the Spirit = lying to a divine Person (Constantinople, AD 381).</li>
+<li><strong>Signs and wonders:</strong> Exodus signs renewed in the Church's new exodus (Acts 2:19; 4:30; 6:8; 14:3; 15:12); sacrament vs. sacramental; God uses even shadows (5:15); the communion of saints.</li>
+<li><strong>Angels free the apostles</strong> (Heb 13:2). <strong>Gamaliel's counsel</strong> — if this is of God, you cannot overthrow it (cf. CCC 269); the "changing of the guard" in Israel's leadership.</li>
+<li><strong>Civil disobedience</strong> in charity and justice (CCC 450, 2242); the blood of the martyrs as the seed of the Church.</li>
+</ul>
+<h3 class="sec">Slide 4 · Greek / Hebrew terms</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Gloss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>ekklesia</em></td>
+<td>"the called-out ones" — rare in the Gospels (Mt 16:18; 18:17), 20+ times in Acts; the LXX word for Israel's congregation</td>
+</tr>
+<tr>
+<td><em>herem</em> (Heb.)</td>
+<td>the ban of total offering (Jericho)</td>
+</tr>
+</tbody>
+</table>
+<p>→ <a href="#greek-word-bank-acts">Greek Word Bank - Acts</a></p>
+<h3 class="sec">Slide 5 · Guideposts (10 min)</h3>
+<ul>
+<li><strong>CCC 1351</strong> — gifts laid at the apostles' feet → today's offertory.</li>
+<li><strong>CCC 269</strong> — God's omnipotence, behind Gamaliel's logic.</li>
+<li><strong>CCC 450, 2242</strong> — civil obedience and disobedience.</li>
+<li><strong>John Paul II, <em>Salvifici Doloris</em> 27</strong> — suffering shares in the treasure of the Redemption.</li>
+</ul>
+<p>→ <a href="#ccc-and-church-document-references-by-sessio">CCC and Church Document References by Session</a></p>
+<h3 class="sec">Slide 6 · Campfire (10 min)</h3>
+<ol>
+<li>What do Ananias and Sapphira do, and why is the punishment so severe? What message does it send to the young Church?</li>
+<li>Has being a Christian ever gotten you into trouble? How have you responded to opposition?</li>
+<li>What lessons do the early Christians teach us?</li>
+</ol>
+<p>Close with a written <strong>"Dear Lord…"</strong> prayer, as every session in the workbook ends.</p>
+<h3 class="sec">Provisions for Tomorrow</h3>
+<p>Read: Acts 6–7.</p>
+<h3 class="sec">Threads running through this session</h3>
+<ul>
+<li><a href="#thread-new-exodus-end-of-exile">Thread - New Exodus, End of Exile</a></li>
+<li><a href="#thread-the-new-israel-without-borders">Thread - The New Israel without borders</a></li>
+<li><a href="#thread-suffering-as-seed">Thread - Suffering as seed</a></li>
+</ul>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a> · Architecture: <a href="#standard-session-architecture">Standard Session Architecture</a></li>
+<li>Previous: <a href="#s05-first-resistance">S05 - First Resistance</a> · Next: <a href="#s07-the-first-martyr-s-torch">S07 - The First Martyr&#x27;s Torch</a></li>
+<li>Source: <a href="#source-acts-great-adventure-conversation">Source - Acts Great Adventure conversation</a></li>
+</ul>
+</section>
+<section class="chapter" id="s07-the-first-martyr-s-torch"><h2>Session 7 — The First Martyr&#x27;s Torch</h2>
+
+<blockquote>
+<p><strong>The First Christian Martyr</strong> · <strong>Passage:</strong> Acts 6-7 · <strong>Leg:</strong> <a href="#leg-i-base-camp-jerusalem">Leg I - Base Camp Jerusalem</a></p>
+</blockquote>
+<h3 class="sec">Slide 1 · Trailhead (5 min)</h3>
+<p>From Jerusalem toward Judea and Samaria; persecution scatters the seed. Enter the seven, and Stephen.</p>
+<h3 class="sec">Slide 2 · Story Script (15 min)</h3>
+<p>Greek-speaking widows are being overlooked at the daily distribution. The apostles refuse to abandon the Word or the widows — they ordain seven Spirit-filled men to serve. One of them, Stephen, face shining like an angel's, retells Israel's whole story before the council: a people forever resisting the deliverers God sends. When he says he sees the Son of Man standing at God's right hand, they drag him outside the city. He dies like his Master — "Lord, do not hold this sin against them" — while a young man named Saul guards the cloaks.</p>
+<h3 class="sec">Slide 3 · Deeper Look (30 min)</h3>
+<ul>
+<li><strong>Hellenists</strong> (Greek-speaking, Septuagint) vs. <strong>Hebrews</strong> (Aramaic-speaking, Palestine); care of widows central to Judaism (Dt 26:12; Jas 1:27); the seven have Greek names — God's welcome of the marginalized wing.</li>
+<li><strong>Diaconate:</strong> prayer and the laying on of hands = consecration and commissioning (Nm 8:10; 1 Tim 3:8-13; 4:14; Phil 1:1). Vatican II restored the permanent diaconate.</li>
+<li><strong>Stephen–Jesus parallels:</strong> irresistible wisdom, false witnesses on the Temple, the blasphemy charge (Lev 24:16), mob violence, the vision of the Son of Man, the dying prayer for enemies (Mt 26:57-68 // Acts 6; Lk 23:34, 46 // Acts 7:59-60).</li>
+<li><strong>Stephen's speech:</strong> salvation history from Abraham to the present; two themes — Israel's rebellion, and God appearing in Gentile lands; critique of fixation on land and Temple; Moses' life in three forties; the future prophet (Dt 18:15); the golden calf (Ex 32); wilderness apostasy (Ez 20:7-8); exile foretold (Am 5:25-27); "Heaven is my throne" (Is 66:1-2); God's two concessions — a king (1 Sam 8) and a temple; <strong>Jesus is the new King and the new Temple</strong>; the law given by angels (CCC 332).</li>
+<li><strong>Stephen sees the beatific vision</strong> — "Son of Man" from Dn 7:13-14: our hope under persecution.</li>
+</ul>
+<h3 class="sec">Slide 4 · Greek / Hebrew terms</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Gloss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>diakonia</em></td>
+<td>service; <em>diakonein</em> = to serve — the ministry of the seven</td>
+</tr>
+</tbody>
+</table>
+<p>→ <a href="#greek-word-bank-acts">Greek Word Bank - Acts</a></p>
+<h3 class="sec">Slide 5 · Guideposts (10 min)</h3>
+<ul>
+<li><strong>CCC 2635</strong> — intercession for enemies (Stephen's prayer).</li>
+<li><strong>CCC 332</strong> — angels and the giving of the law.</li>
+<li><strong>Vatican II on the permanent diaconate</strong> (<em>Lumen Gentium</em> 29 context, workbook box).</li>
+</ul>
+<p>→ <a href="#ccc-and-church-document-references-by-sessio">CCC and Church Document References by Session</a></p>
+<h3 class="sec">Slide 6 · Campfire (10 min)</h3>
+<ol>
+<li>What priorities do the apostles refuse to trade off in Acts 6:1-6, and what does that teach about ministry?</li>
+<li>Why does the retelling of Israel's history expose the idolizing of the Temple?</li>
+<li>Would you confront sin knowing it would cost you? What do Stephen's final moments teach us about preparing for our own death?</li>
+</ol>
+<p>Close with a written <strong>"Dear Lord…"</strong> prayer, as every session in the workbook ends.</p>
+<h3 class="sec">Provisions for Tomorrow</h3>
+<p>Read: Acts 8.</p>
+<h3 class="sec">Threads running through this session</h3>
+<ul>
+<li><a href="#thread-jesus-continues-his-work">Thread - Jesus continues his work</a></li>
+<li><a href="#thread-suffering-as-seed">Thread - Suffering as seed</a></li>
+<li><a href="#thread-the-church-we-know-today">Thread - The Church we know today</a></li>
+</ul>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a> · Architecture: <a href="#standard-session-architecture">Standard Session Architecture</a></li>
+<li>Previous: <a href="#s06-danger-inside-the-camp">S06 - Danger Inside the Camp</a> · Next: <a href="#s08-over-the-wall">S08 - Over the Wall</a></li>
+<li>Source: <a href="#source-acts-great-adventure-conversation">Source - Acts Great Adventure conversation</a></li>
+</ul>
+</section>
+<section class="chapter" id="s08-over-the-wall"><h2>Session 8 — Over the Wall</h2>
+
+<blockquote>
+<p><strong>Philip in Samaria; the Ethiopian Eunuch</strong> · <strong>Passage:</strong> Acts 8 · <strong>Leg:</strong> <a href="#leg-ii-crossing-borders">Leg II - Crossing Borders</a></p>
+</blockquote>
+<h3 class="sec">Slide 1 · Trailhead (5 min)</h3>
+<p>Persecution scatters the Church — and the scattering becomes sowing. First frontier: Samaria.</p>
+<h3 class="sec">Slide 2 · Story Script (15 min)</h3>
+<p>Philip the deacon walks into the one region every self-respecting Jew walks <em>around</em>. Centuries of hatred — Assyria, intermarriage, rival worship — and Philip preaches Christ there, and Samaria rejoices. A celebrity magician tries to <em>buy</em> the Spirit and is scorched by Peter's rebuke. Then an angel sends Philip to an empty desert road, where a chariot rolls by carrying the treasurer of Ethiopia, reading Isaiah 53 aloud and understanding nothing — until Philip climbs in.</p>
+<h3 class="sec">Slide 3 · Deeper Look (30 min)</h3>
+<ul>
+<li><strong>Samaria's backstory:</strong> the Divided Kingdom (930 BC), the northern prophets (Elijah, Elisha, Amos, Hosea), Hosea's unfaithful-bride message, the Assyrian conquest of 722 BC, intermarriage, mutual hatred. Jesus already crossed this line (Jn 4; Lk 17) — Philip follows his Master.</li>
+<li><strong>Restoration sign:</strong> Hosea 2:11's "end of mirth" reversed — "there was much joy in that city" (Acts 8:8).</li>
+<li><strong>Simon the Magician:</strong> tradition's "father of heretics" (Justin Martyr); proto-Gnosticism (Platonic dualism, <em>sōma sēma esti</em> — "the body is a tomb"; secret knowledge). "Simony" is named after him.</li>
+<li><strong>Confirmation:</strong> Peter and John lay hands to complete what baptism began (Heb 6:1-2); the bishop as ordinary minister.</li>
+<li><strong>The Ethiopian eunuch:</strong> a God-fearer excluded by Dt 23:1, reading Isaiah's Suffering Servant (Is 52–53) and needing a guide — perspicuity vs. the Magisterium's role. Is 56 promises eunuchs a place in the coming kingdom. Philip baptizes him; the Spirit carries Philip off like Elijah (1 Kgs 18; 2 Kgs 2). Tradition: the eunuch evangelized Ethiopia.</li>
+</ul>
+<h3 class="sec">Slide 4 · Greek / Hebrew terms</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Gloss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>sōma sēma esti</em></td>
+<td>Gnostic slogan — "the body is a tomb"</td>
+</tr>
+<tr>
+<td><em>simony</em></td>
+<td>from Simon — buying spiritual goods</td>
+</tr>
+</tbody>
+</table>
+<p>→ <a href="#greek-word-bank-acts">Greek Word Bank - Acts</a></p>
+<h3 class="sec">Slide 5 · Guideposts (10 min)</h3>
+<ul>
+<li><strong>CCC 2115–2117</strong> — rejection of magic and divination.</li>
+<li><strong>CCC 1288</strong> — the apostolic roots of confirmation. <strong>CCC 1313</strong> — the bishop as minister of confirmation.</li>
+<li><strong>CCC 2121</strong> — simony.</li>
+</ul>
+<p>→ <a href="#ccc-and-church-document-references-by-sessio">CCC and Church Document References by Session</a></p>
+<h3 class="sec">Slide 6 · Campfire (10 min)</h3>
+<ol>
+<li>Why does Simon want to buy the power of God, and what does Peter's response teach about grace?</li>
+<li>The eunuch was excluded by the Law and included by Christ. Who are today's "excluded on the road," and how do we climb into the chariot?</li>
+</ol>
+<p>Close with a written <strong>"Dear Lord…"</strong> prayer, as every session in the workbook ends.</p>
+<h3 class="sec">Provisions for Tomorrow</h3>
+<p>Read: Acts 9.</p>
+<h3 class="sec">Threads running through this session</h3>
+<ul>
+<li><a href="#thread-the-new-israel-without-borders">Thread - The New Israel without borders</a></li>
+<li><a href="#thread-the-church-we-know-today">Thread - The Church we know today</a></li>
+</ul>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a> · Architecture: <a href="#standard-session-architecture">Standard Session Architecture</a></li>
+<li>Previous: <a href="#s07-the-first-martyr-s-torch">S07 - The First Martyr&#x27;s Torch</a> · Next: <a href="#s09-the-hunter-becomes-the-herald">S09 - The Hunter Becomes the Herald</a></li>
+<li>Source: <a href="#source-acts-great-adventure-conversation">Source - Acts Great Adventure conversation</a></li>
+</ul>
+</section>
+<section class="chapter" id="s09-the-hunter-becomes-the-herald"><h2>Session 9 — The Hunter Becomes the Herald</h2>
+
+<blockquote>
+<p><strong>The Persecutor Becomes the Preacher</strong> · <strong>Passage:</strong> Acts 9 · <strong>Leg:</strong> <a href="#leg-ii-crossing-borders">Leg II - Crossing Borders</a></p>
+</blockquote>
+<h3 class="sec">Slide 1 · Trailhead (5 min)</h3>
+<p>The Church's fiercest enemy is about to become its greatest missionary.</p>
+<h3 class="sec">Slide 2 · Story Script (15 min)</h3>
+<p>Saul rides for Damascus with arrest warrants, breathing threats against "the Way." At noon a light from heaven throws him to the ground and a voice speaks his name twice — the way God spoke to Abraham, Jacob, Moses, Samuel: "Saul, Saul, why do you persecute <em>me</em>?" Not "my followers" — <em>me</em>. Three days blind, then a frightened disciple named Ananias lays hands on the hunter and calls him "Brother Saul." Meanwhile in Joppa, Peter raises Tabitha from the dead, exactly as Jesus raised Jairus' daughter.</p>
+<h3 class="sec">Slide 3 · Deeper Look (30 min)</h3>
+<ul>
+<li><strong>"The Way" (Acts 9:2):</strong> also an Essene self-description; a code name for the movement; the way of the Lord out of Egypt (Ex 13:21). Jesus leads the return from the exile of sin (Is 40:3; Jn 14:6).</li>
+<li><strong>Route:</strong> Saul travels through Zebulun and Naphtali — "the people who walked in darkness have seen a great light" (Is 9:1-2).</li>
+<li><strong>Background:</strong> Hebrew name Shaul (after Israel's first king), tribe of Benjamin, zealous student of Gamaliel.</li>
+<li><strong>Doubled name (9:4)</strong> = solemn divine call: Gen 22:11; 46:3; Ex 3:4; 1 Sam 3:10.</li>
+<li><strong>"Why do you persecute <em>me</em>":</strong> the union of Christ and his body the Church — Paul's later theology (1 Cor 12; Eph 5:21-32; CCC 787-791, 795).</li>
+<li><strong>Blind Saul represents blind Israel;</strong> converted Saul fulfills Israel's calling — a light to the nations (Acts 13:47).</li>
+<li><strong>Suffering for the Name (9:16):</strong> Acts 14; 16; 21; 1 Cor 4; 2 Cor 11; Phil 1; Col 1:24 — Jesus makes room for our participation (<em>Salvifici Doloris</em>); redemptive suffering.</li>
+<li><strong>Chronology:</strong> three years pass before Jerusalem, via Arabia (Gal 1:15-18).</li>
+<li><strong>Peter heals Tabitha:</strong> parallel to Mk 5:35-43 — Peter's words and works mirror Jesus'.</li>
+</ul>
+<h3 class="sec">Slide 4 · Greek / Hebrew terms</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Gloss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>hē hodos</em></td>
+<td>"the Way"</td>
+</tr>
+<tr>
+<td>Neophyte disposition</td>
+<td>"Lord, teach me"; Scripture as mirror (Jas 1:23-25)</td>
+</tr>
+</tbody>
+</table>
+<p>→ <a href="#greek-word-bank-acts">Greek Word Bank - Acts</a></p>
+<h3 class="sec">Slide 5 · Guideposts (10 min)</h3>
+<ul>
+<li><strong>CCC 787–791, 795</strong> — the Church as Christ's body.</li>
+<li><strong><em>Salvifici Doloris</em></strong> — redemptive suffering.</li>
+</ul>
+<p>→ <a href="#ccc-and-church-document-references-by-sessio">CCC and Church Document References by Session</a></p>
+<h3 class="sec">Slide 6 · Campfire (10 min)</h3>
+<ol>
+<li>Who has been a "Barnabas" to you? How can your community welcome those viewed with suspicion, as Ananias and Barnabas welcomed Saul?</li>
+<li>Fulton Sheen: "hospitals are filled with wasted suffering." Are you offering your suffering in union with Christ, or simply suffering?</li>
+</ol>
+<p>Close with a written <strong>"Dear Lord…"</strong> prayer, as every session in the workbook ends.</p>
+<h3 class="sec">Provisions for Tomorrow</h3>
+<p>Read: Acts 10.</p>
+<h3 class="sec">Threads running through this session</h3>
+<ul>
+<li><a href="#thread-jesus-continues-his-work">Thread - Jesus continues his work</a></li>
+<li><a href="#thread-new-exodus-end-of-exile">Thread - New Exodus, End of Exile</a></li>
+<li><a href="#thread-suffering-as-seed">Thread - Suffering as seed</a></li>
+</ul>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a> · Architecture: <a href="#standard-session-architecture">Standard Session Architecture</a></li>
+<li>Previous: <a href="#s08-over-the-wall">S08 - Over the Wall</a> · Next: <a href="#s10-the-door-swings-open-to-the-nations">S10 - The Door Swings Open to the Nations</a></li>
+<li>Source: <a href="#source-acts-great-adventure-conversation">Source - Acts Great Adventure conversation</a></li>
+</ul>
+</section>
+<section class="chapter" id="s10-the-door-swings-open-to-the-nations"><h2>Session 10 — The Door Swings Open to the Nations</h2>
+
+<blockquote>
+<p><strong>St. Peter's "Un-Kosher Picnic"</strong> · <strong>Passage:</strong> Acts 10 · <strong>Leg:</strong> <a href="#leg-ii-crossing-borders">Leg II - Crossing Borders</a></p>
+</blockquote>
+<h3 class="sec">Slide 1 · Trailhead (5 min)</h3>
+<p>A millennium of separation is about to end on a rooftop in Joppa.</p>
+<h3 class="sec">Slide 2 · Story Script (15 min)</h3>
+<p>In Caesarea, a Roman centurion prays at the very hour of the evening sacrifice — and an angel tells him his prayers have risen like incense. In Joppa — the port from which Jonah once fled <em>his</em> mission to the Gentiles — Peter falls into a trance at noon and sees a sheet lowered by its four corners, full of every unclean animal. "Rise, Peter; kill and eat." Three times. He is still puzzling when Gentile messengers knock. Days later, while Peter is still preaching in Cornelius' house, the Holy Spirit falls on the uncircumcised — Pentecost of the Gentiles.</p>
+<h3 class="sec">Slide 3 · Deeper Look (30 min)</h3>
+<ul>
+<li><strong>Backdrop:</strong> OT holiness as separation; Peter is already lodging with Simon the <em>tanner</em> (an unclean trade).</li>
+<li><strong>Cornelius:</strong> a centurion and God-fearer — interested in Judaism, but not a covenant member (cf. Acts 13:16).</li>
+<li><strong>Ninth hour = 3 PM,</strong> the evening liturgy (Ex 29:38-39); Gabriel came to Daniel at that hour (Dn 9). Gentile prayers are accepted in place of the evening sacrifice.</li>
+<li><strong>Jonah–Joppa–Peter:</strong> Jesus calls Peter "Simon Bar-Jona" (Mt 16:17) though his father is John (Jn 1:42) — the reluctant-messenger-to-the-Gentiles motif.</li>
+<li><strong>The vision:</strong> four corners = the whole earth; kosher (<em>kashrut</em>) as the exile-era wall of the table (229 of 341 Mishnah texts concern table fellowship); Jesus lifted the dietary laws (Mk 7:19); clean/unclean stood for Jew/Gentile; lifting the ban = the Gentiles are no longer unclean.</li>
+<li><strong>New standard of holiness:</strong> Christ's blood brings the Gentiles in (Eph 2:11-16); Abraham's blessing reaches the nations (Gen 12; Gal 3:13-14, 28-29); contact with Christ cleanses instead of contaminating (Mt 8:1-4 — Jesus touches the leper).</li>
+<li><strong>Tongues fall on the household (10:44-48):</strong> the third of the four Pentecosts. See <a href="#the-four-pentecosts">The Four Pentecosts</a>.</li>
+</ul>
+<h3 class="sec">Slide 4 · Greek / Hebrew terms</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Gloss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>kashrut</em> (Heb.)</td>
+<td>the dietary laws</td>
+</tr>
+<tr>
+<td>God-fearer</td>
+<td>a Gentile adherent of the synagogue</td>
+</tr>
+</tbody>
+</table>
+<p>→ <a href="#greek-word-bank-acts">Greek Word Bank - Acts</a></p>
+<h3 class="sec">Slide 5 · Guideposts (10 min)</h3>
+<ul>
+<li><strong>CCC 2697–2698</strong> — fixed rhythms of daily prayer.</li>
+<li><strong>CCC 761</strong> — God gathers a people from the nations.</li>
+</ul>
+<p>→ <a href="#ccc-and-church-document-references-by-sessio">CCC and Church Document References by Session</a></p>
+<h3 class="sec">Slide 6 · Campfire (10 min)</h3>
+<ol>
+<li>What very new thing is God telling Peter through the sheet — and are there people <em>you</em> are prejudging as "unclean"?</li>
+<li>Cornelius was already devout: why does he still need Jesus?</li>
+<li>How do people around you send signals for help, verbal and nonverbal, and how can you respond with the light of Christ?</li>
+</ol>
+<p>Close with a written <strong>"Dear Lord…"</strong> prayer, as every session in the workbook ends.</p>
+<h3 class="sec">Provisions for Tomorrow</h3>
+<p>Read: Acts 11–12.</p>
+<h3 class="sec">Threads running through this session</h3>
+<ul>
+<li><a href="#thread-the-new-israel-without-borders">Thread - The New Israel without borders</a></li>
+</ul>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a> · Architecture: <a href="#standard-session-architecture">Standard Session Architecture</a></li>
+<li>Previous: <a href="#s09-the-hunter-becomes-the-herald">S09 - The Hunter Becomes the Herald</a> · Next: <a href="#s11-chains-broken-kingdoms-judged">S11 - Chains Broken, Kingdoms Judged</a></li>
+<li>Source: <a href="#source-acts-great-adventure-conversation">Source - Acts Great Adventure conversation</a></li>
+</ul>
+</section>
+<section class="chapter" id="s11-chains-broken-kingdoms-judged"><h2>Session 11 — Chains Broken, Kingdoms Judged</h2>
+
+<blockquote>
+<p><strong>The Church in Antioch</strong> · <strong>Passage:</strong> Acts 11-12 · <strong>Leg:</strong> <a href="#leg-ii-crossing-borders">Leg II - Crossing Borders</a></p>
+</blockquote>
+<h3 class="sec">Slide 1 · Trailhead (5 min)</h3>
+<p>The shockwave of the un-kosher picnic reaches Jerusalem — and the gospel plants its second capital: Antioch.</p>
+<h3 class="sec">Slide 2 · Story Script (15 min)</h3>
+<p>Peter faces the circumcision party and simply retells the story — "who was I that I could withstand God?" In Antioch, scattered believers preach to Greeks, Barnabas fetches Saul, and the disciples are first called <em>Christians</em>. Then Herod strikes the leadership: James dies by the sword; Peter waits in prison on Passover night, chained between two soldiers — until an angel strikes him awake with Exodus stage-directions: "Get up quickly… put on your sandals." The Church that could not fight prayed instead; the servant girl Rhoda is so overjoyed she leaves Peter standing at the gate. Herod, accepting divine honours, is struck down; "but the word of God grew and multiplied."</p>
+<h3 class="sec">Slide 3 · Deeper Look (30 min)</h3>
+<ul>
+<li><strong>Peter's report accepted (11:1-18);</strong> household salvation (11:14; cf. 18:8; CCC 1655-1657 — the domestic church); Gentile Christians as "a chosen race, a royal priesthood" (1 Pet 2:9-12 // Ex 19:5-6).</li>
+<li><strong>Antioch:</strong> Barnabas as Jerusalem's delegate; Saul brought in; "Christian" = Latin, "partisan of Christ" (cf. Acts 26:28; 1 Pet 4:16). Agabus foretells famine (AD 40s); relief sent to Judea — solidarity against avarice; mercy as the antidote to greed.</li>
+<li><strong>Second wave of persecution:</strong> first the laity (Acts 8), now the leaders. Herod Agrippa, grandson of Herod the Great; James the first apostle-martyr (capital punishment: CCC 2267; Rom 13:4). James is not replaced — the Twelve's foundational office is fulfilled.</li>
+<li><strong>Peter's rescue as new Exodus:</strong> "move quickly," sandals on (Ex 12:11), delivered "out of the hand of Herod" (Ex 3:7-8); the same verb "brought out" (Ex 3:8); Passover timing; the events echo the Resurrection.</li>
+<li><strong>Guardian angels</strong> (Mt 18:10; Gen 48:16); <strong>intercessory prayer</strong> (CCC 2634-2636); Herod's death as judgment on counterfeit kingship.</li>
+</ul>
+<h3 class="sec">Slide 4 · Greek / Hebrew terms</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Gloss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Christianos</em></td>
+<td>first used at Antioch — "partisan of Christ"</td>
+</tr>
+<tr>
+<td>Days of Unleavened Bread</td>
+<td>the Passover setting of the escape</td>
+</tr>
+</tbody>
+</table>
+<p>→ <a href="#greek-word-bank-acts">Greek Word Bank - Acts</a></p>
+<h3 class="sec">Slide 5 · Guideposts (10 min)</h3>
+<ul>
+<li><strong>CCC 1655–1657</strong> — the family as domestic church.</li>
+<li><strong>CCC 2634–2636</strong> — intercession. <strong>CCC 2267</strong> — capital punishment.</li>
+<li><strong>1 Pet 1:3-9; 4:12-13</strong> — rejoicing under trial.</li>
+</ul>
+<p>→ <a href="#ccc-and-church-document-references-by-sessio">CCC and Church Document References by Session</a></p>
+<h3 class="sec">Slide 6 · Campfire (10 min)</h3>
+<ol>
+<li>What do the believers do when James is killed and Peter imprisoned — and what does it show they have learned?</li>
+<li>What can this passage teach you about persistent, communal prayer?</li>
+<li>What are concrete ways your community can practise Antioch-style solidarity?</li>
+</ol>
+<p>Close with a written <strong>"Dear Lord…"</strong> prayer, as every session in the workbook ends.</p>
+<h3 class="sec">Provisions for Tomorrow</h3>
+<p>Read: Acts 13–14.</p>
+<h3 class="sec">Threads running through this session</h3>
+<ul>
+<li><a href="#thread-new-exodus-end-of-exile">Thread - New Exodus, End of Exile</a></li>
+<li><a href="#thread-the-church-we-know-today">Thread - The Church we know today</a></li>
+</ul>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a> · Architecture: <a href="#standard-session-architecture">Standard Session Architecture</a></li>
+<li>Previous: <a href="#s10-the-door-swings-open-to-the-nations">S10 - The Door Swings Open to the Nations</a> · Next: <a href="#s12-first-voyage">S12 - First Voyage</a></li>
+<li>Source: <a href="#source-acts-great-adventure-conversation">Source - Acts Great Adventure conversation</a></li>
+</ul>
+</section>
+<section class="chapter" id="s12-first-voyage"><h2>Session 12 — First Voyage</h2>
+
+<blockquote>
+<p><strong>Paul's First Missionary Journey</strong> · <strong>Passage:</strong> Acts 13-14 · <strong>Leg:</strong> <a href="#leg-iii-to-the-ends-of-the-earth">Leg III - To the Ends of the Earth</a></p>
+</blockquote>
+<h3 class="sec">Slide 1 · Trailhead (5 min)</h3>
+<p>Antioch fasts, prays — and the Spirit says: "Set apart for me Barnabas and Saul." The expedition's third leg begins.</p>
+<h3 class="sec">Slide 2 · Story Script (15 min)</h3>
+<p>Hands are laid on the missionaries and they sail for Cyprus. A court magician is struck blind — the mirror of Saul's own Damascus blindness. In Pisidian Antioch, Paul stands in the synagogue and preaches the whole sweep of Israel's story ending in a risen Son of David. Jews and Gentiles beg to hear more; jealousy erupts; Paul turns to the Gentiles with Isaiah on his lips: "I have set you to be a light for the Gentiles." In Lystra a lame man leaps at Paul's word — and the crowd tries to sacrifice oxen to "Zeus and Hermes," then stones Paul almost to death. He gets up and walks back into the city.</p>
+<h3 class="sec">Slide 3 · Deeper Look (30 min)</h3>
+<ul>
+<li><strong>Three journeys overview:</strong> (1) establishes churches; (2) letters to the Thessalonians; (3) revisits churches, writes most of the letters.</li>
+<li><strong>Commissioning:</strong> prayer and fasting before major decisions (Acts 13:1-3; 14:23); the laying on of hands (Nm 8:10).</li>
+<li><strong>Pattern:</strong> the synagogue first — "to the Jew first and also to the Greek" (Rom 1:16).</li>
+<li><strong>Elymas blinded (13:11):</strong> a sign of spiritual blindness, paralleling Saul's (9:8). Saul is now "Paul," his Roman name.</li>
+<li><strong>Pisidian Antioch sermon (13:16-41):</strong> parallels Peter (Acts 2) and Stephen (Acts 7); restoration of scattered Israel — the ten northern tribes mixed among the nations since 722 BC (Rom 9–11); the Davidic promise (2 Sam 7; 1 Sam 8); Is 55:3 and Ps 16:10 fulfilled in Jesus, not David; Ps 2 enthronement; <em>remez</em> — the "hint" of the everlasting covenant blessing all nations (Is 55:4-7); Messiah preserved from corruption (Ps 16:10); forgiveness and freedom in Christ (13:38-39; Heb 10:1-4); the warning from Hab 1:5.</li>
+<li><strong>Peter–Paul parallels:</strong> a lame man healed (3:1-10 // 14:8-13), each healing followed by a "Men, why…?" speech. See <a href="#luke-acts-parallels">Luke-Acts Parallels</a>.</li>
+</ul>
+<h3 class="sec">Slide 4 · Greek / Hebrew terms</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Gloss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>remez</em> (Heb.)</td>
+<td>rabbinic hinting</td>
+</tr>
+<tr>
+<td>Paul / Saul</td>
+<td>Roman and Hebrew names of the same man</td>
+</tr>
+</tbody>
+</table>
+<p>→ <a href="#greek-word-bank-acts">Greek Word Bank - Acts</a></p>
+<h3 class="sec">Slide 5 · Guideposts (10 min)</h3>
+<ul>
+<li><strong>Rom 1:16</strong> — to the Jew first.</li>
+<li><strong>Rom 9–11</strong> — Israel's restoration.</li>
+<li><strong>Heb 10:1-4</strong> — the insufficiency of the old sacrifices.</li>
+</ul>
+<p>→ <a href="#ccc-and-church-document-references-by-sessio">CCC and Church Document References by Session</a></p>
+<h3 class="sec">Slide 6 · Campfire (10 min)</h3>
+<ol>
+<li>Paul preaches one gospel everywhere but adapts his approach. What factors must you consider when sharing the faith with those around you?</li>
+</ol>
+<p>Close with a written <strong>"Dear Lord…"</strong> prayer, as every session in the workbook ends.</p>
+<h3 class="sec">Provisions for Tomorrow</h3>
+<p>Read: Acts 15–16.</p>
+<h3 class="sec">Threads running through this session</h3>
+<ul>
+<li><a href="#thread-jesus-continues-his-work">Thread - Jesus continues his work</a></li>
+<li><a href="#thread-new-exodus-end-of-exile">Thread - New Exodus, End of Exile</a></li>
+<li><a href="#thread-the-new-israel-without-borders">Thread - The New Israel without borders</a></li>
+</ul>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a> · Architecture: <a href="#standard-session-architecture">Standard Session Architecture</a></li>
+<li>Previous: <a href="#s11-chains-broken-kingdoms-judged">S11 - Chains Broken, Kingdoms Judged</a> · Next: <a href="#s13-council-and-second-voyage">S13 - Council and Second Voyage</a></li>
+<li>Source: <a href="#source-acts-great-adventure-conversation">Source - Acts Great Adventure conversation</a></li>
+</ul>
+</section>
+<section class="chapter" id="s13-council-and-second-voyage"><h2>Session 13 — Council and Second Voyage</h2>
+
+<blockquote>
+<p><strong>The Jerusalem Council; Paul's Second Journey</strong> · <strong>Passage:</strong> Acts 15-16 · <strong>Leg:</strong> <a href="#leg-iii-to-the-ends-of-the-earth">Leg III - To the Ends of the Earth</a></p>
+</blockquote>
+<h3 class="sec">Slide 1 · Trailhead (5 min)</h3>
+<p>The Church's first doctrinal crisis: must Gentiles become Jews to become Christians?</p>
+<h3 class="sec">Slide 2 · Story Script (15 min)</h3>
+<p>The whole Church gathers in Jerusalem. Peter rises: "We believe that we shall be saved through the grace of the Lord Jesus, just as they will." James adds the pastoral application; a letter goes out beginning with words no merely human assembly could write: "It has seemed good to the Holy Spirit and to us." Then the second journey: a night vision — a man of Macedonia pleading, "Come over and help us" — and the gospel crosses into Europe. Lydia the purple-dealer opens her heart and her house; a slave girl is freed of her spirit; and at midnight in a Philippian jail, Paul and Silas sing hymns until an earthquake opens every door — and the jailer's whole household is baptized before dawn.</p>
+<h3 class="sec">Slide 3 · Deeper Look (30 min)</h3>
+<ul>
+<li><strong>The issue:</strong> ritual law for Gentiles; circumcision as covenant sign (Gen 17; Lev 12:3), meaning submission to the whole Law.</li>
+<li><strong>Peter speaks as head</strong> ("We believe," 15:11); James is pastoral, Peter's judgment final. OT warrant for Gentile inclusion: Jer 12:15; Am 9:11-12; Is 45:21.</li>
+<li><strong>The decision:</strong> no circumcision; abstain from idol-food (Lev 17:7-9), unchastity (Lev 18), blood (Lev 17:10-14) — temporary measures for Jew–Gentile table unity.</li>
+<li><strong>"It has seemed good to the Holy Spirit and to us" (15:28):</strong> the Spirit in Church decisions; the keys of the kingdom, binding and loosing (Mt 16:13-19); Peter's office from the prime-minister pattern of Is 22; Spirit + seat of Peter + Magisterium (Jn 16:13). Analogy: Vatican II as a pastoral council (<em>Gaudium et Spes</em>).</li>
+<li><strong>Second journey:</strong> Barnabas and John Mark to Cyprus; Timothy circumcised (pastoral flexibility); the Macedonian vision; Lydia's conversion and household; Philippi's earthquake and the jailer's household baptism.</li>
+<li><strong>Companion epistle — Philippians:</strong> unity through humility, the Christ-hymn (Phil 2:1-11).</li>
+</ul>
+<h3 class="sec">Slide 4 · Greek / Hebrew terms</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Gloss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>synodos</em></td>
+<td>council — the prototype of all ecumenical councils</td>
+</tr>
+</tbody>
+</table>
+<p>→ <a href="#greek-word-bank-acts">Greek Word Bank - Acts</a></p>
+<h3 class="sec">Slide 5 · Guideposts (10 min)</h3>
+<ul>
+<li><strong>Mt 16:13-19; Is 22</strong> — the keys.</li>
+<li><strong>Jn 16:13</strong> — the Spirit guides into all truth.</li>
+<li><strong><em>Gaudium et Spes</em></strong> — the conciliar analogy.</li>
+<li><strong>Phil 2:1-11</strong> — the Christ-hymn.</li>
+</ul>
+<p>→ <a href="#ccc-and-church-document-references-by-sessio">CCC and Church Document References by Session</a></p>
+<h3 class="sec">Slide 6 · Campfire (10 min)</h3>
+<ol>
+<li>What does the council teach about how the Church resolves doctrine — and what is the Spirit's role?</li>
+<li>From Philippians: which "nugget" (2:12-15; 3:7-14; 4:6-13, 19) speaks to you? Memorize one this week.</li>
+</ol>
+<p>Close with a written <strong>"Dear Lord…"</strong> prayer, as every session in the workbook ends.</p>
+<h3 class="sec">Provisions for Tomorrow</h3>
+<p>Read: Acts 17.</p>
+<h3 class="sec">Threads running through this session</h3>
+<ul>
+<li><a href="#thread-the-new-israel-without-borders">Thread - The New Israel without borders</a></li>
+<li><a href="#thread-the-church-we-know-today">Thread - The Church we know today</a></li>
+</ul>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a> · Architecture: <a href="#standard-session-architecture">Standard Session Architecture</a></li>
+<li>Previous: <a href="#s12-first-voyage">S12 - First Voyage</a> · Next: <a href="#s14-turning-the-world-upside-down">S14 - Turning the World Upside Down</a></li>
+<li>Source: <a href="#source-acts-great-adventure-conversation">Source - Acts Great Adventure conversation</a></li>
+</ul>
+</section>
+<section class="chapter" id="s14-turning-the-world-upside-down"><h2>Session 14 — Turning the World Upside Down</h2>
+
+<blockquote>
+<p><strong>Converts and Conflicts</strong> · <strong>Passage:</strong> Acts 17 · <strong>Leg:</strong> <a href="#leg-iii-to-the-ends-of-the-earth">Leg III - To the Ends of the Earth</a></p>
+</blockquote>
+<h3 class="sec">Slide 1 · Trailhead (5 min)</h3>
+<p>Three cities, three receptions: riot in Thessalonica, open Bibles in Beroea, philosophers in Athens.</p>
+<h3 class="sec">Slide 2 · Story Script (15 min)</h3>
+<p>In Thessalonica the accusation is telling: "These men who have turned the world upside down have come here also… saying there is another king, Jesus." In Beroea, the noble-minded test everything against the Scriptures. Then Athens: Paul's spirit is <em>provoked</em> by a forest of idols — and among them, an insurance-policy altar: "To an unknown god." Standing on the Areopagus, Paul names the Unknown: the God who made the world, who needs no shrines, who "commands all men everywhere to repent," who has fixed a day of judgment by a man he raised from the dead. Some mock; some delay; Dionysius and Damaris believe.</p>
+<h3 class="sec">Slide 3 · Deeper Look (30 min)</h3>
+<ul>
+<li><strong>Greek thought context:</strong> Gnostic dualism (matter evil, spirit good) vs. Col 2:8-10 — the fullness dwells in Christ bodily.</li>
+<li><strong>Four ways to know God (CCC 27–38):</strong> creation's design, the human person, reason, revelation. Socratic method — the Socrates/Paul parallel in Athens.</li>
+<li><strong>Thessalonica:</strong> Paul argues from the OT like the risen Jesus on the Emmaus road (Lk 24); allegorical and moral senses; the Suffering Servant (Is 53); the accusations echo those against Jesus (Lk 23:2).</li>
+<li><strong>Beroea:</strong> checking claims against Scripture — sometimes cited for <em>sola scriptura</em>; the Catholic question: does Scripture interpret itself?</li>
+<li><strong>Athens:</strong> the <em>pagus</em> as forum; the missionary's three needs — know the gospel message, know what the world believes, build the bridge.</li>
+<li><strong>Vatican II lens:</strong> <em>Nostra Aetate</em> 2 — the Church "rejects nothing that is true and holy in these religions," while proclaiming Christ "the way, the truth, and the life."</li>
+</ul>
+<h3 class="sec">Slide 4 · Greek / Hebrew terms</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Gloss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Areopagus / pagus</em></td>
+<td>the hill of discussion</td>
+</tr>
+<tr>
+<td><em>apologia</em></td>
+<td>foreshadowed here, developed in Session 18</td>
+</tr>
+</tbody>
+</table>
+<p>→ <a href="#greek-word-bank-acts">Greek Word Bank - Acts</a></p>
+<h3 class="sec">Slide 5 · Guideposts (10 min)</h3>
+<ul>
+<li><strong>CCC 27–38</strong> — the ways of knowing God.</li>
+<li><strong><em>Nostra Aetate</em> 2</strong> — relation to non-Christian religions.</li>
+</ul>
+<p>→ <a href="#ccc-and-church-document-references-by-sessio">CCC and Church Document References by Session</a></p>
+<h3 class="sec">Slide 6 · Campfire (10 min)</h3>
+<ol>
+<li>If Christianity were preached in your town as boldly as in Thessalonica, how would your world be turned upside down?</li>
+<li>Closer to home: how does Jesus' message turn <em>your</em> world upside down — and are you willing to let it?</li>
+</ol>
+<p>Close with a written <strong>"Dear Lord…"</strong> prayer, as every session in the workbook ends.</p>
+<h3 class="sec">Provisions for Tomorrow</h3>
+<p>Read: Acts 18.</p>
+<h3 class="sec">Threads running through this session</h3>
+<ul>
+<li><a href="#thread-the-new-israel-without-borders">Thread - The New Israel without borders</a></li>
+</ul>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a> · Architecture: <a href="#standard-session-architecture">Standard Session Architecture</a></li>
+<li>Previous: <a href="#s13-council-and-second-voyage">S13 - Council and Second Voyage</a> · Next: <a href="#s15-anchored-in-corinth">S15 - Anchored in Corinth</a></li>
+<li>Source: <a href="#source-acts-great-adventure-conversation">Source - Acts Great Adventure conversation</a></li>
+</ul>
+</section>
+<section class="chapter" id="s15-anchored-in-corinth"><h2>Session 15 — Anchored in Corinth</h2>
+
+<blockquote>
+<p><strong>Ministry in Corinth; the Third Journey Begins</strong> · <strong>Passage:</strong> Acts 18 · <strong>Leg:</strong> <a href="#leg-iii-to-the-ends-of-the-earth">Leg III - To the Ends of the Earth</a></p>
+</blockquote>
+<h3 class="sec">Slide 1 · Trailhead (5 min)</h3>
+<p>Eighteen months in a city famous for commerce and cult prostitution — and the birth-context of the Corinthian letters.</p>
+<h3 class="sec">Slide 2 · Story Script (15 min)</h3>
+<p>Paul arrives in Corinth alone and, by his own admission, in weakness and fear. He finds work and family with Aquila and Priscilla, tentmakers expelled from Rome. When opposition mounts, the Lord speaks in a night vision: "Do not be afraid… for I have many people in this city." Paul stays. The synagogue ruler Crispus believes with all his household; Gallio the proconsul throws the case out of court; and the Corinthian church — brilliant, gifted, quarrelsome — is born.</p>
+<h3 class="sec">Slide 3 · Deeper Look (30 min)</h3>
+<ul>
+<li><strong>Corinth:</strong> capital of southern Greece, political centre, centre of cult prostitution. Paul there AD 50-51; Gallio proconsul AD 51-52 — a fixed date for Pauline chronology. Claudius' expulsion of the Jews from Rome.</li>
+<li><strong>Aquila and Priscilla:</strong> a house church (1 Cor 16:19); partners in Corinth, Ephesus (18:18-19) and Rome (Rom 16:3-5).</li>
+<li><strong>Reading the epistles inside Acts:</strong> at least three letters to Corinth; 1 Corinthians as instruction in faith and conduct — divisions and immaturity (1 Cor 1–4), immorality and apostolic authority (1 Cor 5).</li>
+<li><strong>Gifts of the Spirit (1 Cor 12:7-11):</strong> source and purpose — building up the body; one body, many members (12:12-20); the "still more excellent way" — love (1 Cor 13); the attributes of love (13:4-8a).</li>
+</ul>
+<h3 class="sec">Slide 4 · Greek / Hebrew terms</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Gloss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Epistle</td>
+<td>an occasional letter, read in the context of Acts</td>
+</tr>
+<tr>
+<td>Charism</td>
+<td>a gift given for the common good</td>
+</tr>
+</tbody>
+</table>
+<p>→ <a href="#greek-word-bank-acts">Greek Word Bank - Acts</a></p>
+<h3 class="sec">Slide 5 · Guideposts (10 min)</h3>
+<ul>
+<li><strong>1 Cor 12–14</strong> — the ordering of gifts.</li>
+<li><strong>Acts 18:9-10</strong> — the Lord's encouragement in the night vision.</li>
+</ul>
+<p>→ <a href="#ccc-and-church-document-references-by-sessio">CCC and Church Document References by Session</a></p>
+<h3 class="sec">Slide 6 · Campfire (10 min)</h3>
+<ol>
+<li>If Jesus spoke into your current circumstances as he did into Paul's (Acts 18:9), what message might he speak to you?</li>
+<li>Which attribute of love in 1 Cor 13 most challenges you, and how does the body-of-Christ context help you strive toward it?</li>
+</ol>
+<p>Close with a written <strong>"Dear Lord…"</strong> prayer, as every session in the workbook ends.</p>
+<h3 class="sec">Provisions for Tomorrow</h3>
+<p>Read: Acts 19.</p>
+<h3 class="sec">Threads running through this session</h3>
+<ul>
+<li><a href="#thread-the-church-we-know-today">Thread - The Church we know today</a></li>
+</ul>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a> · Architecture: <a href="#standard-session-architecture">Standard Session Architecture</a></li>
+<li>Previous: <a href="#s14-turning-the-world-upside-down">S14 - Turning the World Upside Down</a> · Next: <a href="#s16-riot-in-ephesus">S16 - Riot in Ephesus</a></li>
+<li>Source: <a href="#source-acts-great-adventure-conversation">Source - Acts Great Adventure conversation</a></li>
+</ul>
+</section>
+<section class="chapter" id="s16-riot-in-ephesus"><h2>Session 16 — Riot in Ephesus</h2>
+
+<blockquote>
+<p><strong>Ministry in Ephesus</strong> · <strong>Passage:</strong> Acts 19 · <strong>Leg:</strong> <a href="#leg-iii-to-the-ends-of-the-earth">Leg III - To the Ends of the Earth</a></p>
+</blockquote>
+<h3 class="sec">Slide 1 · Trailhead (5 min)</h3>
+<p>Two to three years in the capital of Asia: 250,000 people, the Temple of Artemis, and the empire's centre of magic.</p>
+<h3 class="sec">Slide 2 · Story Script (15 min)</h3>
+<p>Paul finds disciples who have never heard of the Holy Spirit; he baptizes them and the Spirit falls — the fourth Pentecost. Extraordinary miracles flow, even through cloths that touched Paul. Seven freelance exorcists, sons of Sceva, try the Name without the faith — and the demoniac routs them: "Jesus I know, and Paul I know; but who are you?" Magicians burn scrolls worth fifty thousand silver pieces. Then Demetrius the silversmith does the math on lost idol revenue, and for two hours a stadium of twenty-five thousand chants "Great is Artemis of the Ephesians!"</p>
+<h3 class="sec">Slide 3 · Deeper Look (30 min)</h3>
+<ul>
+<li><strong>Ephesus (AD 53-55):</strong> the Hall of Tyrannus; four trade routes; the Temple of Artemis — the largest Greek temple ever built, 127 sixty-foot columns, one of the seven wonders; the magic capital (Augustus burned two thousand magic scrolls in 13 BC) — hence Ephesians' spiritual-warfare language.</li>
+<li><strong>Ephesians read inside Acts:</strong> 1:3-14 (blessings, adoption, inheritance, sealed by the Spirit; renewal of mind — Rom 12; new creation — 2 Cor 5:17); 2:1-10 (grace through faith; <em>pistis</em>/<em>emunah</em> = steadfast fidelity, more than belief; the "faith alone" debate — Luther's insertion vs. James; "works" = works of the Law); 4:1-16 (humility, gentleness, patience, unity as conditions of mission); 6:10-18 (the whole armour of God, written from Roman imprisonment to this very magic-saturated city).</li>
+<li><strong>Sons of Sceva</strong> ("yelping little fox"): God's power cannot be used without God; contrast Rom 15:17-19.</li>
+<li><strong>Fifty thousand pieces burned:</strong> fifty as the number of repentance (Ps 50/51).</li>
+<li><strong>Opposition motive check:</strong> Acts 16:16-19 and 19:23-27 — profit. Demetrius fears more than income loss; Wisdom 15:10-13 on the idol-maker's hopeless trade.</li>
+<li><strong>The fourth Pentecost:</strong> the disciples of John at Ephesus (19:1-7). See <a href="#the-four-pentecosts">The Four Pentecosts</a>.</li>
+</ul>
+<h3 class="sec">Slide 4 · Greek / Hebrew terms</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Gloss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>pistis</em> (Gk.) / <em>emunah</em> (Heb.)</td>
+<td>faith as steadfast fidelity, not mere belief</td>
+</tr>
+</tbody>
+</table>
+<p>→ <a href="#greek-word-bank-acts">Greek Word Bank - Acts</a></p>
+<h3 class="sec">Slide 5 · Guideposts (10 min)</h3>
+<ul>
+<li><strong>CCC 2115–2117</strong> — divination and magic: what they seek to do and why they are wrong.</li>
+<li><strong>Relics and sacramentals</strong> in Catholic tradition (the cloths of Acts 19:12).</li>
+</ul>
+<p>→ <a href="#ccc-and-church-document-references-by-sessio">CCC and Church Document References by Session</a></p>
+<h3 class="sec">Slide 6 · Campfire (10 min)</h3>
+<ol>
+<li>If you are confirmed, you carry the Spirit's power. Is it an unopened gift? How will you use it to spread and defend the faith?</li>
+<li>Where do people (including us) try to do God's work without God, like the sons of Sceva?</li>
+</ol>
+<p>Close with a written <strong>"Dear Lord…"</strong> prayer, as every session in the workbook ends.</p>
+<h3 class="sec">Provisions for Tomorrow</h3>
+<p>Read: Acts 20–21.</p>
+<h3 class="sec">Threads running through this session</h3>
+<ul>
+<li><a href="#thread-the-church-we-know-today">Thread - The Church we know today</a></li>
+</ul>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a> · Architecture: <a href="#standard-session-architecture">Standard Session Architecture</a></li>
+<li>Previous: <a href="#s15-anchored-in-corinth">S15 - Anchored in Corinth</a> · Next: <a href="#s17-the-road-to-jerusalem">S17 - The Road to Jerusalem</a></li>
+<li>Source: <a href="#source-acts-great-adventure-conversation">Source - Acts Great Adventure conversation</a></li>
+</ul>
+</section>
+<section class="chapter" id="s17-the-road-to-jerusalem"><h2>Session 17 — The Road to Jerusalem</h2>
+
+<blockquote>
+<p><strong>Paul Heads for Jerusalem</strong> · <strong>Passage:</strong> Acts 20-21 · <strong>Leg:</strong> <a href="#leg-iii-to-the-ends-of-the-earth">Leg III - To the Ends of the Earth</a></p>
+</blockquote>
+<h3 class="sec">Slide 1 · Trailhead (5 min)</h3>
+<p>The third journey closes. Every prophecy on the route says the same thing: chains ahead. Paul goes anyway.</p>
+<h3 class="sec">Slide 2 · Story Script (15 min)</h3>
+<p>In Troas, "on the first day of the week," the church gathers to break bread; Paul preaches past midnight and young Eutychus, perched in a window, falls asleep — and falls three storeys. Paul embraces him back to life and returns upstairs to the Eucharist. At Miletus, the Ephesian elders weep on Paul's neck as he quotes a saying of Jesus found in no Gospel: "It is more blessed to give than to receive." The prophet Agabus binds his own hands and feet with Paul's belt. In Jerusalem, rumour-fed crowds seize Paul in the Temple, crying the very words once shouted at his Master: "Away with him!"</p>
+<h3 class="sec">Slide 3 · Deeper Look (30 min)</h3>
+<ul>
+<li><strong>Route and purpose:</strong> Jerusalem, then Rome; the collection for the poor (Rom 15:25-27; 2 Cor); Luke rejoins Paul (the "we"-passages); the Feast of Unleavened Bread (Dt 16:16).</li>
+<li><strong>Sunday theology (20:7):</strong> the Sabbath fulfilled in the day of Resurrection; do not forsake the assembly (Heb 10); the Eucharist (CCC 1343); new creation (CCC 2174); Sunday fulfils the Sabbath (CCC 2175-2176); entering the Sabbath rest (Heb 4:1-11); the Mass as "the Great Exchange"; the message must meet faith in the hearers (Heb 4:2; <em>pistis/emunah</em>; <em>kavana</em> — focused intention).</li>
+<li><strong>Eutychus revived</strong> — parallel to Peter and Tabitha, and to Jesus.</li>
+<li><strong>Miletus farewell (20:17-38):</strong> fierce wolves foretold (1 Tim 1:3-7); the agraphon "more blessed to give" — oral tradition; <em>ashrei</em> = "happy/blessed"; postures of prayer — kneeling (20:36; Ps 95:6), raised hands (Ps 141:2), standing (Mk 11:25).</li>
+<li><strong>Agabus and the sign-acting prophets:</strong> Is 20; Jer 19; Ez 4; Hosea's marriage.</li>
+<li><strong>Jerusalem (c. AD 58):</strong> a Nazirite vow taken for peace (21:23; cf. 18:18); "to the Jews I became as a Jew" (1 Cor 9:19-23); arrest on the false charge of bringing Gentiles past the Temple barrier — the "dividing wall" Christ has demolished (Eph 2:11-22); "Away with him" (21:36) parallels Jesus' passion.</li>
+</ul>
+<h3 class="sec">Slide 4 · Greek / Hebrew terms</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Gloss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>kavana</em> (Heb.)</td>
+<td>attentive intention in prayer</td>
+</tr>
+<tr>
+<td>agraphon</td>
+<td>a saying of Jesus preserved outside the Gospels</td>
+</tr>
+<tr>
+<td><em>ashrei</em> (Heb.)</td>
+<td>happy, blessed</td>
+</tr>
+</tbody>
+</table>
+<p>→ <a href="#greek-word-bank-acts">Greek Word Bank - Acts</a></p>
+<h3 class="sec">Slide 5 · Guideposts (10 min)</h3>
+<ul>
+<li><strong>CCC 1343</strong> — the Sunday Eucharist.</li>
+<li><strong>CCC 2174–2176</strong> — the Lord's Day.</li>
+</ul>
+<p>→ <a href="#ccc-and-church-document-references-by-sessio">CCC and Church Document References by Session</a></p>
+<h3 class="sec">Slide 6 · Campfire (10 min)</h3>
+<ol>
+<li>Paul follows God's will though friends beg him not to. What obstacle stands between you and something God wants of you?</li>
+<li>The early Jewish Christians struggled to release old ways. Where are you clinging to old ways — or denying others the freedom to change?</li>
+</ol>
+<p>Close with a written <strong>"Dear Lord…"</strong> prayer, as every session in the workbook ends.</p>
+<h3 class="sec">Provisions for Tomorrow</h3>
+<p>Read: Acts 22:1–25:12.</p>
+<h3 class="sec">Threads running through this session</h3>
+<ul>
+<li><a href="#thread-jesus-continues-his-work">Thread - Jesus continues his work</a></li>
+<li><a href="#thread-the-church-we-know-today">Thread - The Church we know today</a></li>
+</ul>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a> · Architecture: <a href="#standard-session-architecture">Standard Session Architecture</a></li>
+<li>Previous: <a href="#s16-riot-in-ephesus">S16 - Riot in Ephesus</a> · Next: <a href="#s18-the-prisoner-speaks">S18 - The Prisoner Speaks</a></li>
+<li>Source: <a href="#source-acts-great-adventure-conversation">Source - Acts Great Adventure conversation</a></li>
+</ul>
+</section>
+<section class="chapter" id="s18-the-prisoner-speaks"><h2>Session 18 — The Prisoner Speaks</h2>
+
+<blockquote>
+<p><strong>Paul Makes His Defense</strong> · <strong>Passage:</strong> Acts 22:1-25:12 · <strong>Leg:</strong> <a href="#leg-iii-to-the-ends-of-the-earth">Leg III - To the Ends of the Earth</a></p>
+</blockquote>
+<h3 class="sec">Slide 1 · Trailhead (5 min)</h3>
+<p>What looks like failure — near-lynching, years of custody — becomes a preaching tour before ever-higher courts.</p>
+<h3 class="sec">Slide 2 · Story Script (15 min)</h3>
+<p>From the barracks steps, Paul silences a murderous crowd — in Hebrew. He tells his story: the zealous Pharisee, the Damascus light, the commission to the Gentiles. At the word "Gentiles" the riot reignites. Before the Sanhedrin he sets Pharisee against Sadducee with one sentence about the resurrection. A murder plot by forty sworn fasters is foiled by a nephew's tip and a midnight cavalry escort to Caesarea. Governor Felix trembles at Paul's talk of justice and judgment — and keeps him two years hoping for a bribe. Festus inherits the case, and Paul plays the citizen's card: "I appeal to Caesar."</p>
+<h3 class="sec">Slide 3 · Deeper Look (30 min)</h3>
+<ul>
+<li><strong>Five <em>apologiai</em> across Acts 22–26,</strong> before audiences of rising rank: the crowd, the Sanhedrin, Felix, Festus, Agrippa (Session 19).</li>
+<li><strong>The four trials of Paul parallel the four trials of Jesus:</strong> Sanhedrin, Felix, Festus, Agrippa // Sanhedrin, Pilate, Herod, Pilate — the Session One chart. See <a href="#luke-acts-parallels">Luke-Acts Parallels</a>.</li>
+<li><strong>Defence strategy develops with the audience:</strong> to the Jews, a brother's testimony of Jewish credentials and divine commission; to the council, the resurrection as the real issue; to Felix, the continuity of "the Way" with the faith of the fathers and the hope of resurrection; to Festus, innocence and the appeal to Caesar — the hinge that turns the story toward Rome.</li>
+<li><strong>Roman citizenship as providential instrument;</strong> the suffering foretold at his conversion (9:16) now unfolding.</li>
+</ul>
+<h3 class="sec">Slide 4 · Greek / Hebrew terms</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Gloss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>apologia</em></td>
+<td>reasoned defence (as in Plato's <em>Apology</em> of Socrates), not "apology" in the modern sense — the root of "apologetics"</td>
+</tr>
+</tbody>
+</table>
+<p>→ <a href="#greek-word-bank-acts">Greek Word Bank - Acts</a></p>
+<h3 class="sec">Slide 5 · Guideposts (10 min)</h3>
+<ul>
+<li><strong><em>Salvifici Doloris</em></strong> thread continues: apparent failure as the occasion of witness.</li>
+</ul>
+<p>→ <a href="#ccc-and-church-document-references-by-sessio">CCC and Church Document References by Session</a></p>
+<h3 class="sec">Slide 6 · Campfire (10 min)</h3>
+<ol>
+<li>Paul turns every courtroom into a pulpit. When your faith puts you "in the dock," what is your apologia?</li>
+<li>Felix "trembled" yet postponed. What decisions are we postponing?</li>
+</ol>
+<p>Close with a written <strong>"Dear Lord…"</strong> prayer, as every session in the workbook ends.</p>
+<h3 class="sec">Provisions for Tomorrow</h3>
+<p>Read: Acts 25:13–28:31.</p>
+<h3 class="sec">Threads running through this session</h3>
+<ul>
+<li><a href="#thread-jesus-continues-his-work">Thread - Jesus continues his work</a></li>
+<li><a href="#thread-suffering-as-seed">Thread - Suffering as seed</a></li>
+</ul>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a> · Architecture: <a href="#standard-session-architecture">Standard Session Architecture</a></li>
+<li>Previous: <a href="#s17-the-road-to-jerusalem">S17 - The Road to Jerusalem</a> · Next: <a href="#s19-before-kings-and-through-the-storm">S19 - Before Kings and Through the Storm</a></li>
+<li>Source: <a href="#source-acts-great-adventure-conversation">Source - Acts Great Adventure conversation</a></li>
+</ul>
+</section>
+<section class="chapter" id="s19-before-kings-and-through-the-storm"><h2>Session 19 — Before Kings and Through the Storm</h2>
+
+<blockquote>
+<p><strong>Final Defense and Witness in Rome</strong> · <strong>Passage:</strong> Acts 25:13-28:31 · <strong>Leg:</strong> <a href="#leg-iii-to-the-ends-of-the-earth">Leg III - To the Ends of the Earth</a></p>
+</blockquote>
+<h3 class="sec">Slide 1 · Trailhead (5 min)</h3>
+<p>The fifth and finest apologia — then shipwreck, serpent, and the capital of the world.</p>
+<h3 class="sec">Slide 2 · Story Script (15 min)</h3>
+<p>In full pageantry, King Agrippa and Bernice take their seats, and the prisoner in chains tells his story one last time — so compellingly that Festus shouts "Paul, you are mad!" and Agrippa deflects: "In a short time you would persuade me to be a Christian!" The verdict everyone reaches: "This man could have been set free if he had not appealed to Caesar" — the exact echo of Pilate on Jesus. Then the sea voyage: fourteen days of storm, an angel by night, 276 lives saved on Paul's word, bread broken on a doomed deck. Malta: a viper strikes and fails. Rome: two years under guard, "preaching the kingdom of God… quite openly and unhindered." Luke ends mid-adventure — because the adventure hasn't ended.</p>
+<h3 class="sec">Slide 3 · Deeper Look (30 min)</h3>
+<ul>
+<li><strong>Before Agrippa:</strong> Paul the Pharisee on trial for "the hope of the restoration of Israel" — the twelve tribes; the North exiled 722 BC; restoration possible only through the Resurrection and the ingathering of the Gentiles (Jer 31:1, 9-10, 31-33; Ez 36:22-25; 37:16-22). Paul's theology of restoration (Rom 11) — go to the Gentiles, where the ten tribes are, to stir Israel to jealousy.</li>
+<li><strong>"Rise and stand" (26:16)</strong> — prophetic commissioning language (Ez 2:1-2); "nothing but what Moses and the prophets said": the Messiah must suffer (Ps 89:38-51; Is 49:4; 53:3).</li>
+<li><strong>"Kick against the goads" (26:14):</strong> the ox injuring itself by resisting the master — Paul had long resisted the Spirit's prodding.</li>
+<li><strong>Agrippa's "this man could have been released" (26:32)</strong> parallels Pilate (Lk 23:16, 22), closing the Jesus–Paul trial parallels.</li>
+<li><strong>Malta (28):</strong> three months; signs of God's mark and protection (the viper, the healings).</li>
+<li><strong>Rome (28:11-31):</strong> encouragements on arrival; the Jews approached first (28:17-25); the Is 6 indictment of unbelief; the open ending — the gospel "unhindered" (<em>akōlytōs</em>, the book's last word): the reader must finish the story.</li>
+</ul>
+<h3 class="sec">Slide 4 · Greek / Hebrew terms</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Gloss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>akōlytōs</em></td>
+<td>"unhindered" — the final word of Acts</td>
+</tr>
+<tr>
+<td>goads</td>
+<td>the ox-driver's spike</td>
+</tr>
+</tbody>
+</table>
+<p>→ <a href="#greek-word-bank-acts">Greek Word Bank - Acts</a></p>
+<h3 class="sec">Slide 5 · Guideposts (10 min)</h3>
+<ul>
+<li><strong>Rom 11</strong> — restoration theology.</li>
+<li><strong>The four-trials parallel chart</strong> (Session One) — <a href="#luke-acts-parallels">Luke-Acts Parallels</a>.</li>
+</ul>
+<p>→ <a href="#ccc-and-church-document-references-by-sessio">CCC and Church Document References by Session</a></p>
+<h3 class="sec">Slide 6 · Campfire (10 min)</h3>
+<ol>
+<li>Is the Holy Spirit prodding you? What will it take to open your eyes?</li>
+<li>When tragedy strikes, do you encourage others as Paul did on the ship — or fall apart with worry? What from this session strengthens your confidence in God's care?</li>
+<li>Do you like Luke's ending? Why end here, rather than with Paul's death?</li>
+</ol>
+<p>Close with a written <strong>"Dear Lord…"</strong> prayer, as every session in the workbook ends.</p>
+<h3 class="sec">Provisions for Tomorrow</h3>
+<p>Read: Review the whole study for Session 20.</p>
+<h3 class="sec">Threads running through this session</h3>
+<ul>
+<li><a href="#thread-jesus-continues-his-work">Thread - Jesus continues his work</a></li>
+<li><a href="#thread-the-new-israel-without-borders">Thread - The New Israel without borders</a></li>
+<li><a href="#thread-suffering-as-seed">Thread - Suffering as seed</a></li>
+</ul>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a> · Architecture: <a href="#standard-session-architecture">Standard Session Architecture</a></li>
+<li>Previous: <a href="#s18-the-prisoner-speaks">S18 - The Prisoner Speaks</a> · Next: <a href="#s20-journey-s-end-mission-unending">S20 - Journey&#x27;s End, Mission Unending</a></li>
+<li>Source: <a href="#source-acts-great-adventure-conversation">Source - Acts Great Adventure conversation</a></li>
+</ul>
+</section>
+<section class="chapter" id="s20-journey-s-end-mission-unending"><h2>Session 20 — Journey&#x27;s End, Mission Unending</h2>
+
+<blockquote>
+<p><strong>Synthesis and commissioning</strong> · <strong>Passage:</strong> Conclusion · <strong>Leg:</strong> <a href="#leg-iii-to-the-ends-of-the-earth">Leg III - To the Ends of the Earth</a></p>
+</blockquote>
+<h3 class="sec">Slide 1 · Trailhead (5 min)</h3>
+<p>Look back over the whole map before you leave base camp for good.</p>
+<h3 class="sec">Slide 2 · Story Script (15 min)</h3>
+<p>Close the loop with the class: Jesus' life recapitulated Israel's life; the disciples' lives recapitulated Jesus' life; and now the baton is in the room. Retell in five minutes the whole arc — upper room, fire, gate, stones, sheet, chains, storm, Rome — and end where Luke ends: unhindered, unfinished.</p>
+<h3 class="sec">Slide 3 · Deeper Look (30 min)</h3>
+<ul>
+<li>Jesus chooses people like you and me — "do not be afraid, I will be with you."</li>
+<li>He establishes his Kingdom by a New Covenant: reconstitutes Israel, brings in the Gentiles, fills the Church with the Spirit at Pentecost.</li>
+<li><strong>The spread of the Kingdom:</strong> seeds of growth in persecution; Peter (first half), Paul (second half); Satan opposes, the Spirit empowers; the reward is the beatific vision.</li>
+<li><strong>The key verse, one last time — Acts 1:8:</strong> witness = <em>martus</em> = martyr, giving ourselves for others daily.</li>
+<li><strong>Personal appropriation of the map:</strong> your Jerusalem = those close to you; your Judea and Samaria = those outside your circle; your ends of the earth = an adventure or mission.</li>
+<li><strong>The Eucharist as the source of apostolic zeal.</strong></li>
+<li><strong>Continuing the adventure:</strong> Acts as the framework for reading Paul's letters; choose one epistle and read it prayerfully with a journal (<em>Dei Verbum</em> 21 — in the sacred books the Father meets his children with great love).</li>
+</ul>
+<h3 class="sec">Slide 4 · Greek / Hebrew terms</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Gloss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>martus</em></td>
+<td>witness → martyr — the word the whole course has been circling</td>
+</tr>
+</tbody>
+</table>
+<p>→ <a href="#greek-word-bank-acts">Greek Word Bank - Acts</a></p>
+<h3 class="sec">Slide 5 · Guideposts (10 min)</h3>
+<ul>
+<li><strong><em>Dei Verbum</em> 21</strong> — Scripture as the soul's food.</li>
+</ul>
+<p>→ <a href="#ccc-and-church-document-references-by-sessio">CCC and Church Document References by Session</a></p>
+<h3 class="sec">Slide 6 · Campfire (10 min)</h3>
+<ol>
+<li>How would you describe what Acts is about to someone who has never read it?</li>
+<li>What did you learn about God's purpose for the Church — and how does that affect your actions?</li>
+<li>What did you learn about the Holy Spirit that has had, or will have, an effect on your life?</li>
+<li>What stands out most from Acts 1–8? What was most important in Acts 8–12? What intrigued you in Acts 13–28 for future study?</li>
+</ol>
+<p>Close with a written <strong>"Dear Lord…"</strong> prayer, as every session in the workbook ends.</p>
+<h3 class="sec">Provisions for Tomorrow</h3>
+<p>Read: — course ends —</p>
+<h3 class="sec">Threads running through this session</h3>
+<ul>
+<li><a href="#thread-jesus-continues-his-work">Thread - Jesus continues his work</a></li>
+<li><a href="#thread-new-exodus-end-of-exile">Thread - New Exodus, End of Exile</a></li>
+<li><a href="#thread-the-new-israel-without-borders">Thread - The New Israel without borders</a></li>
+<li><a href="#thread-suffering-as-seed">Thread - Suffering as seed</a></li>
+<li><a href="#thread-the-church-we-know-today">Thread - The Church we know today</a></li>
+</ul>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a> · Architecture: <a href="#standard-session-architecture">Standard Session Architecture</a></li>
+<li>Previous: <a href="#s19-before-kings-and-through-the-storm">S19 - Before Kings and Through the Storm</a> · Next: —</li>
+<li>Source: <a href="#source-acts-great-adventure-conversation">Source - Acts Great Adventure conversation</a></li>
+</ul>
+</section>
+<section class="chapter" id="thread-jesus-continues-his-work"><h2>Thread — Jesus continues his work</h2>
+
+<h3 class="sec">The idea, in one sentence</h3>
+<p>Acts is volume two of one work: what Jesus "began to do and teach" (Acts 1:1) he continues to do through his Spirit-filled Church.</p>
+<h3 class="sec">Explanation</h3>
+<p>Luke builds deliberate parallels between Jesus, Peter and Paul. The baptism/Pentecost anointing (Lk 3:21-22 // Acts 2:1-4); the healed paralytic (Lk 5:17-26 // Acts 3:1-10; 14:8-13; 20:9-12); the dying words of Jesus and of Stephen (Lk 23:34, 46 // Acts 7:59-60); the four trials of Jesus and the four trials of Paul (Lk 22-23 // Acts 23-26), closing with Agrippa's "this man could have been set free" echoing Pilate (Acts 26:32 // Lk 23:16, 22). Peter raises Tabitha as Jesus raised Jairus' daughter (Acts 9 // Mk 5:35-43).</p>
+<h3 class="sec">Where it surfaces</h3>
+<p>Sessions 1, 3, 4, 5, 7, 9, 12, 17, 18, 19, 20</p>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a></li>
+<li>Related threads: <a href="#thread-new-exodus-end-of-exile">Thread - New Exodus, End of Exile</a> · <a href="#thread-the-new-israel-without-borders">Thread - The New Israel without borders</a> · <a href="#thread-suffering-as-seed">Thread - Suffering as seed</a> · <a href="#thread-the-church-we-know-today">Thread - The Church we know today</a></li>
+</ul>
+</section>
+<section class="chapter" id="thread-new-exodus-end-of-exile"><h2>Thread — New Exodus, End of Exile</h2>
+
+<h3 class="sec">The idea, in one sentence</h3>
+<p>The signs and wonders of Acts renew the signs of the Exodus: the Church is leading a new exodus out of the bondage of sin.</p>
+<h3 class="sec">Explanation</h3>
+<p>Signs and wonders punctuate the narrative (Acts 2:19; 4:30; 6:8; 14:3; 15:12). Daniel's seventy weeks lead to Jesus, who ends the exile of sin (Dn 9). "The Way" is the way of the Lord out of Egypt (Ex 13:21; Is 40:3; Jn 14:6). Peter's prison escape is staged in Exodus language on Passover night: "move quickly," sandals on (Ex 12:11), "brought out" of the hand of Herod (Ex 3:7-8).</p>
+<h3 class="sec">Where it surfaces</h3>
+<p>Sessions 6, 9, 11, 12, 20</p>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a></li>
+<li>Related threads: <a href="#thread-jesus-continues-his-work">Thread - Jesus continues his work</a> · <a href="#thread-the-new-israel-without-borders">Thread - The New Israel without borders</a> · <a href="#thread-suffering-as-seed">Thread - Suffering as seed</a> · <a href="#thread-the-church-we-know-today">Thread - The Church we know today</a></li>
+</ul>
+</section>
+<section class="chapter" id="thread-suffering-as-seed"><h2>Thread — Suffering as seed</h2>
+
+<h3 class="sec">The idea, in one sentence</h3>
+<p>Persecution does not stop the gospel; it scatters it - the blood of the martyrs is the seed of the Church.</p>
+<h3 class="sec">Explanation</h3>
+<p>Beaten apostles leave the council rejoicing to be counted worthy of dishonour for the Name (Acts 5). Stephen's death scatters the Church into Judea and Samaria, and the scattering becomes sowing (Acts 8:4). Saul is told at his call how much he must suffer for the Name (9:16), and the promise unfolds through Acts 14, 16, 21 and the letters (1 Cor 4; 2 Cor 11; Phil 1; Col 1:24). Read with John Paul II, <em>Salvifici Doloris</em> 27: suffering shares in the treasure of the Redemption.</p>
+<h3 class="sec">Where it surfaces</h3>
+<p>Sessions 6, 7, 9, 18, 19, 20</p>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a></li>
+<li>Related threads: <a href="#thread-jesus-continues-his-work">Thread - Jesus continues his work</a> · <a href="#thread-new-exodus-end-of-exile">Thread - New Exodus, End of Exile</a> · <a href="#thread-the-new-israel-without-borders">Thread - The New Israel without borders</a> · <a href="#thread-the-church-we-know-today">Thread - The Church we know today</a></li>
+</ul>
+</section>
+<section class="chapter" id="thread-the-church-we-know-today"><h2>Thread — The Church we know today</h2>
+
+<h3 class="sec">The idea, in one sentence</h3>
+<p>The Church we know today - apostolic authority, sacraments, Magisterium and the office of Peter - is visible in seed form throughout Acts.</p>
+<h3 class="sec">Explanation</h3>
+<p>The apostolic office must be filled (Acts 1); the four pillars of Acts 2:42 are teaching, fellowship, breaking of bread and prayers; the seven are ordained by prayer and the laying on of hands (Acts 6); Peter and John lay hands on the Samaritans to complete what baptism began (Acts 8); the Jerusalem Council writes "it has seemed good to the Holy Spirit and to us" (15:28) with Peter's judgment final - the prototype of every ecumenical council; the church at Troas breaks bread on the first day of the week (20:7).</p>
+<h3 class="sec">Where it surfaces</h3>
+<p>Sessions 2, 3, 7, 8, 11, 13, 15, 16, 17, 20</p>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a></li>
+<li>Related threads: <a href="#thread-jesus-continues-his-work">Thread - Jesus continues his work</a> · <a href="#thread-new-exodus-end-of-exile">Thread - New Exodus, End of Exile</a> · <a href="#thread-the-new-israel-without-borders">Thread - The New Israel without borders</a> · <a href="#thread-suffering-as-seed">Thread - Suffering as seed</a></li>
+</ul>
+</section>
+<section class="chapter" id="thread-the-new-israel-without-borders"><h2>Thread — The New Israel without borders</h2>
+
+<h3 class="sec">The idea, in one sentence</h3>
+<p>The kingdom is planted in the heart, not bounded by land: the New Israel has no ethnic or geographic frontier.</p>
+<h3 class="sec">Explanation</h3>
+<p>Land-and-blessing theology (Gen 12:1-3; 15) is transposed - <em>Eretz Israel</em> is no longer the point (Dt 30:1-10). Stephen exposes the idolizing of land and Temple; Jesus is the new King and the new Temple (Acts 7). The wall falls in stages: Samaritans (Acts 8), the eunuch excluded by Dt 23:1 and promised a place by Is 56, the Gentiles of Cornelius' house (Acts 10), and the Council's ruling that Gentiles need not be circumcised (Acts 15). Paul's restoration theology gathers the scattered ten tribes among the nations (Rom 9-11; Jer 31; Ez 36-37).</p>
+<h3 class="sec">Where it surfaces</h3>
+<p>Sessions 5, 6, 8, 10, 12, 13, 14, 19, 20</p>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a></li>
+<li>Related threads: <a href="#thread-jesus-continues-his-work">Thread - Jesus continues his work</a> · <a href="#thread-new-exodus-end-of-exile">Thread - New Exodus, End of Exile</a> · <a href="#thread-suffering-as-seed">Thread - Suffering as seed</a> · <a href="#thread-the-church-we-know-today">Thread - The Church we know today</a></li>
+</ul>
+</section>
+<section class="chapter" id="ccc-and-church-document-references-by-sessio"><h2>CCC and Church Document References by Session</h2>
+
+<h3 class="sec">Catechism</h3>
+<table>
+<thead>
+<tr>
+<th>Session</th>
+<th>CCC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#s02-prelude-to-power">S02 - Prelude to Power</a></td>
+<td>668–682, 697, 860</td>
+</tr>
+<tr>
+<td><a href="#s03-the-fire-falls">S03 - The Fire Falls</a></td>
+<td>696, 799, 1116, 1252, 1299, 1302–1305</td>
+</tr>
+<tr>
+<td><a href="#s04-first-steps-first-signs">S04 - First Steps, First Signs</a></td>
+<td>203, 430–435, 724, 1174–1178, 2666</td>
+</tr>
+<tr>
+<td><a href="#s05-first-resistance">S05 - First Resistance</a></td>
+<td>1996–2005, 2242</td>
+</tr>
+<tr>
+<td><a href="#s06-danger-inside-the-camp">S06 - Danger Inside the Camp</a></td>
+<td>269, 332, 450, 1351, 2242</td>
+</tr>
+<tr>
+<td><a href="#s07-the-first-martyr-s-torch">S07 - The First Martyr&#x27;s Torch</a></td>
+<td>332, 2635</td>
+</tr>
+<tr>
+<td><a href="#s08-over-the-wall">S08 - Over the Wall</a></td>
+<td>1288, 1313, 2115–2117, 2121</td>
+</tr>
+<tr>
+<td><a href="#s09-the-hunter-becomes-the-herald">S09 - The Hunter Becomes the Herald</a></td>
+<td>787–791, 795</td>
+</tr>
+<tr>
+<td><a href="#s10-the-door-swings-open-to-the-nations">S10 - The Door Swings Open to the Nations</a></td>
+<td>761, 2697–2698</td>
+</tr>
+<tr>
+<td><a href="#s11-chains-broken-kingdoms-judged">S11 - Chains Broken, Kingdoms Judged</a></td>
+<td>1655–1657, 2267, 2634–2636</td>
+</tr>
+<tr>
+<td><a href="#s14-turning-the-world-upside-down">S14 - Turning the World Upside Down</a></td>
+<td>27–38</td>
+</tr>
+<tr>
+<td><a href="#s16-riot-in-ephesus">S16 - Riot in Ephesus</a></td>
+<td>2115–2117</td>
+</tr>
+<tr>
+<td><a href="#s17-the-road-to-jerusalem">S17 - The Road to Jerusalem</a></td>
+<td>1343, 2174–2176</td>
+</tr>
+</tbody>
+</table>
+<h3 class="sec">Church documents</h3>
+<table>
+<thead>
+<tr>
+<th>Document</th>
+<th>Session</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Ad Gentes</em> 4</td>
+<td><a href="#s03-the-fire-falls">S03 - The Fire Falls</a></td>
+</tr>
+<tr>
+<td><em>Catechesi Tradendae</em> 10</td>
+<td><a href="#s04-first-steps-first-signs">S04 - First Steps, First Signs</a></td>
+</tr>
+<tr>
+<td><em>Salvifici Doloris</em></td>
+<td><a href="#s06-danger-inside-the-camp">S06 - Danger Inside the Camp</a>, <a href="#s09-the-hunter-becomes-the-herald">S09 - The Hunter Becomes the Herald</a>, <a href="#s18-the-prisoner-speaks">S18 - The Prisoner Speaks</a></td>
+</tr>
+<tr>
+<td><em>Lumen Gentium</em> 29 (permanent diaconate)</td>
+<td><a href="#s07-the-first-martyr-s-torch">S07 - The First Martyr&#x27;s Torch</a></td>
+</tr>
+<tr>
+<td><em>Gaudium et Spes</em> (conciliar analogy)</td>
+<td><a href="#s13-council-and-second-voyage">S13 - Council and Second Voyage</a></td>
+</tr>
+<tr>
+<td><em>Nostra Aetate</em> 2</td>
+<td><a href="#s14-turning-the-world-upside-down">S14 - Turning the World Upside Down</a></td>
+</tr>
+<tr>
+<td><em>Dei Verbum</em> 21</td>
+<td><a href="#s20-journey-s-end-mission-unending">S20 - Journey&#x27;s End, Mission Unending</a></td>
+</tr>
+</tbody>
+</table>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a></li>
+</ul>
+</section>
+<section class="chapter" id="greek-word-bank-acts"><h2>Greek / Hebrew Word Bank — Acts</h2>
+
+<p>Every term taught in the course, with the session where it is introduced.</p>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Language</th>
+<th>Gloss</th>
+<th>Session(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>dunamis</em></td>
+<td>Gk.</td>
+<td>power — "dynamite"; the keyword of Acts 1:8</td>
+<td>1, 2</td>
+</tr>
+<tr>
+<td><em>Theophilus</em></td>
+<td>Gk.</td>
+<td>"lover of God"</td>
+<td>1</td>
+</tr>
+<tr>
+<td><em>martus</em></td>
+<td>Gk.</td>
+<td>witness → martyr</td>
+<td>2, 20</td>
+</tr>
+<tr>
+<td><em>remez</em></td>
+<td>Heb.</td>
+<td>rabbinic "hinting"</td>
+<td>2, 12</td>
+</tr>
+<tr>
+<td><em>Gebirah</em></td>
+<td>Heb.</td>
+<td>Queen Mother</td>
+<td>2</td>
+</tr>
+<tr>
+<td><em>metanoia</em></td>
+<td>Gk.</td>
+<td>repent — "to turn around completely"</td>
+<td>3</td>
+</tr>
+<tr>
+<td><em>Pentecost</em></td>
+<td>Gk.</td>
+<td>fiftieth</td>
+<td>3</td>
+</tr>
+<tr>
+<td><em>onoma</em></td>
+<td>Gk.</td>
+<td>name — nature, authority, power, presence (c. 60x in Acts)</td>
+<td>4</td>
+</tr>
+<tr>
+<td><em>Yeshua</em></td>
+<td>Heb.</td>
+<td>"God saves"</td>
+<td>4</td>
+</tr>
+<tr>
+<td><em>parrēsia</em></td>
+<td>Gk.</td>
+<td>boldness (Acts 4:13, 29, 31)</td>
+<td>5</td>
+</tr>
+<tr>
+<td><em>ekklesia</em></td>
+<td>Gk.</td>
+<td>"the called-out ones"; the LXX word for Israel's congregation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><em>herem</em></td>
+<td>Heb.</td>
+<td>the ban of total offering (Jericho)</td>
+<td>6</td>
+</tr>
+<tr>
+<td><em>diakonia</em></td>
+<td>Gk.</td>
+<td>service; <em>diakonein</em>, to serve</td>
+<td>7</td>
+</tr>
+<tr>
+<td><em>sōma sēma esti</em></td>
+<td>Gk.</td>
+<td>"the body is a tomb" — the Gnostic slogan</td>
+<td>8</td>
+</tr>
+<tr>
+<td><em>hē hodos</em></td>
+<td>Gk.</td>
+<td>"the Way"</td>
+<td>9</td>
+</tr>
+<tr>
+<td><em>kashrut</em></td>
+<td>Heb.</td>
+<td>the dietary laws</td>
+<td>10</td>
+</tr>
+<tr>
+<td><em>Christianos</em></td>
+<td>Gk./Lat.</td>
+<td>"partisan of Christ" — first used at Antioch</td>
+<td>11</td>
+</tr>
+<tr>
+<td><em>synodos</em></td>
+<td>Gk.</td>
+<td>council</td>
+<td>13</td>
+</tr>
+<tr>
+<td><em>pistis</em> / <em>emunah</em></td>
+<td>Gk. / Heb.</td>
+<td>faith as steadfast fidelity, more than belief</td>
+<td>16, 17</td>
+</tr>
+<tr>
+<td><em>kavana</em></td>
+<td>Heb.</td>
+<td>attentive intention in prayer</td>
+<td>17</td>
+</tr>
+<tr>
+<td><em>ashrei</em></td>
+<td>Heb.</td>
+<td>happy, blessed</td>
+<td>17</td>
+</tr>
+<tr>
+<td>agraphon</td>
+<td>Gk.</td>
+<td>a saying of Jesus outside the Gospels</td>
+<td>17</td>
+</tr>
+<tr>
+<td><em>apologia</em></td>
+<td>Gk.</td>
+<td>reasoned defence (Plato's <em>Apology</em>) — root of "apologetics"</td>
+<td>18</td>
+</tr>
+<tr>
+<td><em>akōlytōs</em></td>
+<td>Gk.</td>
+<td>"unhindered" — the last word of Acts</td>
+<td>19</td>
+</tr>
+</tbody>
+</table>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a></li>
+</ul>
+</section>
+<section class="chapter" id="leg-i-base-camp-jerusalem"><h2>Leg I - Base Camp Jerusalem</h2>
+
+<p><em>Fire falls on Jerusalem</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Sessions</strong></td>
+<td>Sessions 1-7</td>
+</tr>
+<tr>
+<td><strong>Territory</strong></td>
+<td>Acts 1:1-8:3</td>
+</tr>
+<tr>
+<td><strong>Guide</strong></td>
+<td>Peter</td>
+</tr>
+<tr>
+<td><strong>Time span</strong></td>
+<td>c. 2 years</td>
+</tr>
+</tbody>
+</table>
+<h3 class="sec">Sessions in this leg</h3>
+<ol>
+<li><a href="#s01-reading-the-map">S01 - Reading the Map</a> — Introduction: Introduction to Acts</li>
+<li><a href="#s02-prelude-to-power">S02 - Prelude to Power</a> — Acts 1: Ascension, waiting, Matthias</li>
+<li><a href="#s03-the-fire-falls">S03 - The Fire Falls</a> — Acts 2: The Power of Pentecost</li>
+<li><a href="#s04-first-steps-first-signs">S04 - First Steps, First Signs</a> — Acts 3: The Miraculous Power of Jesus' Name</li>
+<li><a href="#s05-first-resistance">S05 - First Resistance</a> — Acts 4:1-31: The Church Acts with Boldness</li>
+<li><a href="#s06-danger-inside-the-camp">S06 - Danger Inside the Camp</a> — Acts 4:32-5:42: Problems Within, Persecutions Without</li>
+<li><a href="#s07-the-first-martyr-s-torch">S07 - The First Martyr&#x27;s Torch</a> — Acts 6-7: The First Christian Martyr</li>
+</ol>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a></li>
+<li>Stories: <a href="#signature-stories-by-leg">Signature Stories by Leg</a></li>
+</ul>
+</section>
+<section class="chapter" id="leg-ii-crossing-borders"><h2>Leg II - Crossing Borders</h2>
+
+<p><em>The gospel breaks out</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Sessions</strong></td>
+<td>Sessions 8-11</td>
+</tr>
+<tr>
+<td><strong>Territory</strong></td>
+<td>Acts 8:4-12:25</td>
+</tr>
+<tr>
+<td><strong>Guide</strong></td>
+<td>Peter / Philip</td>
+</tr>
+<tr>
+<td><strong>Time span</strong></td>
+<td>c. 10 years</td>
+</tr>
+</tbody>
+</table>
+<h3 class="sec">Sessions in this leg</h3>
+<ol>
+<li><a href="#s08-over-the-wall">S08 - Over the Wall</a> — Acts 8: Philip in Samaria; the Ethiopian Eunuch</li>
+<li><a href="#s09-the-hunter-becomes-the-herald">S09 - The Hunter Becomes the Herald</a> — Acts 9: The Persecutor Becomes the Preacher</li>
+<li><a href="#s10-the-door-swings-open-to-the-nations">S10 - The Door Swings Open to the Nations</a> — Acts 10: St. Peter's "Un-Kosher Picnic"</li>
+<li><a href="#s11-chains-broken-kingdoms-judged">S11 - Chains Broken, Kingdoms Judged</a> — Acts 11-12: The Church in Antioch</li>
+</ol>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a></li>
+<li>Stories: <a href="#signature-stories-by-leg">Signature Stories by Leg</a></li>
+</ul>
+</section>
+<section class="chapter" id="leg-iii-to-the-ends-of-the-earth"><h2>Leg III - To the Ends of the Earth</h2>
+
+<p><em>Paul's journeys</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Sessions</strong></td>
+<td>Sessions 12-20</td>
+</tr>
+<tr>
+<td><strong>Territory</strong></td>
+<td>Acts 13:1-28:31</td>
+</tr>
+<tr>
+<td><strong>Guide</strong></td>
+<td>Paul</td>
+</tr>
+<tr>
+<td><strong>Time span</strong></td>
+<td>c. 17 years</td>
+</tr>
+</tbody>
+</table>
+<h3 class="sec">Sessions in this leg</h3>
+<ol>
+<li><a href="#s12-first-voyage">S12 - First Voyage</a> — Acts 13-14: Paul's First Missionary Journey</li>
+<li><a href="#s13-council-and-second-voyage">S13 - Council and Second Voyage</a> — Acts 15-16: The Jerusalem Council; Paul's Second Journey</li>
+<li><a href="#s14-turning-the-world-upside-down">S14 - Turning the World Upside Down</a> — Acts 17: Converts and Conflicts</li>
+<li><a href="#s15-anchored-in-corinth">S15 - Anchored in Corinth</a> — Acts 18: Ministry in Corinth; the Third Journey Begins</li>
+<li><a href="#s16-riot-in-ephesus">S16 - Riot in Ephesus</a> — Acts 19: Ministry in Ephesus</li>
+<li><a href="#s17-the-road-to-jerusalem">S17 - The Road to Jerusalem</a> — Acts 20-21: Paul Heads for Jerusalem</li>
+<li><a href="#s18-the-prisoner-speaks">S18 - The Prisoner Speaks</a> — Acts 22:1-25:12: Paul Makes His Defense</li>
+<li><a href="#s19-before-kings-and-through-the-storm">S19 - Before Kings and Through the Storm</a> — Acts 25:13-28:31: Final Defense and Witness in Rome</li>
+<li><a href="#s20-journey-s-end-mission-unending">S20 - Journey&#x27;s End, Mission Unending</a> — Conclusion: Synthesis and commissioning</li>
+</ol>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a></li>
+<li>Stories: <a href="#signature-stories-by-leg">Signature Stories by Leg</a></li>
+</ul>
+</section>
+<section class="chapter" id="luke-acts-parallels"><h2>Luke–Acts Parallels</h2>
+
+<p>The intertextual key of the whole course: what Jesus <em>began</em> to do, he <em>continues</em> to do through Peter and Paul.</p>
+<h3 class="sec">Jesus // the Church</h3>
+<table>
+<thead>
+<tr>
+<th>Jesus (Luke)</th>
+<th>The Church (Acts)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prays at his baptism (Lk 3:21)</td>
+<td>The disciples pray awaiting Spirit-baptism (Acts 1:14)</td>
+</tr>
+<tr>
+<td>Anointed by the Spirit (Lk 3:21-22)</td>
+<td>The Church anointed at Pentecost (Acts 2:1-4)</td>
+</tr>
+<tr>
+<td>Heals a paralytic (Lk 5:17-26)</td>
+<td>Peter heals the lame man (Acts 3:1-10); Paul at Lystra (14:8-13); Eutychus (20:9-12)</td>
+</tr>
+<tr>
+<td>Four trials (Lk 22–23)</td>
+<td>Paul's four trials (Acts 23–26)</td>
+</tr>
+<tr>
+<td>Dying words: forgiveness, commendation (Lk 23:34, 46)</td>
+<td>Stephen's dying words (Acts 7:59-60)</td>
+</tr>
+<tr>
+<td>Pilate: "he has done nothing deserving death" (Lk 23:16, 22)</td>
+<td>Agrippa: "this man could have been set free" (Acts 26:32)</td>
+</tr>
+<tr>
+<td>Raises Jairus' daughter (Mk 5:35-43)</td>
+<td>Peter raises Tabitha (Acts 9:36-42)</td>
+</tr>
+</tbody>
+</table>
+<h3 class="sec">Peter // Paul</h3>
+<table>
+<thead>
+<tr>
+<th>Peter</th>
+<th>Paul</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Heals a man lame from birth (3:1-10)</td>
+<td>Heals a man lame from birth (14:8-13)</td>
+</tr>
+<tr>
+<td>"Men of Israel, why do you wonder?" (3:12)</td>
+<td>"Men, why are you doing this?" (14:15)</td>
+</tr>
+<tr>
+<td>Pentecost sermon (Acts 2)</td>
+<td>Pisidian Antioch sermon (Acts 13:16-41)</td>
+</tr>
+<tr>
+<td>Struck the magician Simon with rebuke (8:20-24)</td>
+<td>Struck Elymas with blindness (13:11)</td>
+</tr>
+<tr>
+<td>Freed from prison by an angel (12:6-11)</td>
+<td>Freed by an earthquake at Philippi (16:25-26)</td>
+</tr>
+</tbody>
+</table>
+<h3 class="sec">Teaching use</h3>
+<p>Introduce in <a href="#s01-reading-the-map">S01 - Reading the Map</a>, return to it at <a href="#s12-first-voyage">S12 - First Voyage</a>, and close the circle at <a href="#s19-before-kings-and-through-the-storm">S19 - Before Kings and Through the Storm</a>.</p>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a> · Thread: <a href="#thread-jesus-continues-his-work">Thread - Jesus continues his work</a></li>
+</ul>
+</section>
+<section class="chapter" id="signature-stories-by-leg"><h2>Signature Stories by Leg</h2>
+
+<p>One memorable image per session, for opening or closing the class.</p>
+<h3 class="sec">Leg I — <a href="#leg-i-base-camp-jerusalem">Leg I - Base Camp Jerusalem</a></h3>
+<ul>
+<li>Luke at his desk writing to Theophilus — <a href="#s01-reading-the-map">S01 - Reading the Map</a></li>
+<li>The waiting room of Acts 1 — <a href="#s02-prelude-to-power">S02 - Prelude to Power</a></li>
+<li>Tongues of fire; Babel running backwards — <a href="#s03-the-fire-falls">S03 - The Fire Falls</a></li>
+<li>The lame man leaping at the Beautiful Gate — <a href="#s04-first-steps-first-signs">S04 - First Steps, First Signs</a></li>
+<li>"They had been with Jesus"; the room shaken by Psalm 2 — <a href="#s05-first-resistance">S05 - First Resistance</a></li>
+<li>Ananias' fatal lie (the Achan parallel); Peter's shadow — <a href="#s06-danger-inside-the-camp">S06 - Danger Inside the Camp</a></li>
+<li>Stephen seeing heaven open, Saul holding the cloaks — <a href="#s07-the-first-martyr-s-torch">S07 - The First Martyr&#x27;s Torch</a></li>
+</ul>
+<h3 class="sec">Leg II — <a href="#leg-ii-crossing-borders">Leg II - Crossing Borders</a></h3>
+<ul>
+<li>Philip's desert-road hitchhike with the eunuch — <a href="#s08-over-the-wall">S08 - Over the Wall</a></li>
+<li>The blinding light on the Damascus road; "Brother Saul" — <a href="#s09-the-hunter-becomes-the-herald">S09 - The Hunter Becomes the Herald</a></li>
+<li>Peter's rooftop vision, the un-kosher picnic — <a href="#s10-the-door-swings-open-to-the-nations">S10 - The Door Swings Open to the Nations</a></li>
+<li>The angel and the sleeping prisoner; Rhoda at the gate — <a href="#s11-chains-broken-kingdoms-judged">S11 - Chains Broken, Kingdoms Judged</a></li>
+</ul>
+<h3 class="sec">Leg III — <a href="#leg-iii-to-the-ends-of-the-earth">Leg III - To the Ends of the Earth</a></h3>
+<ul>
+<li>Stoned at Lystra, then walking back into the city — <a href="#s12-first-voyage">S12 - First Voyage</a></li>
+<li>The Macedonian call; the midnight earthquake at Philippi — <a href="#s13-council-and-second-voyage">S13 - Council and Second Voyage</a></li>
+<li>The altar to the Unknown God in Athens — <a href="#s14-turning-the-world-upside-down">S14 - Turning the World Upside Down</a></li>
+<li>"I have many people in this city" — <a href="#s15-anchored-in-corinth">S15 - Anchored in Corinth</a></li>
+<li>The sons of Sceva routed; fifty thousand pieces of magic scrolls burned — <a href="#s16-riot-in-ephesus">S16 - Riot in Ephesus</a></li>
+<li>Eutychus falling from the window; Agabus and the belt — <a href="#s17-the-road-to-jerusalem">S17 - The Road to Jerusalem</a></li>
+<li>Forty men under oath; Felix trembling — <a href="#s18-the-prisoner-speaks">S18 - The Prisoner Speaks</a></li>
+<li>Storm, shipwreck, the viper, and the unhindered gospel in Rome — <a href="#s19-before-kings-and-through-the-storm">S19 - Before Kings and Through the Storm</a></li>
+<li>The baton in the room — <a href="#s20-journey-s-end-mission-unending">S20 - Journey&#x27;s End, Mission Unending</a></li>
+</ul>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a></li>
+</ul>
+</section>
+<section class="chapter" id="standard-session-architecture"><h2>Standard Session Architecture</h2>
+
+<p>Each session runs as <strong>one day on the trail</strong>. Same six blocks every time — the repetition is the pedagogy.</p>
+<table>
+<thead>
+<tr>
+<th>Slide</th>
+<th>Block</th>
+<th>Time</th>
+<th>What happens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Trailhead</strong></td>
+<td>5 min</td>
+<td>Recap the map; locate today's reading on the three-leg chart</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Story Script</strong></td>
+<td>15 min</td>
+<td>Narrative retelling of the passage as adventure — written to be told aloud</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Deeper Look</strong></td>
+<td>30 min</td>
+<td>Exegesis: Greek terms, OT connections, Luke–Acts parallels</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Greek / Hebrew terms</strong></td>
+<td>—</td>
+<td>The session's word list</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Guideposts</strong></td>
+<td>10 min</td>
+<td>CCC, Church Fathers, Vatican II and magisterial documents</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Campfire</strong></td>
+<td>10 min</td>
+<td>Application questions + a written "Dear Lord…" prayer</td>
+</tr>
+<tr>
+<td>—</td>
+<td><strong>Provisions</strong></td>
+<td>—</td>
+<td>Reading assignment for the next session</td>
+</tr>
+</tbody>
+</table>
+<p>Roughly 70 minutes of content in a 75–80 minute class.</p>
+<h3 class="sec">Why this shape</h3>
+<ul>
+<li>Story before exegesis — students meet the text as narrative before analysis.</li>
+<li>Guideposts anchor the class in the Church's reading, not private interpretation.</li>
+<li>Campfire converts study into prayer, which is where the material is meant to land.</li>
+</ul>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a></li>
+</ul>
+</section>
+<section class="chapter" id="the-four-pentecosts"><h2>The Four Pentecosts</h2>
+
+<p>Tongues mark four new beginnings — the Spirit falling on each group as the gospel crosses the next frontier.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>On whom</th>
+<th>Passage</th>
+<th>Session</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>The Jews at Jerusalem</td>
+<td>Acts 2</td>
+<td><a href="#s03-the-fire-falls">S03 - The Fire Falls</a></td>
+</tr>
+<tr>
+<td>2</td>
+<td>The Samaritans</td>
+<td>Acts 8</td>
+<td><a href="#s08-over-the-wall">S08 - Over the Wall</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td>The Gentiles (Cornelius' household)</td>
+<td>Acts 10</td>
+<td><a href="#s10-the-door-swings-open-to-the-nations">S10 - The Door Swings Open to the Nations</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td>The disciples of John at Ephesus</td>
+<td>Acts 19</td>
+<td><a href="#s16-riot-in-ephesus">S16 - Riot in Ephesus</a></td>
+</tr>
+</tbody>
+</table>
+<p>Each stage dismantles one more wall — see <a href="#thread-the-new-israel-without-borders">Thread - The New Israel without borders</a>.</p>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a></li>
+</ul>
+</section>
+<section class="chapter" id="source-acts-great-adventure-conversation"><h2>Source — Acts Great Adventure conversation</h2>
+
+<p><strong>Origin:</strong> shared Claude conversation, <em>"Acts of the Apostles as an epic adventure"</em>, 18 July 2026.
+<strong>URL:</strong> https://claude.ai/share/03f454ea-6485-4002-8054-200af0b007d3
+<strong>Underlying source:</strong> <em>Acts: The Spread of the Kingdom</em> (Great Adventure study, Jeff Cavins) — Sessions 1–20 as supplied in the original project files.
+<strong>Transferred from:</strong> <code>Acts_Great_Adventure_20_Sessions_Teachers_Guide.md</code> (downloaded from the conversation).</p>
+<h3 class="sec">What transferred</h3>
+<ul>
+<li>The master framework: three expedition legs, the map/compass/fire metaphor, the five golden threads.</li>
+<li>All twenty sessions in full — Trailhead, Story Script, Deeper Look, Greek/Hebrew terms, Guideposts, Campfire, Provisions.</li>
+<li>The three appendix tables: the Greek word bank, the CCC master list by session, and the four Pentecosts.</li>
+</ul>
+<h3 class="sec">Flagged inferences</h3>
+<p>The guide's own note on sources: two passages fill narrative detail from the text of Acts itself where the workbook excerpts were summary-level — the riot/trial details in <a href="#s05-first-resistance">S05 - First Resistance</a>, and parts of the courtroom sequence in <a href="#s18-the-prisoner-speaks">S18 - The Prisoner Speaks</a> (the forty conspirators, Felix's hope of a bribe). Everything else traces to the workbook's talk notes, study questions and boxes.</p>
+<h3 class="sec">Structural note</h3>
+<p>The guide numbers the sessions slightly differently from the framework overview: Session 11 covers Acts 11–12, Session 19 covers Acts 25:13–28:31 (including the storm and Rome), and Session 20 is a synthesis and commissioning rather than a new passage. These notes follow the guide.</p>
+<h3 class="sec">Links</h3>
+<ul>
+<li>MOC: <a href="#acts-great-adventure-moc">Acts - Great Adventure MOC</a></li>
+</ul>
+</section>
+</main>
+
+<footer class="page">
+  A twenty-session journey through the Acts of the Apostles, with thematic threads and reference schemas, from personal study notes.
+</footer>
