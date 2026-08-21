@@ -1,0 +1,648 @@
+<title>BTh Pune — Foundations of Catholic Theology</title>
+<style>
+  :root {
+    --ink: #ede3cf; --ink-soft: #cdbfa4; --paper: #211c16; --paper-raised: #2a241c;
+    --line: rgba(237,227,207,0.16); --wine: #c17a4d; --wine-soft: #c17a4d1c;
+    --gold: #d6ad5c; --gold-soft: #d6ad5c1a; --muted: #a3947a;
+    color-scheme: dark;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --ink: #2a2318; --ink-soft: #4d4330; --paper: #f4ecdb; --paper-raised: #ffffff;
+      --line: rgba(42,35,24,0.15); --wine: #9c4f27; --wine-soft: #9c4f2714;
+      --gold: #8a6414; --gold-soft: #8a641414; --muted: #7a6c52; color-scheme: light;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #ede3cf; --ink-soft: #cdbfa4; --paper: #211c16; --paper-raised: #2a241c;
+    --line: rgba(237,227,207,0.16); --wine: #c17a4d; --wine-soft: #c17a4d1c;
+    --gold: #d6ad5c; --gold-soft: #d6ad5c1a; --muted: #a3947a;
+  }
+  :root[data-theme="light"] {
+    --ink: #2a2318; --ink-soft: #4d4330; --paper: #f4ecdb; --paper-raised: #ffffff;
+    --line: rgba(42,35,24,0.15); --wine: #9c4f27; --wine-soft: #9c4f2714;
+    --gold: #8a6414; --gold-soft: #8a641414; --muted: #7a6c52;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 20px; line-height: 1.7; -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--wine-soft); }
+  h1, h2, h3, h4 {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "URW Palladio", serif;
+    text-wrap: balance; font-weight: 400; color: var(--gold); margin: 0;
+  }
+  p { margin: 0 0 1.1em; max-width: 42em; }
+  strong { color: var(--ink); font-weight: 700; }
+  em { color: var(--wine); font-style: italic; }
+  a { color: var(--wine); }
+  header.hero { padding: 60px 24px 40px; text-align: center; border-bottom: 1px solid var(--line); }
+  header.hero .eyebrow { font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--wine); margin-bottom: 12px; }
+  header.hero h1 { font-size: clamp(28px, 4.4vw, 40px); max-width: 22ch; margin: 0 auto 8px; font-style: italic; }
+  header.hero .sub { max-width: 46em; margin: 0 auto; color: var(--ink-soft); font-size: 16.5px; }
+  nav.chapters {
+    position: sticky; top: 0; z-index: 10; display: flex; gap: 2px; overflow-x: auto;
+    background: var(--paper); border-bottom: 1px solid var(--line); padding: 0 12px;
+  }
+  nav.chapters a {
+    flex: none; padding: 12px 13px; font-size: 12.5px; text-decoration: none; color: var(--muted);
+    white-space: nowrap; border-bottom: 2px solid transparent;
+  }
+  nav.chapters a:hover { color: var(--wine); border-color: var(--wine-soft); }
+  main { max-width: 780px; margin: 0 auto; padding: 0 24px 40px; }
+  section.chapter { padding: 44px 0 30px; border-bottom: 1px solid var(--line); scroll-margin-top: 50px; }
+  section.chapter:last-of-type { border-bottom: none; }
+  section.chapter h2 { font-size: clamp(21px, 2.8vw, 26px); margin-bottom: 14px; font-style: italic; }
+  h3.sec { font-size: 18.5px; color: var(--gold); margin: 24px 0 8px; }
+  ul, ol { padding-left: 1.3em; margin: 0 0 1.1em; max-width: 42em; }
+  li { margin-bottom: 7px; }
+  table { border-collapse: collapse; width: 100%; margin: 14px 0; font-size: 14.5px; }
+  th, td { border: 1px solid var(--line); padding: 7px 9px; text-align: left; vertical-align: top; }
+  th { background: var(--paper-raised); color: var(--gold); }
+  hr { border: none; border-top: 1px solid var(--line); margin: 22px 0; }
+  .callout {
+    background: var(--paper-raised); border: 1px solid var(--line); border-left: 3px solid var(--gold);
+    border-radius: 3px; padding: 14px 18px; margin: 16px 0;
+  }
+  .callout p { margin: 0 0 6px; font-size: 15.5px; color: var(--ink-soft); }
+  .callout p:last-child { margin-bottom: 0; }
+  .callout-label { font-size: 12px !important; letter-spacing: 0.05em; text-transform: uppercase; color: var(--gold) !important; margin-bottom: 6px !important; }
+  footer.page { max-width: 780px; margin: 0 auto; padding: 34px 24px 60px; font-size: 13.5px; color: var(--muted); }
+</style>
+
+<header class="hero">
+  <p class="eyebrow">BTh &middot; Jnana-Deepa Pontifical Athenaeum, Pune</p>
+  <h1>Foundations of Catholic Theology</h1>
+  <p class="sub">New Testament Background, Indian Christology, Sacraments, Pneumatology, Ecclesiology, Contextual and Liberation Theologies, Spirituality, Church History, and Old Testament Foundations</p>
+</header>
+
+<nav class="chapters">
+  <a href="#000-bth-pune-foundations-of-catholic-theolog">☩ BTh Pune — Foundations of Catholic Theology (Master Index)</a>
+  <a href="#01-new-testament-background-and-world">New Testament Background and World</a>
+  <a href="#02-indian-christian-theology-and-inculturati">Indian Christian Theology and Inculturation</a>
+  <a href="#03-christology-and-indian-christology">Christology and Indian Christology</a>
+  <a href="#04-the-sacraments">The Sacraments</a>
+  <a href="#05-priesthood">Priesthood</a>
+  <a href="#06-holy-spirit-pneumatology">Holy Spirit (Pneumatology)</a>
+  <a href="#07-ecclesiology-and-ecclesial-documents">Ecclesiology and Ecclesial Documents</a>
+  <a href="#08-contextual-and-liberation-theologies">Contextual and Liberation Theologies</a>
+  <a href="#09-christian-spirituality-and-mary">Christian Spirituality and Mary</a>
+  <a href="#10-church-history-and-the-msfs">Church History and the MSFS</a>
+  <a href="#11-old-testament-foundations-prophets-wisdom">Old Testament Foundations — Prophets, Wisdom, Anthropology</a>
+
+</nav>
+
+<main>
+<section class="chapter" id="000-bth-pune-foundations-of-catholic-theolog"><h2>☩ BTh Pune — Foundations of Catholic Theology (Master Index)</h2>
+
+<div class="callout callout-info"><p class="callout-label">Method</p><p>Manual method — doctrine in ordered topics with biblical and magisterial supports. Strong for exams; presents results rather than the operations behind them. Audit: <em>method audit §4</em>.</p></div>
+
+<div class="callout callout-abstract"><p class="callout-label">What this is</p><p>Thematic study notes distilled from the 96-source "BTh Pune Notes" NotebookLM notebook. The raw notebook holds class notes, articles, and exam papers across the whole BTh syllabus; these notes reorganize that material into coherent subjects. Every note is atomic and linked — start here, follow the <code>&lt;em&gt;wikilinks&lt;/em&gt;</code>.</p></div>
+
+<h3 class="sec">🧭 The notes</h3>
+<ol>
+<li><a href="#01-new-testament-background-and-world">01 - New Testament Background and World</a> — geography of Palestine, political &amp; Jewish world, languages, philosophical schools</li>
+<li><a href="#02-indian-christian-theology-and-inculturati">02 - Indian Christian Theology and Inculturation</a> — de Nobili, Abhishiktananda, Christian Advaita, Jordan–Tiber–Ganges, avatara vs Incarnation</li>
+<li><a href="#03-christology-and-indian-christology">03 - Christology and Indian Christology</a> — fullness of revelation, four margas, Soares-Prabhu's Jesus</li>
+<li><a href="#04-the-sacraments">04 - The Sacraments</a> — Reconciliation, Anointing, Baptism, Confirmation, Eucharist (+ Indian understanding)</li>
+<li><a href="#05-priesthood">05 - Priesthood</a> — biblical foundation, history, spirituality, Pastores Dabo Vobis</li>
+<li><a href="#06-holy-spirit-pneumatology">06 - Holy Spirit (Pneumatology)</a> — OT/NT, the Paraclete, Indian pneumatology, symbols</li>
+<li><a href="#07-ecclesiology-and-ecclesial-documents">07 - Ecclesiology and Ecclesial Documents</a> — models of the Church, Vatican II, papal documents</li>
+<li><a href="#08-contextual-and-liberation-theologies">08 - Contextual and Liberation Theologies</a> — Dalit, Subaltern, Feminist, Eco, Social Teaching, pluralism</li>
+<li><a href="#09-christian-spirituality-and-mary">09 - Christian Spirituality and Mary</a> — schools, spiritual theology, Marian spirituality, John in Indian culture</li>
+<li><a href="#10-church-history-and-the-msfs">10 - Church History and the MSFS</a> — Indian &amp; medieval history, Fr Mermier, MSFS pioneers to India</li>
+<li><a href="#11-old-testament-foundations-prophets-wisdom">11 - Old Testament Foundations (Prophets, Wisdom, Anthropology)</a> — the Prophets, Wisdom Literature, imago Dei</li>
+</ol>
+<h3 class="sec">📄 Per-source notes</h3>
+<p>Every substantive source has its own note (69 total) — see <em>000 - Sources Index</em> in the <code>Sources/</code> subfolder.</p>
+<h3 class="sec">🔗 Related in this vault</h3>
+<ul>
+<li><em>George Soares-Prabhu</em> · <em>Samuel Rayan</em> — figures cited throughout</li>
+<li><em>000 - Fr Jose Maniparambil - Understanding the Bible (MOC)</em> — companion Bible-study set</li>
+</ul>
+<div class="callout callout-note"><p class="callout-label">Scope</p><p>The notebook had ~96 sources, many being class scratch, exam papers, and duplicates. These 11 notes cover the substantive theological material organized by subject, not a one-note-per-file dump. Source-grounded from NotebookLM (queried 2026-07-23).</p></div>
+</section>
+<section class="chapter" id="01-new-testament-background-and-world"><h2>New Testament Background and World</h2>
+
+<div class="callout callout-info"><p class="callout-label">Part of &lt;a href=&quot;#000-bth-pune-foundations-of-catholic-theolog&quot;&gt;000 - BTh Pune - Foundations of Catholic Theology (MOC)&lt;/a&gt;</p></div>
+
+<h3 class="sec">I. General introduction to the NT</h3>
+<ul>
+<li>Name "New Testament": from Irenaeus (late 2nd c.), used by Origen to distinguish Christian from Jewish scriptures; based on 2 Cor 3:6. "New" = fulfilment of God's promises to Israel, not abolition of the "Old."</li>
+<li><strong>27 books</strong>: Gospels (Mt, Mk, Lk, Jn), Acts, Pauline Epistles, Catholic Epistles, Revelation. Unity: one God, one Jewish-Christian tradition, one story (creation → new creation).</li>
+<li><strong>Four dimensions of NT theology</strong>: historical (life, death, resurrection of Jesus), literary (genres), theological (faith seeking to understand God's saving acts), canonical (normative collection).</li>
+</ul>
+<h3 class="sec">II. Geography of Palestine</h3>
+<ul>
+<li><strong>Fertile Crescent</strong>: well-watered arc from the Persian Gulf up the Tigris–Euphrates, across Syria/Palestine, down to the Nile Delta. Palestine = <strong>land-bridge between Asia and Africa</strong> → trade route + battleground.</li>
+<li><strong>Five longitudinal zones (W→E)</strong>:</li>
+<li><strong>Coastal Plain</strong> — flat, fertile, few harbours (Israelites poor seafarers).</li>
+<li><strong>Central Mountain Range</strong> — Galilee (N), Samaria (centre), Judah/Judea (S); most biblical history here.</li>
+<li><strong>Rift/Jordan Valley</strong> — deepest depression on earth; Sea of Galilee, Jordan River, Dead Sea (1,300 ft below sea level, 26–33% salt, no outlet).</li>
+<li><strong>Trans-Jordanian Plateau</strong> — Decapolis, Perea, Ammon, Moab, Edom.</li>
+<li><strong>Desert</strong> — Syro-Arabian desert; Negeb (around Beersheba).</li>
+</ul>
+<h3 class="sec">III. Political world of the NT</h3>
+<ul>
+<li><strong>Greek era (332–63 BCE)</strong>: Alexander → <strong>Hellenization</strong>; Ptolemies (Egypt) vs Seleucids (Syria); <strong>Antiochus IV Epiphanes</strong> desecrates the Temple → <strong>Maccabean Revolt</strong> → <strong>Hasmonean Dynasty</strong> (142–63 BCE).</li>
+<li><strong>Roman era (63 BCE→)</strong>: <strong>Pompey</strong> takes Jerusalem 63 BCE; <strong>Augustus</strong> and the <em>Pax Romana</em>; <strong>Pontius Pilate</strong> (26–36 CE), procurator who condemned Jesus.</li>
+<li><strong>Herodian dynasty</strong>: <strong>Herod the Great</strong> (37–4 BCE, Idumean, rebuilt the Temple, massacre of the innocents); sons — <strong>Archelaus</strong> (Judea, deposed), <strong>Herod Antipas</strong> (Galilee/Perea, executed the Baptist, mocked Jesus), <strong>Philip</strong> (built Caesarea Philippi); <strong>Herod Agrippa I</strong> (killed James, imprisoned Peter, Acts 12).</li>
+<li><strong>Sanhedrin</strong>: supreme council of chief priests, scribes, elders under the High Priest.</li>
+</ul>
+<h3 class="sec">IV. Jewish world and its languages</h3>
+<ul>
+<li>Cosmopolitan, multilingual (trilingual titulus on the Cross: Hebrew, Latin, Greek).</li>
+<li><strong>Aramaic</strong> — mother tongue of most Jews incl. Jesus (post-exile); OT paraphrased as <em>Targums</em>.</li>
+<li><strong>Greek</strong> — <em>lingua franca</em>; "Galilee of the Gentiles," marketplace, non-Jews.</li>
+<li><strong>Hebrew</strong> — near-dead for ordinary people; sacred language of Scripture, rabbis, synagogue.</li>
+<li><strong>Latin</strong> — Roman officials, soldiers, law; few loanwords (centurion, denarius).</li>
+<li><strong>Sects/groups</strong>: Pharisees, Sadducees, Essenes, Zealots, Scribes, Herodians, Samaritans.</li>
+</ul>
+<h3 class="sec">V. Philosophical schools (Greco-Roman)</h3>
+<ul>
+<li><strong>Platonism</strong> — dualist; material world a shadow; free the soul from the body.</li>
+<li><strong>Cynics</strong> — behaviour over theory; frugality, nature, virtue; pioneered the <em>diatribe</em>.</li>
+<li><strong>Epicureans</strong> — sensation as truth; materialist atoms; gods indifferent; death final.</li>
+<li><strong>Stoicism</strong> — universe as one organism energized by divine reason/<strong>Logos</strong>; live by nature; Paul at Athens (Acts 17:18).</li>
+<li><strong>Sophism</strong> — rhetoric for a fee; relativism; "man is the measure of all things" (Protagoras).</li>
+<li><strong>Gnosticism</strong> — 2nd c.; matter evil, soul an alien spark; secret <em>gnosis</em>; denies the Incarnation and Jesus' physical death.</li>
+</ul>
+<h3 class="sec">Connected</h3>
+<p><a href="#02-indian-christian-theology-and-inculturati">02 - Indian Christian Theology and Inculturation</a> · <a href="#000-bth-pune-foundations-of-catholic-theolog">000 - BTh Pune - Foundations of Catholic Theology (MOC)</a></p>
+</section>
+<section class="chapter" id="02-indian-christian-theology-and-inculturati"><h2>Indian Christian Theology and Inculturation</h2>
+
+<div class="callout callout-info"><p class="callout-label">Part of &lt;a href=&quot;#000-bth-pune-foundations-of-catholic-theolog&quot;&gt;000 - BTh Pune - Foundations of Catholic Theology (MOC)&lt;/a&gt;</p></div>
+
+<h3 class="sec">1. Pioneers and reformers</h3>
+<ul>
+<li><strong>Thomas Stephens</strong> (1549–1619) — Jesuit, "Father of Inculturation in India"; wrote the <strong>Khristapurana</strong>, a biblical epic in Marathi/Konkani in the Vaishnavite literary tradition. Substituted Indian terms: <em>puja</em> (sacrifice), <em>jnana-snana</em> "bath of wisdom" (baptism), <em>adipurushache karma</em> (original sin), <em>Vaikunthnatha</em> (Jesus). Avoided <em>Veda</em>/<em>avatara</em>.</li>
+<li><strong>Robert de Nobili</strong> (1577–1656) — Italian Jesuit, Madurai 1606; lived as a Hindu <strong>sannyasi</strong> (ochre robe, vegetarian, Sanskrit + Tamil). <strong>Accommodation method</strong>: kept Indian social customs (kudumi tuft, sandal paste, sacred thread) as cultural not idolatrous. Called the Gospel <em>Satya Veda</em> (True Veda).</li>
+</ul>
+<h3 class="sec">2. 19th-century inculturation and Hindu reformers</h3>
+<ul>
+<li><strong>Raja Ram Mohan Roy</strong> (1774–1833) — founder of Brahmo Samaj; drawn to the Sermon on the Mount but rejected Christ's deity and the Trinity.</li>
+<li><strong>K.C. Sen</strong> (1838–1884) — the <strong>"Asiatic Christ"</strong> (Jesus fully oriental, belongs to India); <strong>Divine Humanity</strong>; presented the Trinity through <strong>Saccidananda</strong>.</li>
+</ul>
+<h3 class="sec">3. Abhishiktananda, Bede Griffiths, and "Christian Advaita"</h3>
+<ul>
+<li><strong>Swami Abhishiktananda</strong> (Henri Le Saux) — French Benedictine, co-founded Saccidananda Ashram; synthesis in the "cave of the heart" (<em>hrdguhayam</em>); the Trinitarian mystery as the culmination of the Advaitic experience.</li>
+<li><strong>Bede Griffiths</strong> — English Benedictine, led Saccidananda Ashram; Christian doctrine stands between Sankara's monism (<em>jnana</em>) and Ramanuja's dualistic devotion (<em>bhakti</em>).</li>
+<li><strong>Christian Advaita</strong>: non-dual <strong>but distinct</strong> — a <strong>communion of love (koinonia)</strong> where distinctiveness remains; identity of communion, not absolute identity of being. Against the total absorption implied by <em>Aham Brahmasmi</em>.</li>
+</ul>
+<h3 class="sec">4. Harmony of biblical experience with Vedic concepts</h3>
+<ul>
+<li><strong>Trinity as Saccidananda</strong> (Sat-Cit-Ananda): Father = <em>Sat</em> (Being/Source), Son/Logos = <em>Cit</em> (Wisdom/Consciousness), Spirit = <em>Ananda</em> (Bliss).</li>
+<li><strong>Johannine "I AM" (<em>Ego Eimi</em>)</strong> read with Upanishadic <strong>Aham Brahmasmi</strong> — Jesus's self-awakening and unity with the Father.</li>
+<li><strong>Logos / Word</strong> harmonized with <strong>Om / Adisabda</strong> (primordial sound of true existence).</li>
+</ul>
+<h3 class="sec">5. The Jordan, the Tiber and the Ganges (Raimon Panikkar)</h3>
+<p>Three rivers = three phases of Christian self-consciousness:
+- <strong>Jordan → Exclusivism</strong>: Jewish origins, water baptism, historical faith; salvation within boundaries.
+- <strong>Tiber → Inclusivism</strong>: European Christendom, institution, superior "fulfilment" of other religions.
+- <strong>Ganges → Pluralism</strong>: post-colonial, dialogical; religiousness as a universal human dimension; confident pluralism without conquest.</p>
+<h3 class="sec">6. Hindu avatara vs Christian Incarnation</h3>
+<ul>
+<li><strong>Worldview</strong>: <em>avatara</em> = cyclic, repeated descents across <em>yugas</em> to restore <em>dharma</em>; <strong>Incarnation</strong> = once-for-all, linear, eschatological.</li>
+<li><strong>Nature</strong>: <em>avataras</em> take bodies of "pure matter" (<em>suddha-sattva</em>), free of <em>karma</em> and real suffering; <strong>Christ</strong> takes a truly limited human nature (pain, hunger, death).</li>
+<li><strong>Crucified Avatar / Prema-Avatar</strong>: Indian Christian theology adopts and modifies <em>avatara</em> — Jesus' uniqueness in <strong>kenosis</strong> and redemptive suffering love on the Cross, vs the triumphant wicked-destroying avataras.</li>
+</ul>
+<h3 class="sec">7. Theological perspectives on inculturation</h3>
+<ul>
+<li>More than adaptation: transforming a culture from within by the Gospel; rooted in the <strong>Incarnation</strong> — the Word takes flesh in local cultures without colonial imposition.</li>
+<li><strong>Marga integration</strong>: Christology mapped onto the paths to <em>moksha</em> — <em>jnana</em> (knowledge), <em>bhakti</em> (devotion), <em>karma</em> (action) — culminating in Jesus's <strong>Prema Marga (path of love)</strong>.</li>
+<li><strong>Subaltern focus</strong>: inculturation in India joins liberation — poverty and caste, a "contrast community" uplifting Dalits and Tribals. See <a href="#08-contextual-and-liberation-theologies">08 - Contextual and Liberation Theologies</a>.</li>
+</ul>
+<h3 class="sec">Connected</h3>
+<p><a href="#01-new-testament-background-and-world">01 - New Testament Background and World</a> · <a href="#03-christology-and-indian-christology">03 - Christology and Indian Christology</a> · <a href="#08-contextual-and-liberation-theologies">08 - Contextual and Liberation Theologies</a> · <em>George Soares-Prabhu</em></p>
+</section>
+<section class="chapter" id="03-christology-and-indian-christology"><h2>Christology and Indian Christology</h2>
+
+<div class="callout callout-info"><p class="callout-label">Part of &lt;a href=&quot;#000-bth-pune-foundations-of-catholic-theolog&quot;&gt;000 - BTh Pune - Foundations of Catholic Theology (MOC)&lt;/a&gt;</p></div>
+
+<h3 class="sec">1. Christ as the fullness of revelation (JP II / Dei Verbum)</h3>
+<ul>
+<li>The most intimate truth about God and salvation shines forth in Christ — <strong>mediator and fullness of all revelation</strong>.</li>
+<li>The words/events of Jesus are limited human realities, but their source is the divine Person of the incarnate Word → definitive, complete revelation.</li>
+<li><strong>Uniqueness</strong>: Christ the "lodestar" of humanity; the Church necessary for salvation — not merely one complementary way among religions.</li>
+<li><strong>Grace outside the Church</strong>: sincere seekers can reach eternal life under grace, but are in an "unsatisfactory situation" compared to those with the fullness of the means of salvation.</li>
+</ul>
+<h3 class="sec">2. Significance of Jesus in the Indian pluralistic context</h3>
+<ul>
+<li>India = deep religious pluralism; Indian Christology asks <strong>where</strong> Jesus is on the Indian road, not only <strong>who</strong> he is dogmatically.</li>
+<li>Significance discovered through <strong>interreligious relationships</strong> and experience.</li>
+<li><strong>The marginalized Jesus</strong>: identifies with the suffering of Dalits, Tribals, women → empowerment for liberation.</li>
+<li>Uniqueness claims = <strong>symbolic statements of faith</strong>, never framed in opposition to other religions.</li>
+</ul>
+<h3 class="sec">3. "One Jesus and Many Expressions"</h3>
+<p>NT has no single exhaustive title — manifold expressions per community need:
+- <strong>Mark</strong> — the Suffering Messiah (Son of Man who must suffer).
+- <strong>Matthew</strong> — the New Moses (fulfilment, authoritative teacher of the new law).
+- <strong>Luke</strong> — the Prophet (universal mission, option for the poor).
+- <strong>John</strong> — the Revealer of the Father (intimate Father–Son love, believers share divine life).</p>
+<h3 class="sec">4. Indian Christology — the four margas</h3>
+<ul>
+<li><strong>Jnana Marga → Advaita Christology</strong>: ontological unity with the Divine; Jesus as Wisdom, the Awakened One, <em>Jivanmukta</em>, <em>Yogi</em>, the <strong>Cit of Saccidananda</strong>; goal = <em>koinonia</em>, not absorption.</li>
+<li><strong>Bhakti Marga → Avatar Christology</strong>: loving surrender to a personal God; Jesus as Grace, personal Saviour, <em>Guru-Mauli</em>, <strong>Antaryamin</strong> (indwelling Lord), the <strong>Crucified Avatar</strong> (historical, permanent, kenotic — unlike effortless Hindu avatars).</li>
+<li><strong>Karma Marga → Abba Christology</strong>: prophetic action, justice; Jesus as the Kingdom, the Prophet, Suffering Servant (<em>Vedanamurti Sevak</em>), the <em>Dalit</em>, the <strong>Supreme Satyagrahi</strong>.</li>
+<li><strong>Prema Marga → integrating path</strong>: love (<em>agape</em>) as the confluence of intellect, devotion, action; Jesus as Incarnate Love (<em>Prema Avatar</em>), <strong>The Way (Marga) itself</strong>.</li>
+</ul>
+<h3 class="sec">5. Soares-Prabhu's portraits of Jesus</h3>
+<ul>
+<li><strong>Jesus and the Poor</strong>: responds to poverty out of the religious experience of God as liberative power; identifies with the poor (wandering, begging, outcasts); effective concern via the Love Commandment; the Kingdom as a contrast community with no rich or poor.</li>
+<li><strong>Jesus the Listener</strong>: the "sacred art of listening" — attentive to <em>Abba</em> in prayer and to humanity; compassionate listening (Zacchaeus, the blind man, the Samaritan woman) affirms dignity, breaks barriers.</li>
+<li><strong>Spirituality of Solidarity</strong>: rooted in the <em>Abba</em> experience → all are siblings; solidarity with the powerless + confrontation with the powerful → the Cross as the natural outcome.</li>
+<li><strong>Table Fellowship</strong>: dining with tax collectors/sinners = revolutionary; new holiness of mercy not ritual purity; "acted parable" of the Kingdom; direct challenge to caste — caste discrimination incompatible with the Eucharist. See <a href="#04-the-sacraments">04 - The Sacraments</a>, <em>George Soares-Prabhu</em>.</li>
+</ul>
+<h3 class="sec">Connected</h3>
+<p><a href="#02-indian-christian-theology-and-inculturati">02 - Indian Christian Theology and Inculturation</a> · <a href="#04-the-sacraments">04 - The Sacraments</a> · <a href="#08-contextual-and-liberation-theologies">08 - Contextual and Liberation Theologies</a> · <em>George Soares-Prabhu</em></p>
+</section>
+<section class="chapter" id="04-the-sacraments"><h2>The Sacraments</h2>
+
+<div class="callout callout-info"><p class="callout-label">Part of &lt;a href=&quot;#000-bth-pune-foundations-of-catholic-theolog&quot;&gt;000 - BTh Pune - Foundations of Catholic Theology (MOC)&lt;/a&gt;</p></div>
+
+<h3 class="sec">1. Reconciliation (Penance) — Sacrament of Healing</h3>
+<ul>
+<li><strong>Bible</strong>: OT <em>shub</em> (return to God) — David (2 Sam 12:13), Ps 51; NT — healing the paralytic (Mk 2:1–12); institution "Receive the Holy Spirit… whose sins you forgive…" (Jn 20:22–23; Mt 16:19; 18:18).</li>
+<li><strong>Theology</strong>: Christ the <em>Ursakrament</em> of the Father's mercy; priest <em>in persona Christi</em> (Judge, Healer, Father, Teacher). Three models: therapeutic, juridical, relational.</li>
+<li><strong>Matter</strong> = acts of the penitent: contrition, confession, satisfaction. <strong>Form</strong> = absolution ("…I absolve you from your sins…").</li>
+<li><strong>Effects</strong>: forgiveness of sins, reconciliation with God and Church, remission of punishment, peace of conscience, spiritual strength.</li>
+<li><strong>Indian</strong>: sin ~ Hindu <em>shadripus</em> (six enemies) / Buddhist <em>tanha</em>; stress on <strong>communitarian/structural sin</strong> (caste, exploitation, bonded labour); reconciliation builds Kingdom communities across caste/class.</li>
+</ul>
+<h3 class="sec">2. Anointing of the Sick — Sacrament of Healing</h3>
+<ul>
+<li><strong>Bible</strong>: Twelve anoint the sick with oil (Mk 6:7–13); James 5:14–16.</li>
+<li><strong>Theology</strong>: Church as healing community, Christ the Divine Physician; part of <em>sacramentum exeuntium</em> with Penance + Viaticum.</li>
+<li><strong>Matter</strong> = Oil of the Sick (<em>Oleum Infirmorum</em>) on forehead and hands. <strong>Form</strong> = "Through this holy anointing…"</li>
+<li><strong>Effects</strong>: strength, peace, courage; forgiveness of sins (if unable to confess); union with Christ's Passion; sometimes physical healing.</li>
+<li><strong>Indian</strong>: sickness as disruption of cosmic order (<em>Rta</em>) / <em>karma</em>; integral (body + spirit) healing; communal celebration against fatalism.</li>
+</ul>
+<h3 class="sec">3. Baptism — Sacrament of Initiation ("gateway", "identity card")</h3>
+<ul>
+<li><strong>Bible</strong>: Jesus' baptism (Mt 3:13–17); Great Commission (Mt 28:18–20); born of water and Spirit (Jn 3:1–8); dying/rising with Christ (Rom 6:1–11).</li>
+<li><strong>Theology</strong>: incorporation into the Paschal Mystery; regeneration; indelible character; equality of all (Gal 3:28); Body of Christ.</li>
+<li><strong>Matter</strong> = water (immersion/pouring ×3). <strong>Form</strong> = "I baptize you in the Name of the Father and of the Son and of the Holy Spirit."</li>
+<li><strong>Effects</strong>: cleansing of original + personal sin, adoptive sonship, indelible mark, incorporation into the Church.</li>
+<li><strong>Indian</strong>: <em>Jnana Snana</em> (bath of enlightenment) / <em>Snana Samskar</em>; parallels Ganges purification; <strong>challenges caste</strong> — all equal in Christ.</li>
+</ul>
+<h3 class="sec">4. Confirmation — Sacrament of Intensification</h3>
+<ul>
+<li><strong>Bible</strong>: promise of the Paraclete (Jn 14–16); Pentecost (Acts 2:1–4); laying on of hands (Acts 8:14–17; 19:1–7).</li>
+<li><strong>Theology</strong>: perfects baptismal grace; seven gifts of the Spirit; mature witness, "soldier of Christ"; indelible character.</li>
+<li><strong>Matter</strong> = anointing with Sacred Chrism on the forehead with laying on of the hand. <strong>Form</strong> = "Be sealed with the Gift of the Holy Spirit."</li>
+<li><strong>Effects</strong>: outpouring of the Spirit, increase of the seven gifts, strength to proclaim the faith prophetically.</li>
+<li><strong>Indian</strong>: for subaltern/tribal communities, the Spirit = liberating power against subjugation; prophetic witness.</li>
+</ul>
+<h3 class="sec">5. Eucharist — "source and summit"</h3>
+<ul>
+<li><strong>Bible</strong>: institution (Lk 22:7–20; Mt 26; Mk 14; 1 Cor 11:23–26); Bread of Life (Jn 6); Emmaus (Lk 24:13–35).</li>
+<li><strong>Theology</strong>: sacrifice, memorial (<em>anamnesis</em>), communitarian meal; <strong>Transubstantiation</strong>; the Spirit effects the change through the <strong>Epiclesis</strong>.</li>
+<li><strong>Matter</strong> = wheat bread + grape wine. <strong>Form</strong> = words of Institution.</li>
+<li><strong>Effects</strong>: communion with Christ and Church, nourishment, cleansing of venial sins, mission to serve the poor.</li>
+<li><strong>Indian Christian understanding</strong> — <strong>Khrist-Preet-Samskar</strong> (Sacrament of Love), integrating the three <em>margas</em>:</li>
+<li><strong>Jnana Marga</strong> (<em>Khrist-Pragatya-Samskar</em>) — Real Presence + Word; "Christian Advaita" = loving communion, not absorption.</li>
+<li><strong>Bhakti Marga</strong> (<em>Khrist-Prasad-Samskar</em>) — Eucharist as <em>Prasad</em>; communion with the <em>Antaryami</em> (indwelling Lord).</li>
+<li><strong>Karma Marga</strong> (<em>Khrist-Yagna-Samskar</em>) — Christ's <em>yagna</em> → <em>Nishkama Karma</em> (selfless service), <em>Lokasamgraha</em> (welfare of all); share bread, fight injustice.</li>
+<li><strong>Socio-cultural</strong>: Jesus' table fellowship shattered purity laws → prophetic critique of caste; one table for Dalits and all. See <a href="#03-christology-and-indian-christology">03 - Christology and Indian Christology</a>.</li>
+</ul>
+<h3 class="sec">Connected</h3>
+<p><a href="#05-priesthood">05 - Priesthood</a> · <a href="#06-holy-spirit-pneumatology">06 - Holy Spirit (Pneumatology)</a> · <a href="#03-christology-and-indian-christology">03 - Christology and Indian Christology</a> · <a href="#000-bth-pune-foundations-of-catholic-theolog">000 - BTh Pune - Foundations of Catholic Theology (MOC)</a></p>
+</section>
+<section class="chapter" id="05-priesthood"><h2>Priesthood</h2>
+
+<div class="callout callout-info"><p class="callout-label">Part of &lt;a href=&quot;#000-bth-pune-foundations-of-catholic-theolog&quot;&gt;000 - BTh Pune - Foundations of Catholic Theology (MOC)&lt;/a&gt;</p></div>
+
+<h3 class="sec">1. Biblical foundation</h3>
+<ul>
+<li><strong>OT</strong>: evolution from "natural priesthood" (patriarchs, kings — Noah, Abraham, David) to "professional" Levitical/Aaronic priesthood (cult, sacrifice, Law). Whole people a "kingdom of priests" (Ex 19:6).</li>
+<li><strong>Melchizedek</strong> (Gen 14; Ps 110): priest-king, no genealogy → prefigures Christ's eternal, non-Levitical priesthood.</li>
+<li><strong>Jesus</strong>: not of Levi; never called himself/disciples "priest"; ministry prophetic + Kingdom-centred; replaced sterile cultic priesthood with love, compassion, kenotic service.</li>
+<li><strong>Hebrews</strong>: Jesus the Eternal High Priest "in the order of Melchizedek" — offers himself once for all in the heavenly sanctuary; superior New Covenant.</li>
+</ul>
+<h3 class="sec">2. Priesthood in Church history</h3>
+<ul>
+<li><strong>Early Church</strong>: avoided cultic terms (<em>hiereus/sacerdos</em>); used <em>episkopoi</em>, <em>presbyteroi</em>, <em>diakonoi</em>; leadership pastoral, not primarily cultic.</li>
+<li><strong>3rd c.–Middle Ages</strong>: after the Temple's fall + Christianized empire, "sacred–secular divide"; ministers called <em>sacerdos</em> on the Levitical model; heavy <strong>hierarchicalism</strong> (Pseudo-Dionysius) — active clerics vs passive laity; priest as "sacred person" defined by power to consecrate.</li>
+<li><strong>Reformation</strong>: Luther/Calvin — "priesthood of all believers," ministry of the Word.</li>
+<li><strong>Trent</strong> (1545–63): defensive — Holy Orders as ascending ladder of power, indelible character, focus on Eucharistic sacrifice.</li>
+<li><strong>Vatican II</strong>: from pyramid to <strong>People of God</strong>; reclaims the <strong>common priesthood of the faithful</strong> — common and ministerial differ "in essence and not only in degree," mutually ordered.</li>
+</ul>
+<h3 class="sec">3. Theology of ordained ministry</h3>
+<ul>
+<li><strong>Holy Orders</strong>: minister = the Bishop alone; <strong>matter</strong> = laying on of hands; <strong>form</strong> = consecratory prayer.</li>
+<li><strong>Indelible character</strong> (<em>sphragis</em>): permanent seal configuring to Christ; not lost through sin or laicization.</li>
+<li><strong><em>In persona Christi capitis</em></strong>: sacramental representation through which the Risen Christ leads, teaches, sanctifies.</li>
+<li><strong>Threefold function</strong>: teach (Prophet/Word), sanctify (Priest/Sacrament), shepherd (King/Pastor).</li>
+</ul>
+<h3 class="sec">4. Spirituality of priesthood</h3>
+<ul>
+<li><strong>Kenotic + Shepherd</strong> spirituality (Paschal Mystery; the Good Shepherd).</li>
+<li><strong>Servant of the Word</strong> — listen/contemplate, be God's "microphone," denounce injustice.</li>
+<li><strong>Servant of the Sacraments</strong> — Eucharist source and summit; become "the body given and blood shed."</li>
+<li><strong>Servant of the World</strong> — immersed in the human condition, with "the last, the lost, the least."</li>
+</ul>
+<h3 class="sec">5. Special questions</h3>
+<ul>
+<li><strong>Celibacy</strong>: charism and gift; eschatological sign + pastoral availability; needs affective maturity and prayer.</li>
+<li><strong>Married priests</strong>: Eastern Catholic Churches ordain married men; Latin Church rare exceptions (Pastoral Provision).</li>
+<li><strong>Ordination of women</strong>: <em>Ordinatio Sacerdotalis</em> (JP II) — Church has no authority to ordain women (Christ chose only men as the Twelve; constant tradition; <em>in persona Christi</em>).</li>
+</ul>
+<h3 class="sec">6. Pastores Dabo Vobis (JP II, 1992) — formation</h3>
+<p>Title from Jer 3:15 ("I will give you shepherds"). <strong>Four pillars (SHIP)</strong>:
+1. <strong>Spiritual</strong> — the axis; union with God, <em>lectio divina</em>, Eucharist, Penance, pastoral charity.
+2. <strong>Human</strong> — the foundation; "bridge not an obstacle"; psychological balance, affective maturity, friendship.
+3. <strong>Intellectual</strong> — philosophy + theology (<em>fides quaerens intellectum</em>) for the new evangelization.
+4. <strong>Pastoral</strong> — the goal; the "compassion" of Christ; practical shepherding of souls.
+- <strong>Stages</strong>: Propaedeutic → Discipleship (philosophy) → Configuration (theology) → Pastoral.
+- <strong>Ongoing formation</strong>: permanent, all ages — against burnout, routine activism.</p>
+<h3 class="sec">Connected</h3>
+<p><a href="#04-the-sacraments">04 - The Sacraments</a> · <a href="#07-ecclesiology-and-ecclesial-documents">07 - Ecclesiology and Ecclesial Documents</a> · <a href="#000-bth-pune-foundations-of-catholic-theolog">000 - BTh Pune - Foundations of Catholic Theology (MOC)</a></p>
+</section>
+<section class="chapter" id="06-holy-spirit-pneumatology"><h2>Holy Spirit (Pneumatology)</h2>
+
+<div class="callout callout-info"><p class="callout-label">Part of &lt;a href=&quot;#000-bth-pune-foundations-of-catholic-theolog&quot;&gt;000 - BTh Pune - Foundations of Catholic Theology (MOC)&lt;/a&gt;</p></div>
+
+<h3 class="sec">1. Who the Holy Spirit is</h3>
+<ul>
+<li>A <strong>distinct divine Person</strong> (intellect, emotion, will) — not an impersonal force; God's indwelling presence.</li>
+<li>The <strong>"GIFT" par excellence</strong> (Acts 2:38), given gratuitously.</li>
+<li>The <strong>bond of Trinitarian love</strong> between Father and Son.</li>
+</ul>
+<h3 class="sec">2. In the Old Testament</h3>
+<ul>
+<li><strong><em>Ruach</em></strong> = breath/wind/spirit — YHWH's active force in creation, revelation, redemption.</li>
+<li>Extension of God's presence (not yet a distinct person): order from chaos, life, empowering prophets and kings.</li>
+<li>Foreshadows the Spirit-filled Messiah.</li>
+</ul>
+<h3 class="sec">3. In the New Testament</h3>
+<ul>
+<li>The <strong>age of the Spirit</strong>: Pentecost outpouring (fulfils Joel), transcends cultures; eyewitnesses → courageous ministers.</li>
+<li><strong>Indwelling</strong>: believers as <strong>"temples of the Holy Spirit"</strong> (1 Cor 6:19–20); union with the Risen Christ.</li>
+<li><strong>Charisms</strong> (<em>charismata</em>): prophecy, healing, tongues — for building up the Church, not status.</li>
+<li><strong>Wellspring of unity</strong>: breaks barriers, one language of love.</li>
+</ul>
+<h3 class="sec">4. In the Gospel of John (the Paraclete)</h3>
+<ul>
+<li>Descends like a dove at the baptism — sign that Jesus is the Son of God.</li>
+<li><strong>Born of water and the Spirit</strong> (Jn 3:5–8) — regeneration.</li>
+<li><strong>Paraclete</strong> (Helper/Advocate, Jn 14–16): teaches and guides into all truth; glorifies Christ; convicts the world of sin, righteousness, judgment.</li>
+<li><strong>Johannine Pentecost</strong>: "handed over the Spirit" (Jn 19:30); breathes on the disciples for forgiveness (Jn 20:22–23).</li>
+</ul>
+<h3 class="sec">5. Indian contextual pneumatology</h3>
+<ul>
+<li><strong>Saccidananda</strong>: Father = <em>Sat</em>, Son = <em>Cit</em>, <strong>Spirit = <em>Ananda</em> (Bliss)</strong>.</li>
+<li><strong>Spirit as <em>OM</em></strong> (Abhishiktananda): the tremor at the threshold of sound whispering "Abba" in the heart.</li>
+<li><strong>Hindu resonances (FABC 81)</strong>: <em>Atman</em> (inner Self), <em>Prana</em> (breath, ~ ruach/pneuma), <em>Antaryamin</em> (inner controller), <em>Sakti</em> (divine energy).</li>
+<li><strong>Asian pneumatology "from below"</strong>: the Spirit in pluralism, popular religiosity, liberation/ecological/women's movements — the "Power of the Powerless."</li>
+</ul>
+<h3 class="sec">6. Titles, symbols, terms</h3>
+<ul>
+<li><strong>Titles</strong>: Paraclete/Helper/Comforter/Advocate; Spirit of Truth; the Gift.</li>
+<li><strong>Symbols</strong>: wind/breath, fire, dove, water, oil/anointing, seal, hand &amp; finger.</li>
+<li><strong>Terms</strong>: <em>Epiclesis</em> (invocation transforming the Eucharistic gifts); <em>charismata</em> (gifts for the Church).</li>
+</ul>
+<h3 class="sec">Connected</h3>
+<p><a href="#04-the-sacraments">04 - The Sacraments</a> · <a href="#03-christology-and-indian-christology">03 - Christology and Indian Christology</a> · <a href="#07-ecclesiology-and-ecclesial-documents">07 - Ecclesiology and Ecclesial Documents</a></p>
+</section>
+<section class="chapter" id="07-ecclesiology-and-ecclesial-documents"><h2>Ecclesiology and Ecclesial Documents</h2>
+
+<div class="callout callout-info"><p class="callout-label">Part of &lt;a href=&quot;#000-bth-pune-foundations-of-catholic-theolog&quot;&gt;000 - BTh Pune - Foundations of Catholic Theology (MOC)&lt;/a&gt;</p></div>
+
+<h3 class="sec">1. Nature of the Church</h3>
+<ul>
+<li><strong><em>Ekklesia</em></strong> = Hebrew <em>Qahal Yahweh</em> — the gathered community; free, united, self-governing.</li>
+<li><strong>Mystery</strong>: founded in the Trinity — from the Father, inaugurated by Christ, animated by the Spirit.</li>
+<li><strong>Sacrament</strong> (Vatican II): "efficacious sign of grace" — sign and instrument of communion with God and unity of humankind.</li>
+</ul>
+<h3 class="sec">2. Models of the Church (Avery Dulles)</h3>
+<ul>
+<li><strong>Institution</strong> — visible structures, hierarchy, <em>societas perfecta</em>; critiqued as over-clerical/juridical.</li>
+<li><strong>Community / Mystical Communion</strong> — fellowship, equality, Mystical Body, Spirit-interconnected.</li>
+<li><strong>Herald</strong> — kerygmatic; gathered by the Word, proclaims the Gospel.</li>
+<li><strong>Servant</strong> — suffering-servant body; renounces power, serves the world, keeps Kingdom hope alive.</li>
+</ul>
+<h3 class="sec">3. People of God &amp; Communion</h3>
+<ul>
+<li><strong>People of God</strong> (<em>Lumen Gentium</em>): replaces static <em>societas perfecta</em> with a <strong>pilgrim People</strong>; equal dignity of laity, religious, clergy; universal call to holiness.</li>
+<li><strong>Communion (<em>communio</em>)</strong>: the central idea of Vatican II (1985 Synod); the Universal Church as a communion of local churches; levels — hierarchical, among the baptized, ecumenical, inter-religious.</li>
+</ul>
+<h3 class="sec">4. Vatican II — 16 documents (1962–65)</h3>
+<p><strong>Four Constitutions</strong>:
+1. <strong>Lumen Gentium</strong> (Church) — the "Magna Carta"; Mystery, Sacrament, People of God, collegiality.
+2. <strong>Dei Verbum</strong> (Divine Revelation) — Scripture, Tradition, Magisterium.
+3. <strong>Gaudium et Spes</strong> (Church in the Modern World) — human dignity, social justice, solidarity.
+4. <strong>Sacrosanctum Concilium</strong> (Sacred Liturgy) — active participation, vernacular.</p>
+<p><strong>Major Decrees/Declarations</strong>: <em>Unitatis Redintegratio</em> (ecumenism), <em>Ad Gentes</em> (mission), <em>Presbyterorum Ordinis</em> (priests), <em>Christus Dominus</em> (bishops), <em>Apostolicam Actuositatem</em> (laity); <em>Nostra Aetate</em> (non-Christian religions), <em>Dignitatis Humanae</em> (religious freedom), <em>Gravissimum Educationis</em> (education).</p>
+<h3 class="sec">5. Papal document collections</h3>
+<ul>
+<li><strong>John Paul II</strong>: universal presence of the Spirit, "seeds of the Word." <em>Redemptor Hominis</em>, <em>Dominum et Vivificantem</em>, <em>Redemptoris Missio</em>, <em>Centesimus Annus</em>, <em>Sollicitudo Rei Socialis</em>, <em>Evangelium Vitae</em>, <em>Veritatis Splendor</em>, <em>Fides et Ratio</em>, <em>Ut Unum Sint</em>; <em>Theology of the Body</em>.</li>
+<li><strong>Benedict XVI</strong>: faith and reason, love, hope. <em>Deus Caritas Est</em>, <em>Spe Salvi</em>, <em>Caritas in Veritate</em>, <em>Verbum Domini</em>, <em>Sacramentum Caritatis</em>, <em>Summorum Pontificum</em>; <em>Jesus of Nazareth</em> trilogy.</li>
+<li><strong>Francis</strong>: "a poor Church for the poor," integral ecology, synodality. <em>Evangelii Gaudium</em>, <em>Laudato Si'</em>, <em>Fratelli Tutti</em>, <em>Amoris Laetitia</em>, <em>Christus Vivit</em>, <em>Querida Amazonia</em>.</li>
+</ul>
+<h3 class="sec">Connected</h3>
+<p><a href="#05-priesthood">05 - Priesthood</a> · <a href="#08-contextual-and-liberation-theologies">08 - Contextual and Liberation Theologies</a> · <a href="#09-christian-spirituality-and-mary">09 - Christian Spirituality and Mary</a> · <a href="#000-bth-pune-foundations-of-catholic-theolog">000 - BTh Pune - Foundations of Catholic Theology (MOC)</a></p>
+</section>
+<section class="chapter" id="08-contextual-and-liberation-theologies"><h2>Contextual and Liberation Theologies</h2>
+
+<div class="callout callout-info"><p class="callout-label">Part of &lt;a href=&quot;#000-bth-pune-foundations-of-catholic-theolog&quot;&gt;000 - BTh Pune - Foundations of Catholic Theology (MOC)&lt;/a&gt;</p></div>
+
+<h3 class="sec">1. Dalit theology &amp; mission to Dalits</h3>
+<ul>
+<li><strong>Concern</strong>: caste oppression, purity/pollution ideology, double discrimination (state + Church), landlessness, globalization.</li>
+<li><strong>Method</strong>: "Dalitheothics" — faith critique of the profit market via Jesus' kenotic love; political/economic/socio-religious empowerment; "option for justice"; reclaiming resistance symbols (the Dalit drum).</li>
+<li><strong>Thinkers</strong>: L. Stanislaus, George Soares-Prabhu (table fellowship vs caste), Samuel Rayan.</li>
+</ul>
+<h3 class="sec">2. Subaltern theology</h3>
+<ul>
+<li><strong>Concern</strong>: the "silences and absences" of history — struggles of peasants, tribals, marginalized.</li>
+<li><strong>Method</strong>: "history from below" — subalterns as active subjects, not passive victims. <em>Critiqued for neglecting caste and gender.</em></li>
+<li><strong>Thinkers</strong>: Subaltern Studies Collective (Ranajit Guha, Chakraborty, Hardiman, Chatterjee, Spivak); Gramsci.</li>
+</ul>
+<h3 class="sec">3. Feminist theology</h3>
+<ul>
+<li><strong>Concern</strong>: dismantling patriarchy, androcentrism, misogyny; equality and dignity of women; oppressive readings and silenced voices.</li>
+<li><strong>Method</strong>: "feminist consciousness"; <strong>Schüssler Fiorenza's four principles</strong> — suspicion, remembrance, proclamation, creative visualization; "Review, Recover, Reconstruct."</li>
+<li><strong>Thinkers</strong>: Cady Stanton, Maguire, Schüssler Fiorenza, Elizabeth Johnson; Asian — Katoppo, Chung Hyun Kyung, Kwok Pui-Lan.</li>
+</ul>
+<h3 class="sec">4. Eco-theology</h3>
+<ul>
+<li><strong>Concern</strong>: destruction of the <em>oikos</em> by throwaway culture, greed; ecological degradation hits the poor ("ecological refugees").</li>
+<li><strong>Method</strong>: <strong>Integral Ecology</strong> — "the cry of the earth and the cry of the poor"; charity, environmental justice, mercy, solidarity; "ecological conversion"; world as sacrament, cosmotheandric family, humans as stewards/co-creators.</li>
+<li><strong>Thinkers</strong>: Pope Francis (<em>Laudato Si'</em>), Leonardo Boff, Rachel Carson, Teilhard de Chardin, Vandana Shiva, Sundar Lal Bahuguna.</li>
+</ul>
+<h3 class="sec">5. Social Teaching of the Church</h3>
+<ul>
+<li><strong>Concern</strong>: integral development, human dignity and rights; social/political/economic/ecological crises rooted in sin.</li>
+<li><strong>Sources</strong>: Scripture, Tradition, Church experience, social sciences.</li>
+<li><strong>Five principles</strong>: Common Good · Universal Destination of Goods · Subsidiarity · Participation · Solidarity.</li>
+<li><strong>Documents/Popes</strong>: <em>Rerum Novarum</em> (Leo XIII), <em>Mater et Magistra</em> (John XXIII), <em>Sollicitudo Rei Socialis</em> / <em>Centesimus Annus</em> (JP II), <em>Laudato Si'</em> / <em>Fratelli Tutti</em> (Francis).</li>
+</ul>
+<h3 class="sec">6. Asia and Justice (Asian liberation theology)</h3>
+<ul>
+<li><strong>Concern</strong>: critiques faith/society dualism and other-worldliness enabling exploitation; struggle for equality, freedom, bread; justice as constitutive of faith and central to the Kingdom.</li>
+<li><strong>Method</strong>: from relief/welfare to structural change; social analysis; liturgy/Eucharist tied to human-rights struggles.</li>
+<li><strong>Thinker</strong>: Samuel Rayan (praxis-oriented, grassroots).</li>
+</ul>
+<h3 class="sec">7. Religious pluralism / Christians amidst other communities</h3>
+<ul>
+<li><strong>Concern</strong>: tension between salvation through Christ alone and God's universal salvific will; countering fundamentalism, exclusivism, communal violence.</li>
+<li><strong>Method</strong>: paradigm shift <strong>Ecclesiocentrism → Christocentrism → Theocentrism</strong>; <strong>Fourfold Dialogue</strong> (action, religious experience, theological exchange, social); "seeds of the Word."</li>
+<li><strong>Thinkers</strong>: Felix Wilfred, Stanley Samartha (theocentric Christology), Raimon Panikkar (cosmotheandric; Jordan–Tiber–Ganges → <a href="#02-indian-christian-theology-and-inculturati">02 - Indian Christian Theology and Inculturation</a>).</li>
+</ul>
+<h3 class="sec">Connected</h3>
+<p><a href="#02-indian-christian-theology-and-inculturati">02 - Indian Christian Theology and Inculturation</a> · <a href="#03-christology-and-indian-christology">03 - Christology and Indian Christology</a> · <em>George Soares-Prabhu</em> · <em>Samuel Rayan</em></p>
+</section>
+<section class="chapter" id="09-christian-spirituality-and-mary"><h2>Christian Spirituality and Mary</h2>
+
+<div class="callout callout-info"><p class="callout-label">Part of &lt;a href=&quot;#000-bth-pune-foundations-of-catholic-theolog&quot;&gt;000 - BTh Pune - Foundations of Catholic Theology (MOC)&lt;/a&gt;</p></div>
+
+<h3 class="sec">I. Nature of Christian spirituality</h3>
+<ul>
+<li><strong>Spirituality</strong> = conscious life-integration through self-transcendence toward ultimate value.</li>
+<li><strong>Christian</strong>: the ultimate value is the triune God in Christ, animated by the Spirit.</li>
+<li><strong>Marks</strong>: life of grace and faith · Christocentric &amp; Trinitarian · communitarian &amp; just · divinizing (<em>theosis</em>).</li>
+</ul>
+<h3 class="sec">II. Schools and traditions</h3>
+<ul>
+<li><strong>Martyrdom</strong> (Apostolic Fathers) — martyrdom as the ultimate imitation of Christ ("pure bread of Christ").</li>
+<li><strong>Desert</strong> (Abbas/Ammas) — <em>askesis</em>, spiritual combat, the cell, <em>apatheia</em> (purity of heart).</li>
+<li><strong>Cistercian</strong> (Bernard) — simplicity; love from fear to the "kiss of the mouth."</li>
+<li><strong>Franciscan</strong> — <em>kenosis</em>, poverty, joy and thanksgiving.</li>
+<li><strong>Carmelite</strong> (Teresa of Avila) — the "Interior Castle"; degrees of prayer.</li>
+<li><strong>Salesian</strong> (Francis de Sales) — heart-centred, relational; universal call to holiness, gentleness, humility.</li>
+</ul>
+<h3 class="sec">III. Spiritual theology (discipline)</h3>
+<ul>
+<li><strong>Definition</strong>: from revelation + religious experience, defines the supernatural life and directs growth to perfection.</li>
+<li><strong>Method</strong>: deductive + inductive (avoids empty psychologizing / detached intellectualism).</li>
+<li><strong>Three ways</strong>: <strong>Purgative</strong> (beginners — purification), <strong>Illuminative</strong> (proficient — fervour, discernment), <strong>Unitive</strong> (perfect — charity, God's presence).</li>
+<li><strong>Rahner's critique</strong>: stages too formal → growth as increasing "existential depth" within one's concrete "Situation."</li>
+</ul>
+<h3 class="sec">IV. Mary</h3>
+<ul>
+<li><strong>Spirituality of Mary</strong> — her own journey: Servant, <em>fiat</em>, hearing and keeping the Word.</li>
+<li><strong>Marian spirituality</strong> — praying <em>like</em> Mary; prototype of receptivity. <strong>Balthasar</strong>: "spirituality of spiritualities."</li>
+<li><strong>Stages of Marian formation</strong>: Initiation (Annunciation — consent), Formation (Nazareth — silence, humility), Transformation (Crucifixion — compassion, surrender), Mission (Pentecost — missionary discipleship).</li>
+<li><strong>Psycho-spiritual</strong>: Mary as archetype of the sacred feminine / Great Mother; virtues as maturity — humility→ego-transcendence, obedience→will-integration, hope→resilience, charity→emotional maturity.</li>
+</ul>
+<h3 class="sec">V. Fourth Gospel in the light of Indian culture</h3>
+<ul>
+<li><strong>Word</strong>: as <em>Sat/Cit</em> (Chandogya Upanishad parallel); "Word became flesh" ~ <em>Avatara</em> (Crucified/Kenotic); pre-incarnate Word ~ <em>Om/Adisabda</em>.</li>
+<li><strong>Three margas united in Prema Marga</strong>: <em>Jnana</em> ("I and the Father are one" — Guru, <em>Cit</em>), <em>Karma</em> (foot-washing, <em>Nishkama Karma</em>, <em>Satyagrahi</em>), <em>Bhakti</em> ("abide in me" — <em>Antaryamin</em>).</li>
+<li><strong>Indian realities</strong>: <em>Guru-Shishya</em> discipleship; signs meeting poverty/sickness; "I AM" backed by action ~ <em>Satyagraha</em>; union sayings ~ <em>Advaita</em>, with Johannine dualisms (light/darkness).</li>
+</ul>
+<h3 class="sec">Connected</h3>
+<p><a href="#06-holy-spirit-pneumatology">06 - Holy Spirit (Pneumatology)</a> · <a href="#03-christology-and-indian-christology">03 - Christology and Indian Christology</a> · <a href="#02-indian-christian-theology-and-inculturati">02 - Indian Christian Theology and Inculturation</a></p>
+</section>
+<section class="chapter" id="10-church-history-and-the-msfs"><h2>Church History and the MSFS</h2>
+
+<div class="callout callout-info"><p class="callout-label">Part of &lt;a href=&quot;#000-bth-pune-foundations-of-catholic-theolog&quot;&gt;000 - BTh Pune - Foundations of Catholic Theology (MOC)&lt;/a&gt;</p></div>
+
+<h3 class="sec">I. Indian Church history</h3>
+<h3>St. Thomas Christians</h3>
+<ul>
+<li><strong>52–72 CE</strong>: St. Thomas lands at Kodungaloor (52), seven-and-a-half churches, martyred at Mylapore (72).</li>
+<li><strong>345 CE</strong>: Thomas of Cana + 400 Syrian Christians → East Syrian (Chaldean) link.</li>
+<li><strong>Coonan Cross Oath (3 Jan 1653)</strong>: protest against Latinization; split into Pazhakuttukar (Syro-Malabar Catholics) and Puthenkuttukar (Malankara/Jacobite).</li>
+</ul>
+<h3>Portuguese / Padroado</h3>
+<ul>
+<li><strong>1498</strong> Vasco da Gama; <strong>1510</strong> Albuquerque takes Goa.</li>
+<li><strong>Padroado</strong> = royal patronage (Portuguese kings nominate to Church offices) → "Goan Schism" after Rome's <em>Propaganda Fide</em> (1622).</li>
+<li><strong>Paravas</strong>: mass baptism (~20,000, 1535); <strong>St. Francis Xavier</strong> arrives 1542.</li>
+</ul>
+<h3>Synod of Diamper (1599)</h3>
+<ul>
+<li>20–26 June 1599 under Archbishop Menezes; St. Thomas Christians forced to cut ties with Babylon, condemn Nestorianism, accept papal supremacy, surrender Syriac books. Francis Ros SJ → Latin bishop of Angamali.</li>
+</ul>
+<h3>Modern period</h3>
+<ul>
+<li>19th–20th c.: Indian Christian theology (Brahmabandhav Upadhyay "Hindu-Christian"; A.J. Appasamy, Vengal Chakkarai — <em>bhakti</em>).</li>
+<li>Recent: Dalit, Tribal, Feminist theologies. See <a href="#08-contextual-and-liberation-theologies">08 - Contextual and Liberation Theologies</a>.</li>
+</ul>
+<h3 class="sec">II. Medieval highlights</h3>
+<ul>
+<li><strong>476</strong> fall of Western Rome → bishops take civic roles.</li>
+<li><strong>800</strong> Leo III crowns Charlemagne → "Christendom."</li>
+<li><strong>880–1046</strong> Iron Age of the Papacy (corruption, feudalism).</li>
+<li><strong>1073–85</strong> Gregorian Reform — <em>Dictatus Papae</em> (1075), against lay investiture, simony, concubinage.</li>
+<li><strong>1378–1417</strong> Western Schism → resolved by the <strong>Council of Constance</strong> (Martin V).</li>
+<li><strong>12th–13th c.</strong> Mendicants — Franciscans, Dominicans (poverty, preaching, cities).</li>
+</ul>
+<h3 class="sec">III. Fr. Mermier and the MSFS</h3>
+<h3>Before the Indian foundation</h3>
+<ul>
+<li><strong>Pierre-Marie Mermier</strong> b. 28 Aug 1790; ordained 1813.</li>
+<li><strong>1821</strong> parish missions with Abbé Favre (vs indifference, Jansenism) in Savoie.</li>
+<li><strong>1834</strong> community at La Roche-sur-Foron; <strong>1837</strong> Annecy house "La Feuillette"; <strong>24 Oct 1838</strong> Bishop Rey establishes the <strong>Missionaries of St. Francis de Sales (MSFS)</strong>.</li>
+<li><strong>1838</strong> co-founds Daughters of the Cross (with Claudine Echernier).</li>
+<li><strong>1843</strong> <em>Decretum Laudis</em> from the Holy See.</li>
+</ul>
+<h3>After the Indian foundation</h3>
+<ul>
+<li>Steered the mission from France: <strong>26 priests + 5 brothers to India, 1845–1862</strong>; personal correspondence, united "Salesian family."</li>
+<li>Stroke June 1858; led until death <strong>1862</strong>.</li>
+</ul>
+<h3 class="sec">IV. MSFS pioneers to India</h3>
+<ul>
+<li><strong>1845</strong>: Propaganda Fide assigns the Vicariate of Visakhapatnam to the MSFS.</li>
+<li>Embark May/June 1845 on <em>Courrier de l'Inde</em>; Pondicherry <strong>8 Sept 1845</strong>; Yanam/Visakhapatnam Feb 1846.</li>
+<li><strong>Six pioneers</strong>: Fr. Jacques Martin (architect, 1st Rector, d. 1846), Fr. Jean-Marie Tissot (45 yrs; 1st Bishop of Visakhapatnam 1886), Fr. Jean Thevenet (youngest; churches in Aurangabad, Kamptee), Fr. Joseph Lavorel, Bro. Pierre Carton, Bro. Sulpice Fontanel.</li>
+<li><strong>Fr. Sébastien Neyret</strong> (arr. 1847) — Vicar Apostolic 1849, first bishop from the congregation.</li>
+</ul>
+<h3 class="sec">Connected</h3>
+<p><a href="#02-indian-christian-theology-and-inculturati">02 - Indian Christian Theology and Inculturation</a> · <a href="#05-priesthood">05 - Priesthood</a> · <a href="#07-ecclesiology-and-ecclesial-documents">07 - Ecclesiology and Ecclesial Documents</a></p>
+</section>
+<section class="chapter" id="11-old-testament-foundations-prophets-wisdom"><h2>Old Testament Foundations — Prophets, Wisdom, Anthropology</h2>
+
+<div class="callout callout-info"><p class="callout-label">Part of &lt;a href=&quot;#000-bth-pune-foundations-of-catholic-theolog&quot;&gt;000 - BTh Pune - Foundations of Catholic Theology (MOC)&lt;/a&gt;</p></div>
+
+<h3 class="sec">1. The Prophets (Nevi'im)</h3>
+<h3>Nature of prophecy</h3>
+<ul>
+<li><strong>Navi'</strong> = called by God to communicate a divine perspective on contemporary life/politics — not a fortune-teller.</li>
+<li>Rose with the monarchy as checks-and-balances against kings vs the Sinai covenant.</li>
+<li>Messengers of the "Divine Council": "Thus says YHWH." True vs false tested by fulfilment.</li>
+</ul>
+<h3>Books</h3>
+<ul>
+<li><strong>Former Prophets</strong>: Joshua, Judges, 1–2 Samuel, 1–2 Kings (Deuteronomistic History).</li>
+<li><strong>Major</strong>: Isaiah, Jeremiah, Ezekiel (Daniel = Major in the Christian canon; Writings/apocalyptic in the Hebrew).</li>
+<li><strong>Minor (Book of the Twelve)</strong>: Hosea, Joel, Amos, Obadiah, Jonah, Micah, Nahum, Habakkuk, Zephaniah, Haggai, Zechariah, Malachi.</li>
+</ul>
+<h3>Message</h3>
+<ul>
+<li>God controls history; prosperity/disaster reflects covenant faithfulness.</li>
+<li>Fierce critique of complacent institutional religion ignoring <strong>social justice</strong> (Amos: selling the righteous for silver).</li>
+<li>Cycle: sin → punishment → repentance → deliverance; hope of a <strong>New Covenant</strong> written on the heart (Jeremiah, Ezekiel).</li>
+</ul>
+<h3 class="sec">2. Wisdom Literature</h3>
+<ul>
+<li><strong>Nature</strong>: empirical — human observation/experience discerning the order God embedded in creation (vs direct revelation).</li>
+<li><strong>Books</strong>: Proverbs, Job, Ecclesiastes, Song of Songs, Wisdom Psalms; apocryphal — Wisdom of Solomon, Sirach.</li>
+<li><strong>Themes</strong>:</li>
+<li>"The fear of YHWH is the beginning of wisdom."</li>
+<li><strong>Retribution theology</strong> (Proverbs): right behaviour → blessing.</li>
+<li><strong>Theodicy / innocent suffering</strong> (Job): assaults strict retribution; God's wisdom beyond comprehension.</li>
+<li><strong>Search for meaning</strong> (Ecclesiastes): <em>hevel</em> (vanity); enjoy simple gifts, fear the Lord.</li>
+<li><strong>Lady Wisdom</strong> (<em>Sophia/Hokmah</em>): personified, pre-existent, God's craftsman — vs Mistress Folly.</li>
+</ul>
+<h3 class="sec">3. Theological anthropology</h3>
+<ul>
+<li><strong>Imago Dei</strong> (Gen 1): humans as God's representatives, stewards of creation; capacity for communion.</li>
+<li><strong>Body-person unity</strong>: <em>nepes</em> ("living being," not a trapped soul), <em>basar</em> (flesh = whole person); no strict Greek dualism; creation is good.</li>
+<li><strong>The Fall</strong>: sin as ontological rupture — alienation from God, others, nature; essence = grasping autonomy to define good/evil.</li>
+</ul>
+<h3 class="sec">Key terms</h3>
+<p><em>Navi'</em> · <strong>Theodicy</strong> · <em>Hokmah/Sophia</em> · <em>Vaticinia ex eventu</em> (prophecy after the event) · Deuteronomistic History · <em>nepes</em> · <em>basar</em> · <em>hevel</em>.</p>
+<h3 class="sec">Connected</h3>
+<p><a href="#01-new-testament-background-and-world">01 - New Testament Background and World</a> · <a href="#08-contextual-and-liberation-theologies">08 - Contextual and Liberation Theologies</a> · <a href="#000-bth-pune-foundations-of-catholic-theolog">000 - BTh Pune - Foundations of Catholic Theology (MOC)</a></p>
+</section>
+</main>
+
+<footer class="page">
+  Foundations of Catholic Theology, eleven topics, personal study notes prepared during the BTh programme at Jnana-Deepa Pontifical Athenaeum, Pune.
+</footer>
