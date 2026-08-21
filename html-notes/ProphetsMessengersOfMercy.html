@@ -1,0 +1,421 @@
+<title>Prophets: Messengers of Mercy</title>
+<style>
+  :root {
+    --ink: #ede3cf; --ink-soft: #cdbfa4; --paper: #211c16; --paper-raised: #2a241c;
+    --line: rgba(237,227,207,0.16); --wine: #c17a4d; --wine-soft: #c17a4d1c;
+    --gold: #d6ad5c; --gold-soft: #d6ad5c1a; --muted: #a3947a;
+    color-scheme: dark;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --ink: #2a2318; --ink-soft: #4d4330; --paper: #f4ecdb; --paper-raised: #ffffff;
+      --line: rgba(42,35,24,0.15); --wine: #9c4f27; --wine-soft: #9c4f2714;
+      --gold: #8a6414; --gold-soft: #8a641414; --muted: #7a6c52; color-scheme: light;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #ede3cf; --ink-soft: #cdbfa4; --paper: #211c16; --paper-raised: #2a241c;
+    --line: rgba(237,227,207,0.16); --wine: #c17a4d; --wine-soft: #c17a4d1c;
+    --gold: #d6ad5c; --gold-soft: #d6ad5c1a; --muted: #a3947a;
+  }
+  :root[data-theme="light"] {
+    --ink: #2a2318; --ink-soft: #4d4330; --paper: #f4ecdb; --paper-raised: #ffffff;
+    --line: rgba(42,35,24,0.15); --wine: #9c4f27; --wine-soft: #9c4f2714;
+    --gold: #8a6414; --gold-soft: #8a641414; --muted: #7a6c52;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 20px; line-height: 1.7; -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--wine-soft); }
+  h1, h2, h3, h4 {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "URW Palladio", serif;
+    text-wrap: balance; font-weight: 400; color: var(--gold); margin: 0;
+  }
+  p { margin: 0 0 1.1em; max-width: 42em; }
+  strong { color: var(--ink); font-weight: 700; }
+  em { color: var(--wine); font-style: italic; }
+  a { color: var(--wine); }
+  header.hero { padding: 60px 24px 40px; text-align: center; border-bottom: 1px solid var(--line); }
+  header.hero .eyebrow { font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--wine); margin-bottom: 12px; }
+  header.hero h1 { font-size: clamp(28px, 4.4vw, 40px); max-width: 22ch; margin: 0 auto 8px; font-style: italic; }
+  header.hero .sub { max-width: 46em; margin: 0 auto; color: var(--ink-soft); font-size: 16.5px; }
+  nav.chapters {
+    position: sticky; top: 0; z-index: 10; display: flex; gap: 2px; overflow-x: auto;
+    background: var(--paper); border-bottom: 1px solid var(--line); padding: 0 12px;
+  }
+  nav.chapters a {
+    flex: none; padding: 12px 13px; font-size: 12.5px; text-decoration: none; color: var(--muted);
+    white-space: nowrap; border-bottom: 2px solid transparent;
+  }
+  nav.chapters a:hover { color: var(--wine); border-color: var(--wine-soft); }
+  main { max-width: 780px; margin: 0 auto; padding: 0 24px 40px; }
+  section.chapter { padding: 44px 0 30px; border-bottom: 1px solid var(--line); scroll-margin-top: 50px; }
+  section.chapter:last-of-type { border-bottom: none; }
+  section.chapter h2 { font-size: clamp(21px, 2.8vw, 26px); margin-bottom: 14px; font-style: italic; }
+  h3.sec { font-size: 18.5px; color: var(--gold); margin: 24px 0 8px; }
+  ul, ol { padding-left: 1.3em; margin: 0 0 1.1em; max-width: 42em; }
+  li { margin-bottom: 7px; }
+  hr { border: none; border-top: 1px solid var(--line); margin: 22px 0; }
+  .callout {
+    background: var(--paper-raised); border: 1px solid var(--line); border-left: 3px solid var(--gold);
+    border-radius: 3px; padding: 14px 18px; margin: 16px 0;
+  }
+  .callout p { margin: 0 0 6px; font-size: 15.5px; color: var(--ink-soft); }
+  .callout p:last-child { margin-bottom: 0; }
+  .callout-label { font-size: 12px !important; letter-spacing: 0.05em; text-transform: uppercase; color: var(--gold) !important; margin-bottom: 6px !important; }
+  footer.page { max-width: 780px; margin: 0 auto; padding: 34px 24px 60px; font-size: 13.5px; color: var(--muted); }
+</style>
+
+<header class="hero">
+  <p class="eyebrow">Scripture &middot; Prophetic Literature</p>
+  <h1>Prophets: Messengers of Mercy</h1>
+  <p class="sub">What a Prophet Is, Hosea, Jonah and Daniel, and Prophecy Fulfilled in Christ and Lived in Baptismal Anointing</p>
+</header>
+
+<nav class="chapters">
+  <a href="#00-briefing-doc">Briefing Doc — The Prophets: Messengers of Divine Mercy</a>
+  <a href="#prophets-messengers-of-mercy-moc">Prophets: Messengers of God&#x27;s Mercy and the Call to Renewal</a>
+  <a href="#01-what-is-a-prophet">What is a Prophet</a>
+  <a href="#02-salvation-history-context">Salvation History Context</a>
+  <a href="#03-hosea-living-god-s-love-story">Hosea — Living God&#x27;s Love Story</a>
+  <a href="#04-jonah-god-s-reluctant-messenger">Jonah — God&#x27;s Reluctant Messenger</a>
+  <a href="#05-daniel-faithful-to-the-end">Daniel — Faithful to the End</a>
+  <a href="#06-the-heart-of-god">The Fatherly and Spousal Heart of God</a>
+  <a href="#07-fulfillment-in-jesus-christ">The Fulfillment of Prophecy in Jesus Christ</a>
+  <a href="#08-living-your-baptismal-anointing">Living Your Baptismal Prophetic Anointing</a>
+  <a href="#09-audio-overview">Audio Overview — &quot;Why Biblical Prophets Are Fire Alarms&quot;</a>
+
+</nav>
+
+<main>
+<section class="chapter" id="00-briefing-doc"><h2>Briefing Doc — The Prophets: Messengers of Divine Mercy</h2>
+
+<div class="callout callout-info"><p class="callout-label">Source</p><p>Executive briefing across all 10 sources of the NotebookLM notebook <em>"Prophets: Messengers of God's Mercy and the Call to Renewal"</em> (presenter: Thomas Smith). Native artifact also generated in NotebookLM — <a href="https://notebooklm.google.com/notebook/1a2ea9c3-447f-4b6a-a2bd-e2f9532b2cfa">open</a>. Index: <a href="#prophets-messengers-of-mercy-moc">Prophets - Messengers of Mercy (MOC)</a>.</p></div>
+
+<h3 class="sec">Executive summary</h3>
+<p>The prophets are not fortune-tellers but <strong>messengers of divine mercy</strong>. A prophet is one <em>"called out by the Lord to speak forth the word of the Lord under the inspiration of the Holy Spirit"</em> — one who <strong>afflicts the comfortable and comforts the afflicted</strong> (Heschel). Across the Divided Kingdom, Exile, and Return, God keeps sending messengers to heal a ruptured covenant. Read as poetry and enacted parable, the prophetic books reveal the <strong>fatherly and spousal heart of God</strong>, reach fulfillment in <strong>Jesus Christ</strong> (the ultimate prophet), and hand every baptized believer a <strong>prophetic anointing</strong> to renew the world.</p>
+<h3 class="sec">Key themes at a glance</h3>
+<table>
+<thead>
+<tr>
+<th>Theme</th>
+<th>Core claim</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>What is a prophet</td>
+<td>Speaks God's word; threefold message = repentance, judgment, hope</td>
+<td><a href="#01-what-is-a-prophet">01 What is a Prophet</a></td>
+</tr>
+<tr>
+<td>Salvation history</td>
+<td>Prophets spoke in Divided Kingdom, Exile, Return</td>
+<td><a href="#02-salvation-history-context">02 Salvation History Context</a></td>
+</tr>
+<tr>
+<td>Hosea</td>
+<td>Marriage to Gomer = Israel's infidelity; God buys back His bride</td>
+<td><a href="#03-hosea-living-god-s-love-story">03 Hosea - Living God&#x27;s Love Story</a></td>
+</tr>
+<tr>
+<td>Jonah</td>
+<td>Mercy extended even to the enemy (Nineveh); fish = rescue not punishment</td>
+<td><a href="#04-jonah-god-s-reluctant-messenger">04 Jonah - God&#x27;s Reluctant Messenger</a></td>
+</tr>
+<tr>
+<td>Daniel</td>
+<td>Fidelity under empire; small faithfulness → survives great trials</td>
+<td><a href="#05-daniel-faithful-to-the-end">05 Daniel - Faithful to the End</a></td>
+</tr>
+<tr>
+<td>Heart of God</td>
+<td>Covenant as marriage; God "head over heels in love"</td>
+<td><a href="#06-the-heart-of-god">06 The Heart of God</a></td>
+</tr>
+<tr>
+<td>Fulfillment</td>
+<td>Virgin birth, Suffering Servant, Good Shepherd → Christ</td>
+<td><a href="#07-fulfillment-in-jesus-christ">07 Fulfillment in Jesus Christ</a></td>
+</tr>
+<tr>
+<td>Your call</td>
+<td>Baptismal anointing: priest, prophet, king</td>
+<td><a href="#08-living-your-baptismal-anointing">08 Living Your Baptismal Anointing</a></td>
+</tr>
+</tbody>
+</table>
+<h3 class="sec">Most important points</h3>
+<ol>
+<li><strong>Prophet ≠ predictor.</strong> Hebrew <em>Nabi</em> (of the mouth) — a spokesman for God, not a crystal ball.</li>
+<li><strong>Threefold prophetic message:</strong> call to repentance · declaration of judgment · hope and consolation.</li>
+<li><strong>Prophets were poets and actors</strong> — living, enacted parables aimed at the heart.</li>
+<li><strong>Sin has consequences</strong> regardless of privilege — yet God never stops sending messengers.</li>
+<li><strong>Hosea = "literary crucifix":</strong> God pays the slave-price (30 pieces of silver) to redeem an unfaithful bride.</li>
+<li><strong>Jonah's mirror:</strong> God's mercy reaches our enemies; the question is whether we resent it.</li>
+<li><strong>Daniel's rule:</strong> <em>"purpose in your heart"</em> beforehand; fidelity in small things builds virtue for the furnace and the lion's den.</li>
+<li><strong>Christ walks in the fire</strong> — the "fourth man" — and is the Suffering Servant who <em>is</em> the new covenant.</li>
+<li><strong>You are chosen</strong> — before the foundation of the world — and anointed at baptism to be a prophet now.</li>
+</ol>
+<h3 class="sec">Key quotes</h3>
+<blockquote>
+<p>"A prophet is someone who afflicts the comfortable and comforts the afflicted." — Abraham Heschel</p>
+<p>"The God of sacred scripture is head over heels in love with you."</p>
+<p>"Joy is the net of love by which we catch souls." — Mother Teresa</p>
+</blockquote>
+<h3 class="sec">So what — the call to renewal</h3>
+<p>Evangelization needs no prediction of the future — only your <strong>personal testimony</strong>, <strong>deeds of mercy</strong>, and <strong>joy</strong>. Modern people trust witnesses over teachers. Like Barnabas, the "Son of Encouragement," step into the prophetic role: <strong>up-build, encourage, console</strong> — become a messenger of mercy. → <a href="#08-living-your-baptismal-anointing">08 Living Your Baptismal Anointing</a></p>
+<hr />
+<p>← <a href="#prophets-messengers-of-mercy-moc">Prophets - Messengers of Mercy (MOC)</a></p>
+</section>
+<section class="chapter" id="prophets-messengers-of-mercy-moc"><h2>Prophets: Messengers of God&#x27;s Mercy and the Call to Renewal</h2>
+
+<div class="callout callout-info"><p class="callout-label">Method</p><p>Biblical-theological with a social edge. The natural home of <strong>praxis method</strong> — the prophet does see-judge-act before the phrase existed. Audit: <em>method audit §5</em>.</p></div>
+
+<div class="callout callout-abstract"><p class="callout-label">Overview</p><p>Study of the <strong>biblical prophets</strong> as <strong>messengers of divine mercy</strong> across salvation history. A prophet is one called by God to <strong>speak truth</strong> — to <em>afflict the comfortable and comfort the afflicted</em>. Through Hosea, Jonah, and Daniel we see personal trials and courageous fidelity as timeless models. The narratives move beyond prediction to reveal the <strong>fatherly heart of God</strong>, point to fulfillment in <strong>Jesus Christ</strong>, and call every believer to live their <strong>baptismal prophetic anointing</strong>.</p></div>
+
+<h3 class="sec">Map of Content</h3>
+<ul>
+<li><a href="#00-briefing-doc">00 Briefing Doc</a> — executive briefing across all sources</li>
+<li><a href="#09-audio-overview">09 Audio Overview</a> — 🎙️ deep-dive podcast</li>
+<li>
+<p><em>🗺️ Prophets Journey (Canvas)</em> — visual map</p>
+</li>
+<li>
+<p><a href="#01-what-is-a-prophet">01 What is a Prophet</a> — definition, role, the prophet as living parable</p>
+</li>
+<li><a href="#02-salvation-history-context">02 Salvation History Context</a> — Divided Kingdom, Exile, Return</li>
+<li><a href="#03-hosea-living-god-s-love-story">03 Hosea - Living God&#x27;s Love Story</a> — the redeemed bride</li>
+<li><a href="#04-jonah-god-s-reluctant-messenger">04 Jonah - God&#x27;s Reluctant Messenger</a> — mercy for the enemy</li>
+<li><a href="#05-daniel-faithful-to-the-end">05 Daniel - Faithful to the End</a> — fidelity under empire</li>
+<li><a href="#06-the-heart-of-god">06 The Heart of God</a> — spousal and fatherly love</li>
+<li><a href="#07-fulfillment-in-jesus-christ">07 Fulfillment in Jesus Christ</a> — the ultimate prophet</li>
+<li><a href="#08-living-your-baptismal-anointing">08 Living Your Baptismal Anointing</a> — the call to renewal today</li>
+</ul>
+<h3 class="sec">Golden thread</h3>
+<blockquote>
+<p>"A prophet is someone who afflicts the comfortable and comforts the afflicted." — Abraham Heschel</p>
+<p>"The God of sacred scripture is head over heels in love with you."</p>
+</blockquote>
+<h3 class="sec">Sources</h3>
+<p>10 sources in the NotebookLM notebook — <a href="https://notebooklm.google.com/notebook/1a2ea9c3-447f-4b6a-a2bd-e2f9532b2cfa">open notebook</a>. Notes prepared 2026-07-25.</p>
+</section>
+<section class="chapter" id="01-what-is-a-prophet"><h2>What is a Prophet</h2>
+
+<p>Part of <a href="#prophets-messengers-of-mercy-moc">Prophets - Messengers of Mercy (MOC)</a>.</p>
+<h3 class="sec">Not a fortune-teller</h3>
+<ul>
+<li>Common misconception: prophets merely <strong>predict future events</strong>. False.</li>
+<li>English "prophet" ← Greek <em>prophetes</em> ← Hebrew <strong><em>Nabi</em></strong>.</li>
+<li><em>Nabi</em> relates to <strong>the mouth</strong>: a prophet is one <strong>"called out by the Lord to speak forth the word of the Lord under the inspiration of the Holy Spirit."</strong></li>
+</ul>
+<h3 class="sec">Threefold message</h3>
+<ol>
+<li><strong>Call to repentance</strong> — heal a ruptured relationship.</li>
+<li><strong>Declaration of judgment</strong> — consequences for covenant infidelity.</li>
+<li><strong>Hope, restoration, consolation</strong> — the "cascade of consolation."</li>
+</ol>
+<h3 class="sec">Poets and actors</h3>
+<ul>
+<li>Prophets rarely spoke bare facts. They were <strong>poets and actors</strong>, using provocative imagery.</li>
+<li>They became <strong>living, enacted parables</strong> — winning hearts, not just heads.</li>
+</ul>
+<h3 class="sec">Role</h3>
+<ul>
+<li>The <strong>conscience</strong> for the people of God.</li>
+<li>Shake the comfortable out of sin; encourage the suffering.</li>
+</ul>
+<div class="callout callout-quote"><p class="callout-label">Quote</p><p>"A prophet is someone who afflicts the comfortable and comforts the afflicted." — Abraham Heschel</p></div>
+
+<p><strong>Takeaway:</strong> the prophetic word targets the heart to heal the covenant relationship.</p>
+<p>→ Next: <a href="#02-salvation-history-context">02 Salvation History Context</a></p>
+</section>
+<section class="chapter" id="02-salvation-history-context"><h2>Salvation History Context</h2>
+
+<p>Part of <a href="#prophets-messengers-of-mercy-moc">Prophets - Messengers of Mercy (MOC)</a>.</p>
+<p>Writing prophets spoke during three critical, dark periods of Israel's history:</p>
+<h3 class="sec">1. The Divided Kingdom</h3>
+<ul>
+<li>After David and Solomon, the kingdom split → <strong>Israel (North)</strong> and <strong>Judah (South)</strong>.</li>
+<li>Prophets: <strong><a href="#03-hosea-living-god-s-love-story">Hosea</a></strong>, <a href="#04-jonah-god-s-reluctant-messenger">Jonah</a>, Isaiah.</li>
+<li>Warned of judgment for <strong>idolatry</strong> and reliance on <strong>political alliances</strong>.</li>
+</ul>
+<h3 class="sec">2. The Exile</h3>
+<ul>
+<li>Covenant infidelity → North falls to <strong>Assyria</strong>; South deported to <strong>Babylon</strong>.</li>
+<li>Jerusalem and the <strong>Temple destroyed</strong>.</li>
+<li><strong>Jeremiah</strong> witnessed destruction firsthand; <strong>Ezekiel</strong> and <strong><a href="#05-daniel-faithful-to-the-end">Daniel</a></strong> ministered to exiles in Babylon.</li>
+</ul>
+<h3 class="sec">3. The Return</h3>
+<ul>
+<li>After ~70 years, Persian King <strong>Cyrus</strong> allows return in <strong>three waves</strong> — rebuild temple, people, city walls.</li>
+<li><strong>Haggai</strong> and <strong>Malachi</strong> combat spiritual apathy (<em>acedia</em>) and drive the rebuilding.</li>
+</ul>
+<div class="callout callout-note"><p class="callout-label">Takeaways</p><ul>
+<li>Sin and covenant infidelity always bring consequences — geography and past privilege do not exempt.</li>
+<li>Even in the darkest periods, God faithfully sends messengers to guide His people back.</li>
+</ul></div>
+
+<p>→ Next: <a href="#03-hosea-living-god-s-love-story">03 Hosea - Living God&#x27;s Love Story</a></p>
+</section>
+<section class="chapter" id="03-hosea-living-god-s-love-story"><h2>Hosea — Living God&#x27;s Love Story</h2>
+
+<p>Part of <a href="#prophets-messengers-of-mercy-moc">Prophets - Messengers of Mercy (MOC)</a>.</p>
+<h3 class="sec">Trial</h3>
+<ul>
+<li>God commands Hosea to <strong>marry Gomer, a prostitute</strong>.</li>
+<li>She repeatedly returns to former lovers, abandoning Hosea and their three children.</li>
+</ul>
+<h3 class="sec">Message</h3>
+<ul>
+<li>Hosea's painful marriage = <strong>living metaphor for Israel's spiritual infidelity and idolatry</strong>.</li>
+<li>Israel forsook the covenant to worship pagan idols — "possessed with a spirit of harlotry."</li>
+<li>God commands Hosea to the red-light district to <strong>buy his wife back from slavery</strong>: 15 shekels of silver + barley = <strong>30 pieces of silver</strong> (the price of a slave).</li>
+</ul>
+<h3 class="sec">Lessons</h3>
+<ul>
+<li><strong>Idolatry is to our relationship with God what prostitution is to a marriage.</strong></li>
+<li>Hosea is a <strong>"literary crucifix"</strong> — the extreme, passionate lengths God goes to redeem and buy back His bride.</li>
+<li>Connects to <a href="#06-the-heart-of-god">06 The Heart of God</a> — Hosea 11: <em>"How can I give you up, O Ephraim?"</em></li>
+</ul>
+<p>→ Next: <a href="#04-jonah-god-s-reluctant-messenger">04 Jonah - God&#x27;s Reluctant Messenger</a></p>
+</section>
+<section class="chapter" id="04-jonah-god-s-reluctant-messenger"><h2>Jonah — God&#x27;s Reluctant Messenger</h2>
+
+<p>Part of <a href="#prophets-messengers-of-mercy-moc">Prophets - Messengers of Mercy (MOC)</a>.</p>
+<h3 class="sec">Trial</h3>
+<ul>
+<li>God commands Jonah to preach to <strong>Nineveh</strong> (capital of Assyria — Israel's enemy).</li>
+<li>Jonah <strong>flees</strong> the opposite way toward Tarshish.</li>
+<li>Thrown overboard in a storm; swallowed by a <strong>great fish for three days</strong>.</li>
+</ul>
+<h3 class="sec">Message</h3>
+<ul>
+<li>One-sentence homily: <strong>"In forty days, Nineveh shall be overthrown."</strong></li>
+<li>Shockingly, the pagan city <strong>repents</strong> in fasting and ashes — God spares them.</li>
+<li>Jonah is <strong>furious</strong>: he fled because he <em>knew</em> God was merciful and did not want his enemies forgiven.</li>
+</ul>
+<h3 class="sec">Lessons</h3>
+<ul>
+<li>We can <strong>never escape the presence of the Lord</strong>.</li>
+<li>The great fish was <strong>not punishment but divine mercy</strong> — rescuing Jonah from drowning.</li>
+<li>Spiritual mirror: do we harbor resentment? Do we ration God's mercy only to those we deem worthy?</li>
+</ul>
+<p>→ Next: <a href="#05-daniel-faithful-to-the-end">05 Daniel - Faithful to the End</a></p>
+</section>
+<section class="chapter" id="05-daniel-faithful-to-the-end"><h2>Daniel — Faithful to the End</h2>
+
+<p>Part of <a href="#prophets-messengers-of-mercy-moc">Prophets - Messengers of Mercy (MOC)</a>.</p>
+<h3 class="sec">Trial</h3>
+<ul>
+<li>Exiled to Babylon as a <strong>teenager</strong>; intense cultural indoctrination.</li>
+<li>Babylonians try to change identities: <strong>new names</strong> honoring pagan gods, <strong>unkosher food</strong> from the king's table.</li>
+<li>Friends thrown into the <strong>fiery furnace</strong> for refusing to worship an idol.</li>
+<li>As an <strong>80-year-old</strong>, Daniel thrown into the <strong>lion's den</strong> for refusing to stop praying.</li>
+</ul>
+<h3 class="sec">Message</h3>
+<ul>
+<li>Babylon = both a historical empire and a <strong>supernatural spiritual force opposed to God's plans</strong>.</li>
+<li>It seeks to enslave humanity and demand unswerving allegiance.</li>
+<li>Overarching message of the apocalyptic visions: <strong>earthly power will bend its knee to the Lord</strong> — God's goodness and justice prevail.</li>
+</ul>
+<h3 class="sec">Lessons</h3>
+<ul>
+<li><strong>"Purpose in our hearts"</strong> ahead of time to remain faithful.</li>
+<li>Fidelity in <strong>small, everyday decisions</strong> (like dietary laws) builds the virtue needed for major trials.</li>
+<li>Jesus walks with us in suffering — He appeared as the <strong>"fourth in the fire"</strong> with Shadrach, Meshach, and Abednego. See <a href="#07-fulfillment-in-jesus-christ">07 Fulfillment in Jesus Christ</a>.</li>
+</ul>
+<p>→ Next: <a href="#06-the-heart-of-god">06 The Heart of God</a></p>
+</section>
+<section class="chapter" id="06-the-heart-of-god"><h2>The Fatherly and Spousal Heart of God</h2>
+
+<p>Part of <a href="#prophets-messengers-of-mercy-moc">Prophets - Messengers of Mercy (MOC)</a>.</p>
+<h3 class="sec">The Bible as a love story</h3>
+<ul>
+<li>The <strong>Sinai covenant</strong> was not sterile law — a <strong>marriage moment</strong>; the Ten Commandments served as <strong>wedding vows</strong>.</li>
+<li>Sin = idolatry: carving out <strong>"leaky cisterns"</strong> that cannot hold water, instead of drawing from God, the <strong>living fountain</strong>.</li>
+</ul>
+<h3 class="sec">God's churning love</h3>
+<ul>
+<li>Despite rejection, prophecy reveals God's heart <strong>tumbling and churning</strong> with love.</li>
+<li><strong>Hosea 11</strong> — heartbroken Father: <em>"How can I give you up, O Ephraim?... My compassion grows warm and tender."</em></li>
+<li>See the enacted parable in <a href="#03-hosea-living-god-s-love-story">03 Hosea - Living God&#x27;s Love Story</a>.</li>
+</ul>
+<div class="callout callout-quote"><p class="callout-label">Quote</p><p>"The God of sacred scripture is head over heels in love with you."</p></div>
+
+<h3 class="sec">Takeaway</h3>
+<ul>
+<li>God is not distant — a <strong>passionate Bridegroom</strong> and <strong>loving Father</strong>.</li>
+<li>Prophetic judgments aim at <strong>tough love and rehabilitation</strong> — to heal the ruptured relationship and pour out a <strong>"cascade of consolation."</strong></li>
+</ul>
+<p>→ Next: <a href="#07-fulfillment-in-jesus-christ">07 Fulfillment in Jesus Christ</a></p>
+</section>
+<section class="chapter" id="07-fulfillment-in-jesus-christ"><h2>The Fulfillment of Prophecy in Jesus Christ</h2>
+
+<p>Part of <a href="#prophets-messengers-of-mercy-moc">Prophets - Messengers of Mercy (MOC)</a>.</p>
+<h3 class="sec">Jesus the ultimate prophet</h3>
+<ul>
+<li>Prophets point to Jesus by revealing the <strong>heart of the Father</strong>, which Jesus perfectly manifests.</li>
+<li>Jesus is the <strong>final and definitive Word</strong> of the Father, reconciling the world to God.</li>
+</ul>
+<h3 class="sec">Three fulfilled prophecies</h3>
+<ul>
+<li><strong>Virgin Birth</strong> — Isaiah's word to King Ahaz that a virgin would conceive <strong>Emmanuel</strong> ("God with us") was a <strong>"word in waiting,"</strong> a keyhole only Christ fits.</li>
+<li><strong>Suffering Servant</strong> — Isaiah's <strong>four Servant Songs</strong> predict Jesus' baptism and Passion: filled with the Spirit, <em>pierced for our transgressions</em>, led like a lamb to slaughter. Uniquely, the Servant Himself <strong>is</strong> the new covenant.</li>
+<li><strong>Good Shepherd</strong> — Ezekiel: because human leaders failed, <strong>God Himself</strong> would come to shepherd, seek, and save His lost sheep.</li>
+</ul>
+<h3 class="sec">Takeaway</h3>
+<ul>
+<li>OT prophecies have <strong>multiple layers</strong> — immediate historical fulfillments, ultimately <strong>"filled to the full"</strong> in the person, mission, and Passion of Jesus Christ.</li>
+<li>Ties to <a href="#05-daniel-faithful-to-the-end">05 Daniel - Faithful to the End</a> — Christ as the "fourth in the fire."</li>
+</ul>
+<p>→ Next: <a href="#08-living-your-baptismal-anointing">08 Living Your Baptismal Anointing</a></p>
+</section>
+<section class="chapter" id="08-living-your-baptismal-anointing"><h2>Living Your Baptismal Prophetic Anointing</h2>
+
+<p>Part of <a href="#prophets-messengers-of-mercy-moc">Prophets - Messengers of Mercy (MOC)</a>.</p>
+<h3 class="sec">You are called</h3>
+<ul>
+<li>Prophets are <strong>not relics of the past</strong>. Before the foundations of the world, <strong>God chose you</strong> to be a prophet for this exact moment.</li>
+<li>At Catholic baptism, anointed with <strong>holy chrism</strong> to live as members of Christ's body: <strong>priest, prophet, and king</strong>.</li>
+</ul>
+<h3 class="sec">Living the call</h3>
+<ul>
+<li>Living the prophetic call = accepting the mission of <strong>evangelization</strong>.</li>
+<li>No need to predict the future — simply <strong>share your personal story and the Gospel</strong>.</li>
+<li>Modern man listens to <strong>witnesses more than teachers</strong> — back words with visible <strong>deeds of mercy</strong>.</li>
+<li>Like <strong>Barnabas</strong> ("Son of Encouragement"), fulfill the prophetic role by <strong>upbuilding, encouraging, and consoling</strong> others in the body of Christ.</li>
+</ul>
+<div class="callout callout-quote"><p class="callout-label">On joy</p><p>"Joy is the net of love by which we catch souls." — Mother Teresa</p>
+<p>"The greatest evidence against the existence of God in the world is a joyless Christian." — Peter Kreeft</p></div>
+
+<h3 class="sec">Takeaway</h3>
+<ul>
+<li>Stop hiding your faith — become a <strong>messenger of mercy</strong>.</li>
+<li>Know the story of salvation, keep your <strong>personal testimony ready</strong>, radiate <strong>joy</strong> — and step into your anointing to <em>afflict the comfortable and comfort the afflicted</em>.</li>
+</ul>
+<p>← Back to <a href="#prophets-messengers-of-mercy-moc">Prophets - Messengers of Mercy (MOC)</a></p>
+</section>
+<section class="chapter" id="09-audio-overview"><h2>Audio Overview — &quot;Why Biblical Prophets Are Fire Alarms&quot;</h2>
+
+<p>Deep-dive 2-host podcast generated from all 10 sources of the <em>Prophets: Messengers of God's Mercy</em> notebook. Index: <a href="#prophets-messengers-of-mercy-moc">Prophets - Messengers of Mercy (MOC)</a>.</p>
+<h3 class="sec">Listen</h3>
+<ul>
+<li><strong>Stream / download:</strong> <a href="https://lh3.googleusercontent.com/notebooklm/AKYWMX-P_uLF2Hj36h_rmrA8Tvedpwlf88QYrxUhfYYkHsIctJ3LaQVi07MNAQbYR9uxQP3ufiKH0OclNGEOQIg-Gk4ZJqXRe7R2upGfbdwbAhyflo4sZUPjUWmaPnHpLR6-5IYY4jrKOwK_sYsJjwQHMSJoReyFEag=m140-dv">audio link</a></li>
+<li><strong>In NotebookLM:</strong> <a href="https://notebooklm.google.com/notebook/1a2ea9c3-447f-4b6a-a2bd-e2f9532b2cfa">open notebook</a></li>
+</ul>
+<div class="callout callout-warning"><p class="callout-label">Link may expire</p><p>The Google-hosted URL is session/auth-bound and can stop working later. For a permanent copy, download the <code>.mp3</code> into this folder and embed it with <code>!&lt;em&gt;prophets-audio.mp3&lt;/em&gt;</code>.</p></div>
+
+<h3 class="sec">Companion notes</h3>
+<p>Pair the audio with <a href="#00-briefing-doc">00 Briefing Doc</a> and the <a href="#01-what-is-a-prophet">full note set</a>.</p>
+</section>
+</main>
+
+<footer class="page">
+  Notes on the Prophets as Messengers of God's Mercy, from personal study and NotebookLM sources.
+</footer>
