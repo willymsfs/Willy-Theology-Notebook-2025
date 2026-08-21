@@ -1,0 +1,499 @@
+<title>Theological Method — STUDENT EDITION</title>
+<style>
+  :root {
+    --ink: #ede3cf; --ink-soft: #cdbfa4; --paper: #211c16; --paper-raised: #2a241c;
+    --line: rgba(237,227,207,0.16); --wine: #c17a4d; --wine-soft: #c17a4d1c;
+    --gold: #d6ad5c; --gold-soft: #d6ad5c1a; --muted: #a3947a;
+    color-scheme: dark;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --ink: #2a2318; --ink-soft: #4d4330; --paper: #f4ecdb; --paper-raised: #ffffff;
+      --line: rgba(42,35,24,0.15); --wine: #9c4f27; --wine-soft: #9c4f2714;
+      --gold: #8a6414; --gold-soft: #8a641414; --muted: #7a6c52; color-scheme: light;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #ede3cf; --ink-soft: #cdbfa4; --paper: #211c16; --paper-raised: #2a241c;
+    --line: rgba(237,227,207,0.16); --wine: #c17a4d; --wine-soft: #c17a4d1c;
+    --gold: #d6ad5c; --gold-soft: #d6ad5c1a; --muted: #a3947a;
+  }
+  :root[data-theme="light"] {
+    --ink: #2a2318; --ink-soft: #4d4330; --paper: #f4ecdb; --paper-raised: #ffffff;
+    --line: rgba(42,35,24,0.15); --wine: #9c4f27; --wine-soft: #9c4f2714;
+    --gold: #8a6414; --gold-soft: #8a641414; --muted: #7a6c52;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 20px; line-height: 1.7; -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--wine-soft); }
+  h1, h2, h3, h4, .display {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "URW Palladio", serif;
+    text-wrap: balance; font-weight: 400; color: var(--gold); margin: 0;
+  }
+  p { margin: 0 0 1.1em; max-width: 42em; }
+  strong { color: var(--ink); font-weight: 700; }
+  em { color: var(--wine); font-style: italic; }
+  a { color: var(--wine); }
+
+  header.hero { padding: 60px 24px 44px; text-align: center; border-bottom: 1px solid var(--line); }
+  header.hero .eyebrow { font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--wine); margin-bottom: 12px; }
+  header.hero h1 { font-size: clamp(30px, 4.6vw, 44px); max-width: 20ch; margin: 0 auto 8px; font-style: italic; }
+  header.hero .sub { max-width: 46em; margin: 0 auto 16px; color: var(--ink-soft); font-size: 18px; }
+  header.hero .inst { font-size: 14px; color: var(--muted); line-height: 1.5; margin-bottom: 6px; }
+  header.hero .edition {
+    display: inline-block; margin: 12px 0 10px; padding: 4px 14px; border: 1px solid var(--gold);
+    border-radius: 20px; font-size: 12.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold);
+  }
+  header.hero .meta { font-size: 13.5px; color: var(--muted); margin-top: 8px; }
+  header.hero .leitmotif-line { font-size: 14.5px; color: var(--wine); font-style: italic; margin-top: 10px; }
+
+  nav.chapters {
+    position: sticky; top: 0; z-index: 10; display: flex; gap: 2px; overflow-x: auto;
+    background: var(--paper); border-bottom: 1px solid var(--line); padding: 0 12px;
+  }
+  nav.chapters a {
+    flex: none; padding: 12px 13px; font-size: 13px; text-decoration: none; color: var(--muted);
+    white-space: nowrap; border-bottom: 2px solid transparent;
+  }
+  nav.chapters a:hover { color: var(--wine); border-color: var(--wine-soft); }
+
+  main { max-width: 780px; margin: 0 auto; padding: 0 24px 40px; }
+
+  section.chapter { padding: 52px 0 34px; border-bottom: 1px solid var(--line); scroll-margin-top: 50px; }
+  section.chapter:last-of-type { border-bottom: none; }
+  section.chapter h2 { font-size: clamp(22px, 3vw, 28px); margin-bottom: 18px; font-style: italic; }
+
+  h3.sec { font-size: 20px; color: var(--gold); margin: 28px 0 10px; }
+
+  ul.plain, ol { padding-left: 1.3em; margin: 0 0 1.1em; max-width: 42em; }
+  ul.plain li, ol li { margin-bottom: 9px; }
+
+  .review { margin-top: 24px; background: var(--gold-soft); border: 1px solid var(--line); border-radius: 3px; padding: 18px 22px; }
+  .review h4 { margin: 0 0 10px; font-size: 12.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gold); }
+  .review ol { margin: 0; padding-left: 1.2em; font-size: 16.5px; color: var(--ink-soft); }
+
+  .cue {
+    background: var(--paper-raised); border: 1px solid var(--line); border-left: 3px solid var(--gold);
+    border-radius: 3px; padding: 14px 18px; margin: 18px 0;
+  }
+  .cue p { margin: 0; font-size: 16.5px; color: var(--ink-soft); }
+  .cue strong { color: var(--gold); }
+
+  footer.page { max-width: 780px; margin: 0 auto; padding: 34px 24px 60px; font-size: 13.5px; color: var(--muted); }
+</style>
+
+<header class="hero">
+  <p class="eyebrow">BTh &middot; Morning Star Regional Seminary</p>
+  <h1>Theological Method</h1>
+  
+  <div class="inst">Morning Star Regional Seminary, Barrackpore</div>
+  <div class="edition">STUDENT EDITION</div>
+  
+  
+</header>
+
+<nav class="chapters">
+  <a href="#welcome">Welcome</a>
+  <a href="#unit-one-the-nature-and-necessity-of-met">Unit One: The Nature and Necessity of Method</a>
+  <a href="#unit-two-the-historical-development-of-m">Unit Two: The Historical Development of Method</a>
+  <a href="#unit-three-a-catalogue-of-the-principal-">Unit Three: A Catalogue of the Principal Methods</a>
+  <a href="#unit-four-operating-the-methods">Unit Four: Operating the Methods</a>
+  <a href="#unit-five-choosing-and-combining-methods">Unit Five: Choosing and Combining Methods</a>
+  <a href="#unit-six-the-indian-correction">Unit Six: The Indian Correction</a>
+  <a href="#unit-seven-the-theologians-and-their-met">Unit Seven: The Theologians and Their Methods</a>
+  <a href="#unit-eight-method-in-the-work-of-the-stu">Unit Eight: Method in the Work of the Student</a>
+  <a href="#select-bibliography">Select Bibliography</a>
+</nav>
+
+<main>
+<section class="chapter" id="welcome"><h2>Welcome</h2>
+<p>This course asks a question that lies underneath every other theological question. Not what the Church teaches, but how a theologian arrives at, tests, and hands on what the Church teaches. A student who has never asked that question will still be using a method. The only difference is that the method will be using the student, unexamined and therefore unaccountable.</p>
+<p>The units that follow move from the nature of method, through its history, into a catalogue of the principal methods, then into the working procedures of each, the criteria for choosing between them, the Indian correction of the whole discussion, and finally the theologians in whose hands these methods were forged.</p>
+</section>
+<section class="chapter" id="unit-one-the-nature-and-necessity-of-met">
+<h2>Unit One: The Nature and Necessity of Method</h2>
+<h3 class="sec">1.1 What Theological Method Examines</h3>
+<p>Theological method examines three things: the bases of theology, the proper ordering of theology, and the norms of theology. It is a procedure that can be set out in the open, worked through step by step, and critically appraised by somebody else. That last point carries more weight than it appears to carry. A procedure that cannot be examined by another person is not a method at all. It is a habit.</p>
+<p>The definition given by Bernard Lonergan has become standard: a method is a normative pattern of recurrent and related operations yielding cumulative and progressive results. Each word in that definition does work. The pattern is normative because it tells the theologian what ought to be done next. It is recurrent because any competent person can run it again. The operations are related because the result of one becomes the material of the next. The results are cumulative because nobody has to begin from nothing, and progressive because the discipline actually advances rather than circling.</p>
+<h3 class="sec">1.2 Method, Technique, and System</h3>
+<p>Three words are commonly confused, and the confusion produces a good deal of wasted argument in seminary corridors.</p>
+<ul class="plain">
+<li><strong>Technique</strong> is a mechanical rule applied in the same way to every case. Method is not a technique, because judgement operates at every stage of it.</li>
+<li><strong>System</strong> is the finished product: a body of doctrine set out in order at one particular moment. The Summa is a system. The Institutes of Calvin form a system. Systems age.</li>
+<li><strong>Method</strong> is the open and self correcting process which produces systems and which allows theologians of different generations to collaborate. Method does not age in the same way, because it can absorb new data.</li>
+</ul>
+<p>A useful classroom formula: a system is what a theologian has, and a method is what a theologian does.</p>
+<h3 class="sec">1.3 the Four Transcendental Precepts</h3>
+<p>The operations of theology are not invented by theologians. They are rooted in the structure of human consciousness itself, which moves through experiencing, understanding, judging, and deciding. Lonergan turns these four levels into four imperatives which he calls the transcendental precepts: be attentive, be intelligent, be reasonable, be responsible.</p>
+<p>The precepts are transcendental in the sense that they are not confined to one field of study. A physicist, a magistrate, a farmer, and a theologian all obey them or else fail at their work. What distinguishes theology is not a special logic but the object it attends to and the conversion it requires of the one who attends.</p>
+<p><strong>EXAMPLE: </strong>A student is asked to write on the theology of the diaconate. Attentiveness means reading the conciliar text rather than a summary of it. Intelligence means grasping what the text actually asks and answers. Reasonableness means judging whether the claim is warranted by the evidence assembled. Responsibility means deciding what follows for the diaconate in the Diocese of Asansol, and being prepared to be held to that judgement.</p>
+<h3 class="sec">1.4 Why Method is Necessary</h3>
+<p>Four reasons stand out, and each of them can be stated in a sentence that a student should be able to reproduce in an examination.</p>
+<p>First, method brings order to a Babel of opinions. Without an agreed procedure there is no way of adjudicating between conflicting truth claims, and theology becomes a competition in confidence.</p>
+<p>Second, the rise of modern historical awareness made method unavoidable. Once every text and every institution was recognised as conditioned by its time and place, the ancient sources stopped functioning as absolute premises and began to function as data which required critical investigation.</p>
+<p>Third, a rigorous method allows theology to hold together what would otherwise fly apart, namely the findings of historical criticism and the normative teaching of the Church.</p>
+<p>Fourth, an explicitly stated method makes theology collaborative. When the whole task is broken into specialised operations, the work of one scholar can be taken up by another without being redone from the beginning.</p>
+<h3 class="sec">1.5 What Goes Wrong Without Method</h3>
+<p>The failures are as instructive as the successes, and they fall into four recognisable patterns.</p>
+<ul class="plain">
+<li><strong>Discord between methods.</strong> A disagreement about method is graver than a disagreement about doctrine, because the parties have no shared procedure for settling anything. Debate then becomes a kind of guerilla warfare over particular problems, while the actual disagreement, which lies in unexamined presuppositions, never surfaces.</li>
+<li><strong>Methodological imperialism.</strong> Importing the method of the natural sciences wholesale forces theology into a false naturalism, impoverishes the vision of reality, and overlooks the living soul of religion.</li>
+<li><strong>Irrationalism.</strong> The opposite error. Abandoning reason isolates theology, breeds sectarianism, and destroys the capacity to speak with a sincere enquirer.</li>
+<li><strong>Loss of balance among the sources.</strong> An over emphasis on experience yields mysticism. An over emphasis on history yields a false naturalism. An over emphasis on reason yields rationalism.</li>
+</ul>
+<h3 class="sec">1.6 Method and the Sources of Theology</h3>
+<p>Method governs how a theologian handles Scripture, Tradition, the Magisterium, reason, experience, and context. The single most consequential decision is the choice of starting point, and there are only two.</p>
+<p>An <strong>anthropological</strong> starting point begins with faith in the context of human living and then asks what the message of God means for that world. A <strong>revelatory</strong> starting point begins with the message of God in Scripture and Tradition and then explores the implications for human living. Neither is neutral packaging. The choice determines which questions can be asked and which answers will appear adequate. For that reason a theological essay should state the starting point in the opening paragraph and not leave the reader to guess it.</p>
+<p><strong style="color:var(--wine)">Indian Context.</strong> The choice of starting point is not an abstraction in India. A revelatory start in a parish of Barrackpore will produce a catechesis of the deposit of faith. An anthropological start in the same parish begins from the reality of migrant labour, the price of rice, the school fees of a Dalit child, and asks what the Gospel says into that. Both are legitimate, and the pastoral tragedy of much Indian preaching is that it announces a revelatory starting point while quietly assuming a European anthropological one.</p>
+<h3 class="sec">1.7 What a Good Method Secures</h3>
+<p>Four functions, worth memorising as a set.</p>
+<ul class="plain">
+<li><strong>Rigour.</strong> Obedience to the transcendental precepts. Objectivity is the fruit of authentic subjectivity, not the reward of pretended detachment. The myth to be destroyed is the notion that knowing is simply taking a good look at the facts.</li>
+<li><strong>Cumulative progress.</strong> Specialisation by function allows new work to build on secured research.</li>
+<li><strong>Self correction.</strong> Like an inductive science, theology enlarges its sample of data, refines its language, and stands ready to revise its first convictions.</li>
+<li><strong>Fidelity.</strong> Control lies not in logic alone but in conversion, which is intellectual, moral, and religious. The capacity to interpret divine meaning faithfully depends on an otherworldly falling in love, and it is this, rather than cleverness, which prevents arbitrary construction.</li>
+</ul>
+<p><strong>A NOTE FOR THE CLASSROOM: </strong>Older manuals treated method as a short preliminary chapter, a matter of defining terms before the real work began. Current scholarship treats method as the discipline within which all the other work takes place. Students who have learned theology from a manual will need to unlearn the idea that method is an introduction to something else.</p>
+<h3 class="sec">Review Questions</h3>
+<div class="review"><h4>Review Questions</h4><ol>
+<li>Give the definition of method offered by Lonergan and explain each element of it.</li>
+<li>Distinguish method, technique, and system, with one example of each.</li>
+<li>Why is discord between methods graver than opposition between doctrines?</li>
+<li>Name the three distortions produced by imbalance among the sources of theology.</li>
+<li>State the two possible starting points and one consequence which follows from each.</li>
+</ol></div>
+</section>
+<section class="chapter" id="unit-two-the-historical-development-of-m">
+<h2>Unit Two: The Historical Development of Method</h2>
+<p>The history of theological method is largely a history of reactions. Each of the great turns in the tradition was first a decision about procedure and only afterwards a decision about doctrine.</p>
+<h3 class="sec">2.1 the Patristic Period</h3>
+<p>The earliest theology worked by an authoritarian and deductive procedure shaped by Platonism. Origen begins from the authoritative tradition, apprehends general truths by an act of insight, deduces the detailed truths which follow, and confirms them from the scriptural text. Alongside this runs allegorical interpretation, whose task was to keep the original symbols of the faith in living contact with a changing human consciousness.</p>
+<p>A limit was set early. Irenaeus of Lyons, reasoning in a manner close to the Empiric school of medicine, held that believers know that God created without needing to know how or why God created. Clear scriptural witness outranks speculative explanation of causes.</p>
+<p>Against the Gnostics, who assembled cherry picked verses like the pieces of a mosaic, Irenaeus laid down the rule that Scripture is to be understood only by Scripture, and traced the grand plan of salvation from creation to consummation in order to show that the Creator and the Saviour are one God.</p>
+<h3 class="sec">2.2 Monastic Theology and the Rise of the Schools</h3>
+<p>Early medieval theology in the cloister followed the patristic pattern of reading and meditating on the Bible. The turning point came in the twelfth century with the rise of the universities, when biblical exegesis and speculative theology separated from one another. Scholasticism deployed dialectic and the newly recovered writings of Aristotle. Authoritative texts were now treated piecemeal, statements being extracted as sententiae and grouped around problems, the quaestiones, to be resolved by rational disputation. The Book of Sentences of Peter Lombard is the classic product of this arrangement.</p>
+<p><strong>EXAMPLE: </strong>A single question of the Summa Theologiae displays the whole machinery: the question is posed, objections are marshalled, an authority is cited on the contrary, the master gives his own answer, and each objection is then answered in turn. Nothing is hidden. The reader can see exactly where the argument would break if a premise failed.</p>
+<h3 class="sec">2.3 Thomas Aquinas</h3>
+<p>Thomas Aquinas perfected the scholastic procedure by ordering theology for teaching rather than for discovery. He distinguishes the way of discovery, which moves from what is first for us, from the way of teaching, which moves from what is first in itself. On the mysteries of faith he claims analogy rather than proof. The psychological analogy, which compares the procession of the divine Word to the procession of a concept from an act of human understanding, yields a fruitful but strictly limited understanding.</p>
+<h3 class="sec">2.4 Biblical Humanism and the Reformation</h3>
+<p>Lorenzo Valla and Erasmus attacked the reliance of scholasticism upon dialectic and abstract metaphysics, arguing that it had turned theology into philosophy. Their slogan was ad fontes, back to the sources, which in practice meant the Greek New Testament and the Fathers. Grammatical and historical exegesis became the normative theological task, and the Reformers adopted it. The purpose of theology shifted from the resolution of logical puzzles to the moving of the people of God towards piety and Christian living.</p>
+<h3 class="sec">2.5 Neo Scholasticism and the Crisis of Historical Consciousness</h3>
+<p>The nineteenth century saw Catholic theology divide between traditionalists who relied upon revelation alone and those who sought accommodation with modern philosophy. In 1879 Leo XIII settled the matter in favour of the Aristotelian and Thomist method, and the neo scholastic manual became the standard instrument of seminary formation. Its weakness was not its rigour but its silence about history: it advanced itself as timeless truth while ignoring the historical conditioning of its own categories.</p>
+<p>Meanwhile the scientific revolution and the rise of historical awareness had shattered the static worldview. The historical critical method displaced allegory, and Bible and dogma alike came to be treated as products of development. Theology was pushed from a deductive procedure towards an empirical and inductive one grounded in experience and history.</p>
+<p><strong style="color:var(--wine)">Indian Context.</strong> The manual tradition arrived in India intact and governed seminary teaching for generations. Its categories were Latin, its examples European, and its silences about caste, poverty, and religious pluralism were total. Much of what is now called Indian theology began as an attempt to answer questions which the manual could not even formulate.</p>
+<h3 class="sec">2.6 the Modern Settlement and Its Rivals</h3>
+<p>Friedrich Schleiermacher relocated theology in religious consciousness, defining religion as the feeling of absolute dependence and treating doctrines as expressions of that feeling. Karl Barth, after the collapse of European confidence in the First World War, rejected that move entirely, insisting upon the strange otherness of God and upon revelation which breaks in from beyond rather than emerging from culture. Paul Tillich attempted a middle path by correlating the questions of human existence with the answers of the Christian message.</p>
+<p>Karl Rahner and Bernard Lonergan sought to hold modern philosophy and historical consciousness together with the Thomist tradition. Rahner rooted theology in the self communication of God to the human subject. Lonergan executed a turn to the subject and divided theology into eight functional specialties pivoting upon conversion.</p>
+<h3 class="sec">2.7 Vatican II and After</h3>
+<p>The Second Vatican Council was carried by the movement of ressourcement, the return to the biblical, patristic, and liturgical sources, which broke the grip of the manual. Liberation theology then insisted that method must include a social and economic analysis of oppression, and adopted the inductive rhythm of see, judge, and act. Postmodern thought questioned universal reason and grand narratives, and the cultural and linguistic model of George Lindbeck redescribed doctrine as the grammar of a community.</p>
+<h3 class="sec">Review Questions</h3>
+<div class="review"><h4>Review Questions</h4><ol>
+<li>What limit did Irenaeus set upon theological speculation, and on what grounds?</li>
+<li>What changed in the twelfth century, and what did the change cost?</li>
+<li>Distinguish the way of discovery from the way of teaching in Aquinas.</li>
+<li>What did historical consciousness do to the sources of theology?</li>
+<li>Why is ressourcement a methodological event before it is a doctrinal one?</li>
+</ol></div>
+</section>
+<section class="chapter" id="unit-three-a-catalogue-of-the-principal-">
+<h2>Unit Three: A Catalogue of the Principal Methods</h2>
+<p>What follows is a working catalogue. Each entry gives the definition, the principal names, and the characteristic moves. The point of a catalogue is not memorisation for its own sake but recognition: a student who can name the method operating in a book has already understood half of the book.</p>
+<h3 class="sec">3.1 the Classical or Scholastic Method</h3>
+<p>Systematic and speculative theology which correlates revealed truth with natural reason and philosophy, resolving problems logically and unifying doctrines into a single fabric. The names are Peter Lombard, Thomas Aquinas, Duns Scotus, and in the modern revival Joseph Kleutgen. The moves are to begin from authoritative texts, to extract statements, to organise them by questions, and to apply logic and dialectic, with analogy reserved for the mysteries.</p>
+<h3 class="sec">3.2 the Transcendental Method</h3>
+<p>Theology grounded in the analysis of human intentional consciousness, holding that genuine objectivity is the fruit of authentic subjectivity. The names are Bernard Lonergan, Robert Doran, and Donald Gelpi. The moves are the four precepts, the eight functional specialties in two phases, and conversion as the pivot between the phases.</p>
+<h3 class="sec">3.3 the Method of Correlation</h3>
+<p>The dialectical relating of the existential questions implied in the human situation to the answers given in the Christian message. The name is Paul Tillich. The moves are to analyse the human situation with the help of philosophy, psychology, and sociology, and then to interpret the religious symbols as the adequate answers to the questions so exposed.</p>
+<h3 class="sec">3.4 the Biblical and Exegetical Method</h3>
+<p>Direct exegesis of Scripture as the central and normative theological task, in deliberate rejection of speculative system. The names are Lorenzo Valla and Erasmus. The moves are linguistic, semantic, and historical analysis of the text, with the aim of moving the people of God towards piety.</p>
+<h3 class="sec">3.5 the Historical Critical Method</h3>
+<p>Canonical texts are treated as historical documents shaped by time, place, and culture, in order to free theology from dogmatic prejudice. Textual, form, narrative, and rhetorical criticism are the instruments. In the stratigraphic variety associated with John Dominic Crossan the chronological layers of the text are excavated to reconstruct the conflicts which produced them.</p>
+<h3 class="sec">3.6 the Method of Praxis</h3>
+<p>Theology grounded in the transformation of history and society, which allocates a hermeneutical privilege to the victims of history. The names are Gustavo Gutierrez, Juan Carlos Scannone, Carlos Galli, and the writings of Pope Francis. The moves are to see, to judge, and to act.</p>
+<h3 class="sec">3.7 Contextual Theology and Inculturation</h3>
+<p>Theological reflection which takes the Incarnation as the model for the translation of the Gospel into a particular and culturally conditioned locality. The names are Kosuke Koyama, Kazoh Kitamori, and Shusaku Endo. The moves are a kenotic posture, particularisation of the universal Gospel, dialogical conversation, and assessment against the canon and the catholic community.</p>
+<h3 class="sec">3.8 Feminist, Womanist, and Antiracist Method</h3>
+<p>A critical approach which exposes the systemic biases embedded in traditional theology and centres the bodies and the experience of the marginalised. The names are Shawn Copeland, Kathryn Tanner, Elisabeth Schussler Fiorenza, and Mary McClintock Fulkerson. The characteristic move is to recode inherited symbols rather than to discard them.</p>
+<h3 class="sec">3.9 Comparative and Interreligious Method</h3>
+<p>A multi systemic manner of thinking which relates different symbol systems without homogenising them. The names are Francis Clooney, John Cobb, Wilfred Cantwell Smith, and Edwin Burtt. The moves are the suspension of judgement, the construction of an impartial vocabulary, comparison, and synthesis.</p>
+<h3 class="sec">3.10 Further Methods in Brief</h3>
+<ul class="plain">
+<li><strong>Phenomenological.</strong> Impartial description of religious phenomena by way of epoche and eidetic vision. Bleeker and Kristensen.</li>
+<li><strong>Imaginative construction.</strong> Theology as a human work building a worldview around God as the ultimate point of reference, judged pragmatically by the humanity it produces. Gordon Kaufman.</li>
+<li><strong>Inductive or evolutionary.</strong> Doctrine treated as a growing reality, tested by verification in experience rather than deduced from dogma.</li>
+<li><strong>Relational or experiential.</strong> God known only in relation to the believer, formulations abstracted from the feeling of absolute dependence. Schleiermacher.</li>
+<li><strong>Typological and symbolic.</strong> Correspondences between the economies of salvation, read synthetically. Jean Danielou.</li>
+<li><strong>Dialectical or kerygmatic.</strong> The Word of God set against every human religion, natural theology refused. Karl Barth.</li>
+<li><strong>Cultural and linguistic.</strong> Religion as a comprehensive framework and doctrine as its grammar. George Lindbeck.</li>
+<li><strong>Narrative.</strong> The structure of the story itself as the bearer of the theology.</li>
+</ul>
+<h3 class="sec">Review Questions</h3>
+<div class="review"><h4>Review Questions</h4><ol>
+<li>Distinguish the scholastic method from the biblical and exegetical method in three respects.</li>
+<li>What is meant by the hermeneutical privilege of the victims of history?</li>
+<li>Explain epoche and eidetic vision, and name the method in which they operate.</li>
+<li>Which of the methods listed above could be used in the same essay, and which could not?</li>
+</ol></div>
+</section>
+<section class="chapter" id="unit-four-operating-the-methods">
+<h2>Unit Four: Operating the Methods</h2>
+<p>A method which cannot be executed is a slogan. This unit sets out the working procedures, step by step, in a form which can be applied to a text, a doctrine, or a pastoral situation this week.</p>
+<h3 class="sec">4.1 the Scholastic Quaestio in Four Moves</h3>
+<ul class="plain">
+<li><strong>Identify.</strong> Lecture upon an authoritative text and name the question: a difficulty in the text, a conflict of interpretations, or a doubtful solution.</li>
+<li><strong>Define.</strong> Define, distinguish, and examine the words, the ideas, and the realities involved.</li>
+<li><strong>Set out the arguments.</strong> Lay out and genuinely appreciate the arguments on every side, the procedure known as sic et non.</li>
+<li><strong>Resolve.</strong> Give a rational and orderly solution, dialectic being the instrument.</li>
+</ul>
+<h3 class="sec">4.2 the Eight Functional Specialties</h3>
+<p>The first phase encounters the data of the past and the second phase hands the tradition on to the future. Between the two stands conversion.</p>
+<h3 class="sec">Phase One</h3>
+<ul class="plain">
+<li><strong>Research.</strong> Be attentive. The question is whether we have an accurate text.</li>
+<li><strong>Interpretation.</strong> Be intelligent. The question concerns the literary form and the intention of the author.</li>
+<li><strong>History.</strong> Be reasonable. The question is what was moving forward, and what actually happened.</li>
+<li><strong>Dialectics.</strong> Be responsible. The question is where I stand in the face of these oppositions.</li>
+</ul>
+<h3 class="sec">The Pivot</h3>
+<p>Conversion, in its religious, moral, intellectual, and psychic modalities. The theologian evaluates the authenticity of the theologian.</p>
+<h3 class="sec">Phase Two</h3>
+<ul class="plain">
+<li><strong>Foundations.</strong> Objectify the conversion and choose deliberately the framework and the categories.</li>
+<li><strong>Doctrines.</strong> Make the judgements of fact and of value which affirm the truths of the tradition.</li>
+<li><strong>Systematics.</strong> Seek a coherent understanding of the mysteries affirmed, using analogy.</li>
+<li><strong>Communications.</strong> Transpose that understanding into the common speech of a particular culture, in preaching, catechesis, and pastoral care.</li>
+</ul>
+<p>The eighth specialty feeds the first. What communications produces becomes the historical data of the research of the next generation. The circle turns.</p>
+<p><strong>EXAMPLE: </strong>Aquinas asked whether there are processions in God. Having affirmed the doctrine, he sought understanding of it by an analogy drawn from the human mind, namely the procession of a concept from an act of understanding. Doctrines settled that the processions are. Systematics attempted, without claiming proof, to grasp something of how.</p>
+<h3 class="sec">4.3 the Method of Correlation in Three Moves</h3>
+<ul class="plain">
+<li><strong>Existential analysis.</strong> Analyse the human situation and extract the ultimate questions implied within it.</li>
+<li><strong>Correlation.</strong> Interpret the religious symbols as the adequate answers to precisely those questions.</li>
+<li><strong>Mutual shaping.</strong> Allow the form of the question to shape the answer while the substance of the answer determines the question.</li>
+</ul>
+<p>Three worked correlations are standard. Finitude, anxiety, and contingency are answered by God as the ground of being. Existential disruption and despair are answered by the Christ as the New Being. The question of the meaning of history is answered by the Kingdom of God.</p>
+<h3 class="sec">4.4 Historical Critical Exegesis</h3>
+<ul class="plain">
+<li><strong>Textual criticism.</strong> Establish the best text. The rule of the more difficult reading applies, because scribes smooth what they do not understand.</li>
+<li><strong>Literary and narrative criticism.</strong> Identify the genre and the rhetorical devices employed.</li>
+<li><strong>Historical reconstruction.</strong> Ask what lies behind the narrative and what actually took place.</li>
+</ul>
+<h3 class="sec">4.5 See, Judge, and Act</h3>
+<p>The rhythm comes from the Young Christian Workers movement and became central to Latin American theology.</p>
+<ul class="plain">
+<li><strong>See.</strong> Study the concrete situation with analytical instruments. Examine the social and cultural structures. Identify progress, decline, and the needs of the poor.</li>
+<li><strong>Judge.</strong> Bring the tradition to bear, with a preferential option for the poor, and articulate what the Christian message signifies in this situation.</li>
+<li><strong>Act.</strong> Plan and execute strategies which bring redemptive meanings and values into the situation and transform its structures.</li>
+</ul>
+<p>It is a spiral and not a circle. The act creates a new situation which must be seen again, and each turn ought to be better informed than the one before it.</p>
+<p><strong style="color:var(--wine)">Indian Context.</strong> Run the spiral on a real case. A parish in Barrackpore notices that adolescent girls leave school after class eight. Seeing means the actual numbers, the fee structure, the distance to the school, and the caste composition of the classroom. Judging means asking what the Kingdom of God requires here, and refusing the comfortable answer that the families do not value education. Acting means a concrete intervention with a date attached to it. Six months later the parish sees again, and discovers whether it was right.</p>
+<h3 class="sec">4.6 Inculturation in Four Moves</h3>
+<ul class="plain">
+<li><strong>Kenotic posture.</strong> Abandon epistemic arrogance and every assumption of cultural superiority.</li>
+<li><strong>From above to below.</strong> Particularise the universal Gospel under culture specific conditions, on the model of the Incarnation.</li>
+<li><strong>Dialogical conversation.</strong> Learn the local languages and idioms, and practise mutual correction rather than monologue.</li>
+<li><strong>Canonical and catholic assessment.</strong> Test the construction against the biblical canon and against the global ecclesial community.</li>
+</ul>
+<h3 class="sec">4.7 Comparative Theology in Five Moves</h3>
+<ul class="plain">
+<li><strong>Epoche.</strong> Listen to the adherents of the tradition and accept the phenomena as religious without immediately judging their truth.</li>
+<li><strong>Analysis of agreement.</strong> Establish where agreement already exists and where it is lacking.</li>
+<li><strong>Impartial terminology.</strong> Build a vocabulary which does not beg the question, using a neutral term such as value in place of good and bad.</li>
+<li><strong>Objective comparison.</strong> Analyse each position in that vocabulary and locate its exact virtues and defects.</li>
+<li><strong>Progressive synthesis.</strong> Integrate the dependable goods of each into a richer perspective.</li>
+</ul>
+<p><strong>EXAMPLE: </strong>Christianity and Buddhism may be compared under the impartial goal of spiritual freedom. The theologian asks under what conditions the Christian way and the Buddhist way each secure release from craving and from suffering, and only then attempts a synthesis of what is dependable in both.</p>
+<h3 class="sec">Review Questions</h3>
+<div class="review"><h4>Review Questions</h4><ol>
+<li>Set out the four moves of the quaestio and apply them to a disputed question of your own choosing.</li>
+<li>Give the governing question of each of the first four functional specialties.</li>
+<li>Why is see, judge, and act described as a spiral rather than a circle?</li>
+<li>Why does comparative method insert a step for impartial terminology before comparison begins?</li>
+</ol></div>
+</section>
+<section class="chapter" id="unit-five-choosing-and-combining-methods">
+<h2>Unit Five: Choosing and Combining Methods</h2>
+<p>A method is an instrument fitted to a task. The first question is therefore never which method is best, but what kind of question is being asked.</p>
+<h3 class="sec">5.1 Where Each Method Belongs</h3>
+<p>The scholastic method belongs in the formal academy and in the classroom of dogmatics, where the Church needs a comprehensive framework of belief or must defend the rationality of faith. Its strength is orderly and comprehensive treatment. Its danger is a divorce between theology and lived piety, and the treatment of authorities in fragments torn from their setting.</p>
+<p>The humanist and exegetical method belongs in exegesis, preaching, and moral formation. Its strength is philological fidelity and a direct connection to Christian living. Its limit is that it avoids metaphysics and therefore struggles to construct doctrine.</p>
+<p>The method of correlation belongs on the boundary between faith and culture, in an age of widespread anxiety and scepticism. Its strength is that it addresses the question actually being asked. Its danger is that the divine becomes a principle immanent within the depth of the human, so that the transcendent pole is quietly lost.</p>
+<p>The transcendental method belongs in doctoral research, the history of doctrine, and comprehensive systematics. Its strength is cumulative collaboration. Its limits are complexity and the fact that authentic subjectivity, upon which everything rests, cannot be measured.</p>
+<p>The prophetic and sociological method belongs in ethics, social action, and pastoral planning. Its strength is concrete obedience. Its danger is a reading of history and Scripture slanted towards a conclusion already chosen.</p>
+<p>Comparative and cooperative method belongs in interreligious dialogue and ecumenism. Its strength is impartial mutual learning. Its danger is the dilution of historically grounded truth into an abstract common end.</p>
+<h3 class="sec">5.2 the Standard Criticisms</h3>
+<p>A student who can state the strongest objection to a method understands it better than one who can only praise it.</p>
+<ul class="plain">
+<li><strong>Scholasticism.</strong> The humanists charged that reliance upon dialectic and Greek philosophy had made theology into philosophy.</li>
+<li><strong>Humanism.</strong> The scholastics replied that without philosophy and dialectic a theologian cannot defend the faith rigorously.</li>
+<li><strong>Correlation.</strong> Jacob Taubes argued that the dialectic drives towards a theology of immanence and stalls between historical criticism and pneumatic exegesis.</li>
+<li><strong>Transcendental method.</strong> Many hold the separation of doctrines from systematics to be artificial and unworkable, and warn that systematics becomes technical and elitist.</li>
+<li><strong>Prophetic method.</strong> Critics point to a reductionist memory of Church history and to essentialised contrasts such as Hebrew against Greek.</li>
+<li><strong>Cooperative method.</strong> Traditionalists object that surrendering authoritative revelation for an ongoing synthesis destroys the foundation of faith.</li>
+</ul>
+<h3 class="sec">5.3 Four Criteria of Choice</h3>
+<ul class="plain">
+<li><strong>The starting point.</strong> Anthropological or revelatory. State it.</li>
+<li><strong>The nature of the task.</strong> Discovery or teaching. Historical recovery requires inductive and critical procedures, while pedagogical presentation requires systematic and deductive ones.</li>
+<li><strong>The life situation.</strong> The question often chooses the theologian, in the form of a bioethical case, a parish crisis, or a social emergency.</li>
+<li><strong>Humility or system.</strong> Ask whether the task calls for restraint before a mystery which cannot be grasped, or for the drive to synthesise coherently for a modern hearer.</li>
+</ul>
+<h3 class="sec">5.4 Combining Methods</h3>
+<p>Methods may be combined, and for any substantial piece of work they must be. What legitimates the combination is that the methods are sequenced by task, each doing the work it does well.</p>
+<p>Lonergan built a pipeline in which the inductive and empirical labour of the historian and the philologist feeds into the constructive and pastoral labour of the systematician and the preacher. Ethicists of a practical bent mix arguments from duty, from consequence, and from virtue according to the shape of a given debate. Behind both lies a wider requirement, namely the integration of sequential thinking, which is linear and analytical, with parallel synthetic thinking, which grasps a whole at once.</p>
+<p><strong>A NOTE FOR THE CLASSROOM: </strong>The counterfeit of combination is eclecticism, which switches method in the middle of an argument in order to escape an objection. The test is simple. If the change of method was planned before the objection arose, it is sequencing. If it arrived only after the objection, it is evasion.</p>
+<h3 class="sec">Review Questions</h3>
+<div class="review"><h4>Review Questions</h4><ol>
+<li>Name the four criteria for choosing a method and illustrate two of them from your own written work.</li>
+<li>State the strongest criticism of the method of correlation and assess whether it succeeds.</li>
+<li>Distinguish legitimate combination of methods from eclecticism.</li>
+</ol></div>
+</section>
+<section class="chapter" id="unit-six-the-indian-correction">
+<h2>Unit Six: The Indian Correction</h2>
+<p>Everything set out so far was formulated in Europe and North America, with one Japanese exception. This unit asks what changes when the same questions are asked in India. The answer is not a decoration added to a Western structure. It is a correction to the structure.</p>
+<h3 class="sec">6.1 Beyond the Translation Model</h3>
+<p>Indian theology has learned to distinguish translation from inculturation. The translation model renders Western doctrine using upper caste Hindu vocabulary and presents the result as an Indian theology. Authentic inculturation is a slower and less controllable process in which the Church immerses itself in the concrete lives, the struggles, and the languages of the people. Its horizon is the cosmotheandric vision, in which the cosmic, the divine, and the human are inseparable dimensions of one reality.</p>
+<h3 class="sec">6.2 Experience as Starting Point</h3>
+<p>Much Indian theology begins from anubhava, direct spiritual experience, rather than from propositional doctrine. The Christian ashram movement institutionalised this beginning, integrating jnana, bhakti, and nishkama karma into a Christian spirituality. The Trinity has been expounded through saccidananda, being, consciousness, and bliss, in a line running from Brahmabandhab Upadhyaya to Swami Abhishiktananda.</p>
+<h3 class="sec">6.3 the Dalit Critique</h3>
+<p>Here the discussion turns. Christian Dalits reject the classical Indian philosophical categories, recognising in them the language of the upper castes and an instrument for the maintenance of superiority. Inculturation into a Sanskritic Hinduism is, on this reading, inculturation into the very system which oppresses them.</p>
+<p>Dalit theological method therefore begins elsewhere: from the little traditions, the myths, the folklore, and the lived experience of oppression. At the centre stands the Crucified Jesus, who gives meaning within suffering and power to revolt against injustice, while the Risen Christ gives hope of a new and egalitarian society. Tribal and Adivasi theology runs a parallel course among communities threatened by displacement and exploitation.</p>
+<h3 class="sec">6.4 the Indian Liberation Stream</h3>
+<p>Indian liberation theology works upon the epistemological privilege of the poor, holding that God is present among the oppressed in such a way that they occupy a better vantage point for knowing God. It uses the social sciences to analyse the roots of poverty and caste, and reads Scripture from the standpoint of the destitute.</p>
+<h3 class="sec">6.5 the Method of George Soares Prabhu</h3>
+<p>The most carefully articulated Indian exegetical procedure belongs to George Soares Prabhu.</p>
+<p>He criticises the historical critical method for claiming a universal objectivity which it does not possess, for being over academic, and for carrying an ideological bias towards the values of capitalism. Yet he holds it to be indispensable, because it anchors the text historically and prevents fanciful and subjective interpretation.</p>
+<p>An authentic Indian reading looks with two eyes. The first eye sees the Indian situation, marked by poverty and by caste. The second sees the Indian mind, which is inclusive, cosmocentric, and sensitive to context. The reading itself is three dimensional, being at once religious, social, and intertextual, and it moves through the hermeneutical circle of Juan Luis Segundo in four steps: a new experience of reality, ideological suspicion, exegetical suspicion, and a new interpretation of the Bible.</p>
+<p>He employs Indian categories deliberately. Dharma names the complex of religious insight and ethical value in the teaching of Jesus, above all in the Sermon on the Mount. Dhvani and vyanjana, the resonating and the suggested meaning, are used to grasp the inspired sense of the scriptures. He acknowledges sannyasa, yet he criticises the modern Christian ashram as elitist and disconnected from the struggles of the poor. Inculturation for him is not the adaptation of customs but a conversion which changes fundamental attitudes, and theology remains a second step which follows spiritual discipline and a committed pursuit of liberation.</p>
+<p><strong style="color:var(--wine)">Indian Context.</strong> The triad which defines the Indian context in the writings of Soares Prabhu is poverty, pluriform religiosity, and the caste system. Any method imported into India and applied without reference to those three will produce accurate exegesis of a text that nobody in the parish was asking about.</p>
+<h3 class="sec">6.6 Placing the Indian Correction</h3>
+<ul class="plain">
+<li>The historical critical method remains, but it is unmasked as culturally conditioned and supplemented by dhvani and vyanjana.</li>
+<li>Correlation remains, but the questions come from poverty, caste, and pluralism rather than from existential anxiety.</li>
+<li>See, judge, and act remains, with caste analysis added to class analysis.</li>
+<li>Inculturation remains, but split by the Dalit question of whose culture is being inculturated.</li>
+<li>Comparative theology remains, grounded in anubhava and in the recognition of other religions as ways of salvation.</li>
+</ul>
+<h3 class="sec">Review Questions</h3>
+<div class="review"><h4>Review Questions</h4><ol>
+<li>Distinguish the translation model from authentic inculturation, with an example of each from Indian Church history.</li>
+<li>State the Dalit critique of inculturation and the alternative starting point which it proposes.</li>
+<li>Set out the four steps of the hermeneutical circle and apply them to one passage of the Gospels.</li>
+<li>Why does Soares Prabhu call the historical critical method necessary but not sufficient?</li>
+</ol></div>
+</section>
+<section class="chapter" id="unit-seven-the-theologians-and-their-met">
+<h2>Unit Seven: The Theologians and Their Methods</h2>
+<p>Methods are not free floating. Each was forged by somebody who faced a crisis and needed an instrument. What makes a theologian major is not the volume of the output but the paradigm: a construction which later generations must either adopt or define themselves against.</p>
+<h3 class="sec">7.1 the Early Centuries</h3>
+<p>Clement of Rome writes under a practical crisis, the ousting of elders at Corinth, and grounds ecclesial order in the commissioning of Christ and the apostles. Ignatius of Antioch writes in haste on the road to martyrdom, and his method is intensely experiential: if the flesh of Christ was not real, then the martyrdom which awaits him is meaningless. Polycarp is mild with moral failure and severe with doctrinal corruption, on the conviction that right doctrine drives right practice.</p>
+<p>Justin Martyr synthesises a Greek education with Christian revelation and begins from common ground: to the pagan he says that the Word dimly recognised by the philosophers is incarnate in Christ, and to the Jew he offers a Christological exegesis of the prophets. Irenaeus of Lyons is the first architect of a coherent system, holding that Scripture is understood only by Scripture and tracing the plan of God from creation to consummation under the heading of recapitulation.</p>
+<p>Athanasius reasons from salvation backwards: if the Son is a creature, he cannot bring us into communion with the Father, and therefore he is of one being with the Father. Augustine begins from an examination of his own life and memory, synthesises Neoplatonic motifs with revelation, and sharpens in controversy the claim that the will cannot choose God without the prior gift of the Spirit.</p>
+<h3 class="sec">7.2 the Medieval and Reformation Turns</h3>
+<p>Anselm does theology as meditation, and attempts to establish Christian doctrine by unaided logic without appeal to Scripture or to earlier authority, on the premise that God is Reason itself. Aquinas orders theology for teaching, integrates Aristotle so that reason supplies the preambles of faith, and reserves analogy for the mysteries.</p>
+<p>Luther refuses the whole arrangement. Reason is called the whore of the devil, natural theology is rejected, and God is known only in the crucified Christ, which shatters human pride. The canon itself is tested by whether a book teaches Christ. Calvin divides the labour: exegesis belongs to the commentaries and doctrine to the Institutes, and God accommodates the divine speech to finite capacity in the manner of a nurse speaking to an infant.</p>
+<p>John Owen divides all theology under Christology and Pneumatology and applies dense doctrine to the affections, on the conviction that theology is inherently practical. Jonathan Edwards uses the instruments of the Enlightenment, natural science and psychological observation, in the service of Reformed orthodoxy, and holds that holy affections arise from true doctrine.</p>
+<h3 class="sec">7.3 the Modern Paradigms</h3>
+<p>Schleiermacher performs a Copernican revolution by locating the source of theology in religious experience, thereby insulating faith from historical and scientific attack, and treating doctrines as expressions of religious affection. Barth rejects that move as subjectivism attempting to be Christianity, insists upon the infinite qualitative distinction between God and humanity, and writes dogmatics as an act of preaching, assertive and aesthetic rather than argumentative.</p>
+<p>Rahner begins from the human subject as spirit in the world, always questioning and open to infinite mystery, and asks what conditions must exist within the hearer for revelation to be received. The supernatural existential holds that human nature is always already graced, so that grace is not an addition to a self contained nature. Lonergan divides theology into eight functional specialties and grounds the whole in the authenticity of the converted subject.</p>
+<h3 class="sec">7.4 the Fault Lines</h3>
+<p>Five debates recur across the whole history, and a student who can locate a theologian on each of them has a working map.</p>
+<ul class="plain">
+<li><strong>Nature and grace.</strong> Pelagius holds a natural capacity for perfection, Augustine a total dependence upon grace, Aquinas that grace perfects nature, Rahner that nature is always already graced.</li>
+<li><strong>Revelation and reason.</strong> Aquinas builds upon reason, Luther refuses it, Schleiermacher relocates revelation within subjectivity, Barth insists that God alone crosses the gulf.</li>
+<li><strong>Faith and history.</strong> Irenaeus reads history as recapitulation, Schleiermacher as religious evolution, Rahner as the categorical mediation of transcendence.</li>
+<li><strong>Church and world.</strong> Augustine distinguishes the two cities, Rahner reshapes ecclesiology towards a world Church which must confess its own sinfulness.</li>
+<li><strong>God and suffering.</strong> Justin sees discipline, Luther sees the cross which overturns the theology of glory, Rahner sees surrender to incomprehensible mystery, Kitamori sees the pain of God.</li>
+</ul>
+<p><strong>EXAMPLE: </strong>Kitamori and Luther illustrate how a fault line crosses cultures. Both refuse to seek God where reason expects to find him. Luther finds God in the cross against the theology of glory of late medieval Europe. Kitamori finds the pain of God against the divine impassibility inherited from Greek philosophy, and writes in the Japan of 1946, in a country in ruins.</p>
+<p><strong style="color:var(--wine)">Indian Context.</strong> Ask which of the five fault lines is most urgent in the Indian Church at present. The honest answer is usually the fourth, Church and world, because it decides whether the parish is an enclave or a leaven, and the fifth, God and suffering, because a theology which cannot speak to the suffering of the poor will be answered by silence in the pews.</p>
+<h3 class="sec">Review Questions</h3>
+<div class="review"><h4>Review Questions</h4><ol>
+<li>What makes a theologian major? Illustrate from two figures.</li>
+<li>Set out the positions of Augustine, Aquinas, and Rahner on nature and grace.</li>
+<li>Why is the rejection by Barth of Schleiermacher a methodological rejection rather than a doctrinal one?</li>
+<li>State one standard criticism of Rahner and assess it.</li>
+</ol></div>
+</section>
+<section class="chapter" id="unit-eight-method-in-the-work-of-the-stu">
+<h2>Unit Eight: Method in the Work of the Student</h2>
+<p>This unit is practical. It concerns the essay to be submitted next month, the exegesis paper, the seminar presentation, and the homily on Sunday.</p>
+<h3 class="sec">8.1 State the Starting Point</h3>
+<p>Choose deliberately between the anthropological and the revelatory starting point, and say so in the opening paragraph. A model sentence: this paper proceeds from a revelatory starting point, establishing first what Dei Verbum 11 affirms about inspiration, and asking only then what follows for the Indian reader of Scripture.</p>
+<h3 class="sec">8.2 Structure the Argument</h3>
+<p>A four step procedure serves for any issue, whether pastoral, ethical, or textual.</p>
+<ul class="plain">
+<li><strong>Theological analysis.</strong> Make explicit the theological assumptions which lie implicit in the discussion.</li>
+<li><strong>Evaluation.</strong> Examine those assumptions and state their strengths and their limitations.</li>
+<li><strong>Construction.</strong> Propose the most adequate resolution in the light of the Christian message.</li>
+<li><strong>Justification.</strong> Explain in explicit theological terms why the proposal is preferable to the alternatives.</li>
+</ul>
+<p>Marks are most often lost in two places: by stopping at evaluation, and by leaping to construction without analysis.</p>
+<h3 class="sec">8.3 Use Both Modes of Thinking</h3>
+<p>Sequential thinking is linear and analytical, and it is required for dissecting a text and building an argument. Parallel synthetic thinking grasps a whole at once and is required for interpretation and for pastoral judgement. A practical discipline joins them: read Scripture or keep a period of prayer to prime the intuition, then write the insight down and test it by rigorous sequential reasoning.</p>
+<h3 class="sec">8.4 the Four Killers</h3>
+<ul class="plain">
+<li><strong>The short circuit.</strong> Leaping from what an ancient text meant to what it means for us, skipping interpretation, history, dialectics, and doctrine. The result is anachronism, and a false quarrel in which history is set against faith.</li>
+<li><strong>The illusion of neutrality.</strong> Every reader occupies a horizon. Claiming neutrality does not remove the social location of the reader, it only removes it from scrutiny.</li>
+<li><strong>Impatience.</strong> Rushing to a conclusion and dismissing the opposing view. Methodological patience means remaining with the dissenting voice until the root of the disagreement is visible.</li>
+<li><strong>Loss of epistemic humility.</strong> Forgetting that all human theology is a limited attempt to grasp what exceeds it.</li>
+</ul>
+<h3 class="sec">8.5 Checklist Before Submission</h3>
+<ul class="plain">
+<li>Starting point named and justified.</li>
+<li>Method named, with a reason why it fits this question.</li>
+<li>Implicit assumptions in the debate made explicit.</li>
+<li>At least one opposing position engaged in its strongest form.</li>
+<li>No leap from what the text meant to what it means without the intermediate steps.</li>
+<li>Own horizon and social location acknowledged.</li>
+<li>Constructive proposal stated and justified against the alternatives.</li>
+<li>Limits of the argument acknowledged.</li>
+</ul>
+<p><strong style="color:var(--wine)">Indian Context.</strong> One additional line belongs on the checklist of every student of this seminary. Ask who in India would be helped and who would be harmed if the conclusion of the paper were preached from a pulpit in Bengal next Sunday. A conclusion which cannot survive that question has not yet been thought through.</p>
+<h3 class="sec">Review Questions</h3>
+<div class="review"><h4>Review Questions</h4><ol>
+<li>Write a methodological paragraph for your current assignment, naming starting point, method, and social location.</li>
+<li>Identify the short circuit in a paper you have already submitted.</li>
+<li>What does methodological patience require of a student who has already formed an opinion?</li>
+</ol></div>
+</section>
+<section class="chapter" id="select-bibliography">
+<h2>Select Bibliography</h2>
+<p>Amos, Scott. New Learning, Old Theology. 2003.</p>
+<p>Bleeker, Claas Jouco. Comparing the Religio Historical and the Theological Method. Numen, 1971.</p>
+<p>Burtt, Edwin A. The Problem of Theological Method. Journal of Religion, 1947.</p>
+<p>Chua, How Chuang. A Theological and Methodological Evaluation of Asian Contextual Theologies. 2021.</p>
+<p>Cobb, John B. Theological Data and Method. Journal of Religion, 1953.</p>
+<p>Harrington, Daniel. Catholic Theology and Theological Method. 1978.</p>
+<p>Kaufman, Gordon D. An Essay on Theological Method. Missoula: Scholars Press, 1975.</p>
+<p>Kaufman, Gordon D. Theology as Imaginative Construction. Journal of the American Academy of Religion, 1982.</p>
+<p>Lindbeck, George. The Nature of Doctrine: Religion and Theology in a Postliberal Age. Philadelphia: Westminster, 1984.</p>
+<p>Lonergan, Bernard. Method in Theology. Edited by Robert M. Doran and John D. Dadosky. Toronto: University of Toronto Press, 2017.</p>
+<p>Mackey, James P. Divine Revelation and the Transcendental Method in Theology of Lonergan.</p>
+<p>Mshana, Rogate. Poverty, Justice and the African Context. 2013.</p>
+<p>Nichols, Aidan. The Theology of Jean Danielou. 2010.</p>
+<p>Ormerod, Neil. Theological Method. Grand Rapids: Eerdmans, 2015.</p>
+<p>Ormerod, Neil. A Method in Theology for the Twenty First Century. 2020.</p>
+<p>Pathil, Kuncheria, and Dominic Veliath. An Introduction to Theology. Bangalore: Theological Publications in India.</p>
+<p>Pitts, Jamie. Revising the Theological Method of John Howard Yoder. 2013.</p>
+<p>Schoedel, William R. Theological Method in Irenaeus. Journal of Theological Studies, 1984.</p>
+<p>Soares-Prabhu, George M. Collected Writings. Volumes One to Four. Pune: Jnana-Deepa Vidyapeeth.</p>
+<p>Stone, Howard W., and James O. Duke. How to Think Theologically. Minneapolis: Fortress, 2023.</p>
+<p>Taubes, Jacob. On the Nature of the Theological Method: Reflections on the Methodological Principles of the Theology of Tillich. Journal of Religion, 1954.</p>
+<p>Teel, Karen. Whiteness in Catholic Theological Method. Journal of the American Academy of Religion, 2019.</p>
+<p>Tillich, Paul. The Problem of Theological Method. Journal of Religion, 1947.</p>
+<p>Welker, Michael. Who Is Jesus Christ for Us Today? Harvard Theological Review, 2002.</p>
+<p>Whelan, Gerard. The Theological Method of Evangelii Gaudium. 2015.</p>
+<p>Youtz, Herbert Alden. The Critical Problem of Theology. 1911.</p>
+</section>
+</main>
+
+<footer class="page">
+  Class notes for the Bachelor of Theology Programme, Morning Star Regional Seminary, Barrackpore &mdash; affiliated to Jnana-Deepa Pontifical Athenaeum, Pune. STUDENT EDITION. Text only, no diagrams &mdash; hierarchy carried by heading levels, bold, italic and colour.
+</footer>
